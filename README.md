@@ -1,3 +1,3 @@
 # Email Templates
 
-[[Install|Installation]]
+[Install](https://github.com/sashcy/email-templates/wiki/Installation)
