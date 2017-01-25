@@ -1,2 +1,3 @@
 # Email Templates
 
+[[Install|Installation]]
