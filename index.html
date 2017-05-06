@@ -190,7 +190,7 @@ a:visited:active {
     text-decoration: none
 }
 .button span:hover {
-    background-color: #14602B
+    background-color: #14602B !important;
 }
 .button spanvisited {
     color: #FFF
@@ -344,6 +344,15 @@ table.default_table.centered td:not(:first-child) {
 }
 .footer-title {
 	text-align: center;
+}
+.sidebar-title {
+	font-family: Roboto, Helvetica, Arial, sans-serif; 
+	font-weight: 400 !important; 
+	font-size: 20px !important; 
+	color: #2a3052;
+	text-align: left;
+	Margin-top: 0px !important;
+	Margin-bottom: 10px !important;
 }
 /* ------------------------------------- 
     ONE COLUMN LAYOUT 
@@ -500,7 +509,6 @@ table.default_table.centered td:not(:first-child) {
 .section-title {
 	text-align: left;
 	border-top: 1px solid #dedede;
-	padding-left: 10px;
 }
 .primary-color {
     background-color: #2A3052;
@@ -592,6 +600,11 @@ table.default_table.centered td:not(:first-child) {
 	.left-sidebar .left, .left-sidebar .right,
 	.right-sidebar .left, .right-sidebar .right {	 
 		max-width: 100%;
+		text-align: center;
+	}
+	.left-sidebar .left *, .left-sidebar .right *,
+	.right-sidebar .left *, .right-sidebar .right * {
+		text-align: center;
 	}
 	.FX_table td {
 		width: 94% !important;
@@ -607,7 +620,6 @@ table.default_table.centered td:not(:first-child) {
     }
 }
 </style>
-
 </head>
 <body>
     <center class="wrapper">
