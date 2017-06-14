@@ -5,12 +5,14 @@
     <!--[if !mso]><!-->
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--<![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Binary.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary.com PT</title>
     <!--[if mso]>
     <style type="text/css">
         table {border-collapse: collapse;}
 		body, table, td {font-family: Helvetica, Arial, sans-serif !important;}
+		.bullet-img {width: 23px; vertical-align: top !important; padding: 8px 0px 0px 17px !important;}
+		table.default_table  td {vertical-align: top; padding: 10px 20px 10px 20px;}
     </style>
     <![endif]-->
 <style type="text/css">
@@ -79,8 +81,7 @@ div[style*="margin: 16px 0"] {
     TYPOGRAPHY 
 ------------------------------------- */
 p {
-	Margin: 1em 0;
-    line-height: 1.4em;
+    Margin: 10px 0;
 }
 a,
 a:visited {
@@ -112,7 +113,7 @@ a:visited:active {
 	font-family: Roboto, Helvetica, Arial, sans-serif; 
 	color: #2A3052;
     font-size: 22px !important;
-    font-weight: 300;
+    font-weight: 300
 	Margin-bottom: 15px !important;
 }
 .h4, h4 { 
@@ -132,7 +133,7 @@ a:visited:active {
 	font-family: Roboto, Helvetica, Arial, sans-serif; 
 	font-weight:bold; 
 	font-size: 14px;
-	color: #000000;
+	color: #000000
 	Margin-bottom: 2px !important;
 }
 /* ------------------------------------- 
@@ -260,10 +261,15 @@ a:visited:active {
 	color: #444;	
 }
 .social-ch {
-    padding-top: 15px;
+    padding-top: 20px;
 	text-align: right;
 }
-.social-ch a:hover {
+.social a {
+	margin: 0 5px;
+	outline: none;
+	font-size: 12px !important;
+}
+.social a:hover {
 	text-decoration: none;
 }
 .note {
@@ -340,15 +346,8 @@ table.default_table.centered th:not(:first-child),
 table.default_table.centered td:not(:first-child) {
     text-align: center
 }
-.footer {
-	display: block;
-	border-top: 1px solid #DEDEDE;
-	margin: 20px 0;
-	padding: 20px 0;
-}
 .footer-title {
 	text-align: center;
-	padding: 0 10px;
 }
 .sidebar-title {
 	font-family: Roboto, Helvetica, Arial, sans-serif; 
@@ -359,13 +358,17 @@ table.default_table.centered td:not(:first-child) {
 	Margin-top: 0px !important;
 	Margin-bottom: 10px !important;
 }
-.unsubscribe-bar {
-    text-align: center !important;
-    padding: 15px;
+
+.bullet_table_li {
+	padding: 5px 0 5px 0px;
+	font-family: Roboto, Helvetica, Arial, sans-serif; 	
+	font-size: 18px !important;
+	color: #000;
 }
-.footer-menu {
-    text-align: center !important;
-	padding: 15px;
+.bullet-img {
+	width: 23px;
+	vertical-align: top !important;
+	padding: 8px 0px 0px 17px !important;
 }
 /* ------------------------------------- 
     ONE COLUMN LAYOUT 
@@ -588,16 +591,12 @@ table.default_table.centered td:not(:first-child) {
 .bordered {
     border: 1px solid #DEDEDE
 }
-.bordered-bar {
-	border-top: 1px solid #DEDEDE;
-	border-bottom: 1px solid #DEDEDE;
-}
 .centered {
 	text-align: center !important;
 }
 .justify {
-	text-align: justify !important;
-    text-justify: inter-word;
+	text-align:justify !important;  
+    text-justify: inter-cluster !important;
 }
 /* ------------------------------------- 
     RESPONSIVE
@@ -671,13 +670,164 @@ table.default_table.centered td:not(:first-child) {
 					</td>
 				</tr>
 			</table>
-			{{content}}
-			<table class="outer footer" align="center" cellpadding="0" cellspacing="0" border="0">		
+			
+			<!-- content {{content}} -->
+			<table align="center" border="0" cellpadding="0" cellspacing="0" class="outer">
 				<tr>
-					<td>
-						<h2 class="footer-title">Want to learn more?</h2>
+					<td class="one-column">
+						<table width="100%">
+							<tr>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td class="text">
+												<p>Dear Traders,</p>
+												<p>We’re extremely excited to announce two new additions to our cryptocurrency product range: <b>Ethereum (ETH/USD)</b> and <b>Litecoin (LTC/USD)</b>.</p>
+												<p>This comes hot on the heels of the BTC/USD instrument we launched last month, meaning that you can now trade the world’s leading digital currencies on our MT5 platforms for desktop, web, and mobile.</p>
+												<h2>What is a cryptocurrency</h2>
+												<p>A cryptocurrency is a type of digital currency that relies on cryptography techniques and a variation of the blockchain technology (a kind of ‘public ledger’) to secure its transactions</p>
+												<p>Cryptocurrencies are:</p>
+												<ul class="bullet">
+													<li><strong>Get recognised</strong>: promote your financial product or trading strategy to Binary.com’s client database.</li>
+													<li><strong>Increase signup/conversion rate</strong>: earn commissions for every client you convert.</li>
+													<li><strong>Receive dedicated support</strong> to help you set up, produce, and deliver the webinar.</li>
+													<li><strong>Get featured in Binary.com Academy</strong>, with a dedicated page featuring your accomplishments as well as a summary about your product or company.</li>
+													<li><strong>Incur no monetary costs</strong> for free and ongoing promotion.</li>
+												</ul>
+												<table class="bullet_table">
+													<tr>
+														<td class="bullet-img" width="30"><img src="https://offers.binary.com/binary/customer-io/images/bullet1.png" width="16" height="16"></td>
+														<td class="bullet_table_li"><b>Anonymous</b> – Transactions can take place without any exchange of personal information</td>
+													</tr>
+													<tr>
+														<td class="bullet-img"><img src="https://offers.binary.com/binary/customer-io/images/bullet1.png" width="16" height="16"></td>
+														<td class="bullet_table_li"><b>Decentralised</b> – No government agency or bank controls it, and there can be no central point of failure. Instead, it’s maintained by a peer-to-peer network</td>
+													</tr>
+													<tr>
+														<td class="bullet-img"><img src="https://offers.binary.com/binary/customer-io/images/bullet1.png" width="16" height="16"></td>
+														<td class="bullet_table_li"><b>Almost impossible to counterfeit</b> – The technology that powers cryptocurrencies record each transaction. Several copies of the transaction are available, and can be verified by anyone</td>
+													</tr>
+												</table>
+												<table class="default_table">
+													<thead>
+														<tr>
+															<th></th>
+															<th><strong>Bitcoin</strong></th>
+															<th><strong>Litecoin</strong></th>
+															<th><strong>Ether</strong></th>
+														</tr>
+													</thead>
+
+													<tbody>
+														<tr>
+															<td><strong>Created</strong></td>
+															<td>2009</td>
+															<td>2011</td>
+															<td>2015</td>
+														</tr>
+														<tr>
+															<td><strong>Why it’s popular</strong></td>
+															<td>The world’s first-ever cryptocurrency. Pioneered the technology that underpins all new cryptocurrencies that have emerged since then.</td>
+															<td>Seen as an improved, faster version of Bitcoin. Taking the lead in breaking through the technological constraints experienced by Bitcoin.</td>
+															<td>Touted as next big thing. Appreciated in value by more than 3000% in this year alone, largely due to the potential of its ‘smart contracts’ –– scripts of code that can be deployed in its underlying technology.</td>
+														</tr>
+														<tr>
+															<td><strong>Estimated market cap</strong></td>
+															<td>Over $46 billion</td>
+															<td>Over $1.5 billion</td>
+															<td>Over $24 billion</td>
+														</tr>
+														<tr>
+															<td><strong>Coin limit</strong></td>
+															<td>21 million</td>
+															<td>84 million</td>
+															<td>Unlimited</td>
+														</tr>
+														<tr>
+															<td><strong>Exchange symbol</strong></td>
+															<td>BTC</td>
+															<td>LTC</td>
+															<td>ETH</td>
+														</tr>
+													</tbody>
+												</table>
+												<h2>How to trade Bitcoin, Ethereum, and Litecoin on MetaTrader 5</h2>
+												<p>Are you ready to start trading cryptocurrencies on our MT5 platform?</p>
+												<p>Here’s what you need to do:</p>
+												<ol>
+												<li>Log in to your MT5 account</li>
+												<li>Right-click the Market Watch window and select ‘Symbols’</li>
+												<li>Select ‘Crypto’ from the list in the ‘Symbols’ window.</li>
+												<li>Click on each symbol that appears and click ‘Show’ to add them to your Market Watch window.</li>
+												<li>Now, go back to the Market Watch window. Right-click on the cryptocurrency symbol you’d like to trade, select ‘New Order’ and start trading.</li>
+												</ol>
+												<h2>Cryptocurrency contract specifications</h2>    
+												<table class="default_table">
+																<thead>
+																	<tr>
+																		<th></th>
+																		<th><strong>BTC/USD</strong></th>
+																		<th><strong>ETH/USD</strong></th>
+																		<th><strong>LTC/USD</strong></th>
+																	</tr>
+																</thead>												
+																<tbody>
+																	<tr>
+																		<td><strong>Max leverage</strong></td>
+																		<td>3:1</td>
+																		<td>3:1</td>
+																		<td>3:1</td>
+																	</tr>
+																	<tr>
+																		<td><strong>Spread</strong></td>
+																		<td>Variable</td>
+																		<td>Variable</td>
+																		<td>Variable</td>
+																	</tr>
+																	<tr>
+																		<td><strong>Minimum volume</strong></td>
+																		<td>1</td>
+																		<td>0.1</td>
+																		<td>1</td>
+																	</tr>
+																</tbody>
+															</table>
+												<p>The rise in the valuation of Bitcoin means that cryptocurrencies are set to explode this year. Bitcoin has already seen a 500-fold increase over the last five years, and reached a record high in June this year as the price per bitcoin hit USD 2,900 for the first time.</p>
+												<p>Digital currencies truly represent an exciting frontier for new and seasoned traders alike.</p>
+												<p>Join the uptrend before it's too late.</p>
+												<div class="cta-lg bordered-bar">
+												<!--[if mso]>
+													  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://mt.binary.com/en/user/settings/metatrader.html#financial?utm_source=customerio&utm_medium=email&utm_campaign=eth_ltc_launch" style="height:40px;v-text-anchor:middle;width:340px;" arcsize="8%" stroke="f" fillcolor="#2E8836">
+														<w:anchorlock/>
+														<center>
+													 <![endif]-->
+													<a href="https://mt.binary.com/en/user/settings/metatrader.html#financial?utm_source=customerio&utm_medium=email&utm_campaign=eth_ltc_launch" class="button"><span>Trade ETH/USD and LTC/USD now</span></a>
+													<!--[if mso]>
+													</center>
+													</v:roundrect>
+													<![endif]-->
+												</div>
+												<p>Regards,</p>
+												<p>Binary.com</p>
+												<p>P.S. Don’t see your favourite cryptocurrency on our MT5 platform? Still not sure how to get started? Get in touch with us at <a href="mailto:marketing@binary.com">marketing@binary.com</a>. We’d love to hear your feedback and find out what type of content you would be interested in learning about.</p>																								
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
 					</td>
 				</tr>
+			</table>
+			<!-- end content -->
+			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">		
+				<tr>
+					<td>
+					    <div class="separator-line-thin-gray"></div>
+						<h2 class="footer-title">Deseja saber mais?</h2>
+					</td>
+				</tr>
+				
 				<tr>
 					<td class="three-column">
 						<!--[if mso]>
@@ -691,14 +841,14 @@ table.default_table.centered td:not(:first-child) {
 									<td class="inner">
 										<table class="contents">
 											<tr>
-												<td>													
+												<td>
+													<p class="centered font-s"><a href="http://academy.binary.com/pt/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Relatórios diários</a></p>
 													<a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-dailyreport1.png" style="max-width:60px;" class="columnImage" /></a>
 												</td>
 											</tr>
 											<tr>
-												<td class="text font-s">
-													<p class="centered font-s"><a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Daily Report</a></p>
-													<p class="font-s">Stay up-to-date with the latest financial news and trends from around the world, with Daily Market Reports written by professional trader, Dave Evans.</p>
+												<td class="text">
+													<p class="font-s">Conheça os nossos Relatórios Diários dos Mercados, elaborados pelo negociador profissional Dave Evans. Mantenha-se atualizado com as notícias financeiras e tendências mais recentes de todo o mundo.</p>
 												</td>
 											</tr>
 										</table>
@@ -715,15 +865,14 @@ table.default_table.centered td:not(:first-child) {
 									<td class="inner">
 										<table class="contents">
 											<tr>
-												<td>													
+												<td>
+													<p class="centered font-s"><a href="http://academy.binary.com/pt/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Centro de aprendizagem</a></p>
 													<a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-learningcenter.png" style="max-width:60px;" class="columnImage" /></a>
 												</td>
 											</tr>
 											<tr>
-												
-												<td class="text font-s">
-													<p class="centered font-s"><a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Learning Centre</a></p>
-													<p class="font-s">Gain useful knowledge about all aspects of binary options trading. Browse our full library of educational materials, including videos, webinars, ebooks, and more.</p>
+												<td class="text">
+													<p class="font-s">Adquira conhecimentos úteis sobre todos os aspectos da negociação de opções binárias. Pesquise toda a nossa biblioteca de materiais de apoio, incluindo vídeos educativos, webinars, livros eletrônicos, perguntas frequentes e mais.</p>
 												</td>
 											</tr>
 										</table>
@@ -740,14 +889,14 @@ table.default_table.centered td:not(:first-child) {
 									<td class="inner">
 										<table class="contents">
 											<tr>
-												<td>													
+												<td>
+													<p class="centered font-s"><a href="http://academy.binary.com/pt/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Webinars mensais</a></p>
 													<a href="https://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-monthlywebinar.png" style="max-width:60px;" class="columnImage" /></a>
 												</td>
 											</tr>
 											<tr>
-												<td class="text font-s">
-													<p class="centered font-s"><a href="http://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Monthly Webinars</a></p>
-													<p class="font-s">Watch, earn, and learn for free. Sign up for our monthly webinars and collect exclusive techniques, strategies, and tips from our professional trading partners.</p>
+												<td class="text">
+													<p class="font-s">Assista, aprenda e ganhe gratuitamente! Inscreva-se nos nossos webinars mensais. Colete técnicas, estratégias e dicas exclusivas dos nossos parceiros de negociação profissional.</p>
 												</td>
 											</tr>
 										</table>
@@ -763,7 +912,8 @@ table.default_table.centered td:not(:first-child) {
 					</td>
 				</tr>
 				<tr>
-					<td class="two-column  bordered-bar">
+					<td class="two-column">
+						<div class="separator-line-thin-gray-sm"></div>
 						<!--[if mso]>
 						<table width="100%">
 						<tr>
@@ -775,39 +925,40 @@ table.default_table.centered td:not(:first-child) {
 									<td class="inner">
 										<table class="contents font-s">
 											<tr>
-												<td>
-													<p class="font-s mb-centered">Have a question? Need Help?<br />Email us at <a href="mailto:support@binary.com">marketing@binary.com</a>.</p>
+												<td class="mb-centered">
+													<p class="font-s">Tem dúvidas? Necessita de ajuda?</p>
+                                                    <p class="font-s">Envie um e-mail para <a href="mailto:support@binary.com">marketing@binary.com</a>.</p>
 												</td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 							</table>
-						</div>
+						</div>						
 						<!--[if mso]>
 						</td><td width="50%" valign="top">
-						<![endif]-->						
+						<![endif]-->
 						<div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
 										<table class="contents">
 											<tr>
-												<td class="social-ch" valign="middle">
+												<td class="social-ch">
 													<a href="https://www.youtube.com/user/BinaryTradingVideos">
-														<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" height="35" width="35" alt="Binary.com on YouTube" />
+														<img src="https://marketing.binary.com/images/email/youtube.png">
 													</a>
 													<a href="https://plus.google.com/+Binarydotcom/posts">
-														<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/g+.png" height="35" width="35" alt="Binary.com Google+" />
+														<img src="https://marketing.binary.com/images/email/googleplus.png">
 													</a>
 													<a href="https://www.facebook.com/binarydotcom">
-														<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/fb.png" height="35" width="35" alt="Binary.com on Facebook" />
+														<img src="https://marketing.binary.com/images/email/facebook.png">
 													</a>
 													<a href="https://twitter.com/Binarydotcom">
-														<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/twitter.png" height="35" width="35" alt="Binary.com on Twitter" />
+														<img src="https://marketing.binary.com/images/email/twitter.png">
 													</a>
 													<a href="https://www.linkedin.com/company/binary-com?trk=prof-following-company-logo">
-														<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/linkedn.png" height="35" width="35" alt="Binary.com LinkedIn" />
+														<img src="https://marketing.binary.com/images/email/linkedin.png">
 													</a>
 												</td>
 											</tr>
@@ -824,25 +975,34 @@ table.default_table.centered td:not(:first-child) {
 					</td>
 				</tr>
 				<tr>
-					<td class="one-column">
+					<td class="one-column footer">
+						<div class="separator-line-thin-gray-sm"></div>
 						<table width="100%">
 							<tr>
 								<td class="inner">
 									<table class="contents">
 										<tr>
 											<td>
-												<p class="font-xs justify">This email has been issued by Binary (IOM) Ltd, Binary (Europe) Ltd and Binary Investments (Europe) Ltd. Binary (IOM) Ltd is licensed and regulated by the Isle of Man Gambling Supervision Commission, and by the UK Gambling Commission. Binary (Europe) Ltd is licensed by the UK Gambling Commission and by the Malta Gaming Authority. Binary Investments (Europe) Ltd is licensed and regulated by the Malta Financial Services Authority, Notabile Road, Attard, BKR4000, Malta.</p>
-												<p class="font-xs justify">Binary options trading may incur losses as well as gains. Prices shown on website may vary and/or fluctuate due to changes in the currency exchange rates and/or price movements, which may impact your return of investment. Clients must be 18 years and above. Gambling can be addictive, please play responsibly. To find out how, please visit: www.gambleaware.co.uk.</p>												
+												<p class="font-xs justify">Este e-mail foi remetido pela Binary (IOM) Ltd, Binary (Europe) Ltd e Binary Investments (Europe) Ltd. A Binary (IOM) Ltd é licenciada e regulamentada pela Comissão de Supervisão de Jogos da Ilha de Man e pela Comissão de Jogos do Reino Unido. A Binary (Europe) Ltd é licenciada pela Comissão de Jogos do Reino Unido e pela Autoridade de Jogos de Malta. A Binary Investments (Europe) Ltd é licenciada e regulamentada pela Autoridade de Serviços Financeiros de Malta, Notabile Road, Attard, BKR4000, Malta.</p>
+												<p class="font-xs justify">A negociação de opções binárias pode incorrer em perdas, bem como em ganhos. Os preços exibidos no website podem variar e/ou flutuar devido a alterações nas taxas de câmbio e/ou movimentações de preço, o que pode afetar o seu retorno de investimento.Os jogos de azar podem ser viciantes. Por favor, jogue responsavelmente:</p>
+												<p class="font-s"><a href="https://www.binary.com/pt/terms-and-conditions.html?#legal" target="_blank">Termos e Condições</a>&nbsp;|&nbsp;<a href="https://www.binary.com/pt/terms-and-conditions.html?#risk" target="_blank">Isenção de responsabilidade de riscos</a>&nbsp;|&nbsp;<a href="https://www.binary.com/pt/terms-and-conditions.html?section=conflicts-policy" target="_blank">Política de conflitos</a>&nbsp;|&nbsp;<a href="https://www.binary.com/pt/terms-and-conditions.html?#order-execution" target="_blank">Execução de ordens</a></p>
 											</td>
 										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="one-column">					
+						<table width="100%">
+							<tr>
+								<td class="inner">
+									<table class="contents">
 										<tr>
-											<td class="footer-menu">
-												<span class="font-s"><a href="https://www.binary.com/en/terms-and-conditions.html?#legal" target="_blank">Terms and Conditions</a>&nbsp;|&nbsp;<a href="https://www.binary.com/en/terms-and-conditions.html?#risk" target="_blank">Risk Disclaimer</a>&nbsp;|&nbsp;<a href="https://www.binary.com/en/terms-and-conditions.html?section=conflicts-policy" target="_blank">Conflicts Policy</a>&nbsp;|&nbsp;<a href="https://www.binary.com/en/terms-and-conditions.html?#order-execution" target="_blank">Order Execution</a></span>
-											</td>
-										</tr>
-										<tr>
-											<td class="fill-bg-color unsubscribe-bar">
-												<span class="font-s">Don't wish to receive these emails anymore? <a href="{% unsubscribe_url %}" class="untracked">Unsubscribe</a></span>
+											<td class="fill-bg-color">
+												<p class="font-s centered"><a href="{% unsubscribe_url %}" class="untracked">Cancelar assinatura</a></p>
 											</td>
 										</tr>
 									</table>

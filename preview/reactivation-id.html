@@ -1,0 +1,864 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Binary.com</title>
+        <style type="text/css">
+            /* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+            @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin,vietnamese,cyrillic-ext,latin-ext,cyrillic);
+            #outlook a {
+                padding: 0;
+            }
+            /* Force Outlook to provide a "view in browser" message */
+
+            .ReadMsgBody {
+                width: 100%;
+            }
+
+            .ExternalClass {
+                width: 100%;
+            }
+            /* Force Hotmail to display emails at full width */
+
+            .ExternalClass,
+            .ExternalClass div,
+            .ExternalClass font,
+            .ExternalClass p,
+            .ExternalClass span,
+            .ExternalClass td {
+                line-height: 100%;
+            }
+            /* Force Hotmail to display normal line spacing */
+
+            a,
+            blockquote,
+            body,
+            li,
+            p,
+            table,
+            td {
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+            }
+            /* Prevent WebKit and Windows mobile changing default text sizes */
+
+            table,
+            td {
+                mso-table-lspace: 0;
+                mso-table-rspace: 0;
+            }
+            /* Remove spacing between tables in Outlook 2007 and up */
+
+            img {
+                -ms-interpolation-mode: bicubic;
+            }
+            /* Allow smoother rendering of resized image in Internet Explorer */
+            /* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            img {
+                border: 0;
+                height: auto;
+                line-height: 100%;
+                outline: none;
+                text-decoration: none;
+            }
+
+            a, a:visited {
+              color: #2A3052;
+              text-decoration: none;
+              font-weight: bold;
+            }
+            a:hover, a:active, a:visited:hover, a:visited:active {
+              text-decoration: underline;
+            }
+
+            table {
+                border-collapse: collapse !important;
+            }
+
+            #bodyCell,
+            #bodyTable,
+            body {
+                height: 100% !important;
+                margin: 0;
+                padding: 0;
+                width: 100% !important;
+                font-family: roboto, sans-serif, arial;
+                font-size: 18px;
+            }
+            /* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
+            /* ========== Page Styles ========== */
+
+            #bodyCell {
+                padding: 20px;
+            }
+
+            #templateContainer {
+                width: 600px;
+            }
+            /**
+			* @tab Page
+			* @section background style
+			* @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+			* @theme page
+			*/
+
+            #bodyTable,
+            body {
+                /*@editable*/
+                background-color: #ffffff;
+            }
+            /**
+			* @tab Page
+			* @section background style
+			* @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+			* @theme page
+			*/
+
+            #bodyCell {
+                /*@editable*/
+                border-top: 4px solid #F2F2F2;
+            }
+            /**
+			* @tab Page
+			* @section email border
+			* @tip Set the border for your email.
+			*/
+
+            #templateContainer {
+                /*@editable*/
+                border: 1px solid #F2F2F2;
+            }
+            /**
+			* @tab Page
+			* @section heading 1
+			* @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+			* @style heading 1
+			*/
+
+            h1 {
+                /*@editable*/
+                display: block;
+                /*@editable*/
+                font-family: roboto, sans-serif, arial;
+                /*@editable*/
+                /*@editable*/
+                font-style: normal;
+                /*@editable*/
+                /*@editable*/
+                line-height: 100%;
+                /*@editable*/
+                letter-spacing: normal;
+                margin: 10px 0 10px;
+                /*@editable*/
+                text-align: left;
+                font-size: 36px;font-weight: 300;color: #e98024;
+            }
+            h1.dark
+            {
+                color: #2a3052;
+            }
+            /**
+			* @tab Page
+			* @section heading 2
+			* @tip Set the styling for all second-level headings in your emails.
+			* @style heading 2
+			*/
+
+            h2 {
+                /*@editable*/
+                display: block;
+                /*@editable*/
+                font-family: roboto, sans-serif, arial;
+                /*@editable*/
+                /*@editable*/
+                font-style: normal;
+                /*@editable*/
+                /*@editable*/
+                line-height: 100%;
+                /*@editable*/
+                letter-spacing: normal;
+                margin: 0 0 10px;
+                /*@editable*/
+                text-align: left;
+                font-size: 28px;font-weight: 300;color: #e98024;
+            }
+            /**
+			* @tab Page
+			* @section heading 3
+			* @tip Set the styling for all third-level headings in your emails.
+			* @style heading 3
+			*/
+
+            h3 {
+                /*@editable*/
+                color: #2A3052 !important;
+                display: block;
+                /*@editable*/
+                font-family: roboto, sans-serif, arial;
+                /*@editable*/
+                font-size: 22px;
+                font-weight: 300;
+                /*@editable*/
+                line-height: 100%;
+                /*@editable*/
+                letter-spacing: normal;
+                margin: 0 0 10px;
+                /*@editable*/
+            }
+            /**
+			* @tab Page
+			* @section heading 4
+			* @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+			* @style heading 4
+			*/
+
+            h4 {
+                /*@editable*/
+                color: #808080 !important;
+                display: block;
+                /*@editable*/
+                font-family: roboto, sans-serif, arial;
+                /*@editable*/
+                font-size: 14px;
+                /*@editable*/
+                font-style: italic;
+                /*@editable*/
+                font-weight: normal;
+                /*@editable*/
+                line-height: 100%;
+                /*@editable*/
+                letter-spacing: normal;
+                margin: 0 0 10px;
+                /*@editable*/
+                text-align: left;
+            }
+            /* ========== Header Styles ========== */
+            /**
+			* @tab Header
+			* @section preheader style
+			* @tip Set the background color and bottom border for your email's preheader area.
+			* @theme header
+			*/
+
+            #templatePreheader {
+                /*@editable*/
+                background-color: #F4F4F4;
+                /*@editable*/
+                border-bottom: 1px solid #CCCCCC;
+            }
+            /**
+			* @tab Header
+			* @section preheader text
+			* @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+			*/
+
+            .preheaderContent {
+                /*@editable*/
+                color: #808080;
+                /*@editable*/
+                font-family: roboto, sans-serif, arial;
+                /*@editable*/
+                font-size: 10px;
+                /*@editable*/
+                line-height: 125%;
+                /*@editable*/
+                text-align: left;
+            }
+            /**
+			* @tab Header
+			* @section preheader link
+			* @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
+			*/
+
+            .preheaderContent a:link, .preheaderContent a:visited,
+            /* Yahoo! Mail Override */
+            /* Yahoo! Mail Override */
+            .preheaderContent a .yshortcuts
+            {
+                /*@editable*/
+                color: #606060;
+                /*@editable*/
+                font-weight: normal;
+                /*@editable*/
+                text-decoration: underline;
+            }
+            /**
+			* @tab Header
+			* @section header style
+			* @tip Set the background color and borders for your email's header area.
+			* @theme header
+			*/
+
+            #templateHeader {
+                /*@editable*/
+                background-color: #F4F4F4;
+                /*@editable*/
+                border-top: 1px solid #FFFFFF;
+                /*@editable*/
+                border-bottom: 1px solid #CCCCCC;
+            }
+            /**
+			* @tab Header
+			* @section header text
+			* @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+			*/
+
+            .headerContent {
+                /*@editable*/
+                color: #505050;
+                /*@editable*/
+                font-family: roboto, sans-serif, arial;
+                /*@editable*/
+                font-size: 20px;
+                /*@editable*/
+                font-weight: bold;
+                /*@editable*/
+                line-height: 100%;
+                /*@editable*/
+                padding-top: 0;
+                /*@editable*/
+                padding-right: 0;
+                /*@editable*/
+                padding-bottom: 0;
+                /*@editable*/
+                padding-left: 0;
+                /*@editable*/
+                text-align: left;
+                /*@editable*/
+                vertical-align: middle;
+            }
+            /**
+			* @tab Header
+			* @section header link
+			* @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+			*/
+
+            .headerContent a:link, .headerContent a:visited,
+            /* Yahoo! Mail Override */
+            /* Yahoo! Mail Override */
+            .headerContent a .yshortcuts
+            {
+                /*@editable*/
+                color: #EB4102;
+                /*@editable*/
+                font-weight: normal;
+                /*@editable*/
+                text-decoration: underline;
+            }
+
+            #headerImage {
+                height: auto;
+                max-width: 600px;
+            }
+            /* ========== Body Styles ========== */
+            /**
+			* @tab Body
+			* @section body style
+			* @tip Set the background color and borders for your email's body area.
+			*/
+
+            #templateBody {
+                /*@editable*/
+                background-color: #fff;
+                /*@editable*/
+                /*border-top: 1px solid #FFFFFF;*/
+                /*@editable*/
+                /*border-bottom: 1px solid #CCCCCC;*/
+            }
+            /**
+			* @tab Body
+			* @section body text
+			* @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+			* @theme main
+			*/
+
+            .bodyContent {
+                /*@editable*/
+                color: #505050;
+                /*@editable*/
+                font-family: roboto, sans-serif, arial;
+                /*@editable*/
+                font-size: 18px;
+                /*@editable*/
+                line-height: 150%;
+                padding: 20px;
+                /*@editable*/
+                text-align: left;
+            }
+            /**
+			* @tab Body
+			* @section body link
+			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+			*/
+
+            .bodyContent a:link, .bodyContent a:visited,
+            /* Yahoo! Mail Override */
+            /* Yahoo! Mail Override */
+            .bodyContent a .yshortcuts
+            {
+                /*@editable*/
+                color: #EB4102;
+                /*@editable*/
+                font-weight: normal;
+                /*@editable*/
+                text-decoration: underline;
+            }
+
+            .bodyContent img {
+                display: inline;
+                height: auto;
+                max-width: 560px;
+            }
+            /* ========== Footer Styles ========== */
+            /**
+			* @tab Footer
+			* @section footer style
+			* @tip Set the background color and borders for your email's footer area.
+			* @theme footer
+			*/
+
+            #templateFooter {
+                /*@editable*/
+                background-color: #F2F2F2;
+                /*@editable*/
+                /*border-top: 1px solid #F2F2F2;*/
+            }
+            /**
+			* @tab Footer
+			* @section footer text
+			* @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+			* @theme footer
+			*/
+
+            .footerContent {
+                /*@editable*/
+                color: #000;
+                /*@editable*/
+                font-family: roboto, sans-serif, arial;
+                /*@editable*/
+                font-size: 10px;
+                /*@editable*/
+                line-height: 150%;
+                padding: 20px 10px 5px;
+                /*@editable*/
+                text-align: justify;
+            }
+            /**
+			* @tab Footer
+			* @section footer link
+			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+			*/
+
+            .footerContent a:link, .footerContent a:visited,
+            /* Yahoo! Mail Override */
+            /* Yahoo! Mail Override */
+            .footerContent a .yshortcuts,
+            .footerContent a span
+            {
+                /*@editable*/
+                /*color: #606060;*/
+                /*@editable*/
+                /*font-weight: normal;*/
+                /*@editable*/
+                /*text-decoration: underline;*/
+            }
+            /*ashkan begin*/
+
+            .center {
+                text-align: center;
+            }
+
+            .emailhead {
+                background-color: #2a3052;
+                background-image: url('https://offers.binary.com/binary/email/customer_io/email-webinar/header_img.jpg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                height: 300px;
+			width: 600px;
+            }
+              .sec1{
+                max-width: 75%;
+                display: inline-block;
+              }
+              .sec2{
+                float: right;
+                width: 25%;
+                margin-top: 5%;
+              }
+              .sec2 p{
+                text-align: right;
+                font-size: 18px;
+              }
+            .box {
+                margin: 10px;
+                border-radius: 3px;
+            }
+
+            .box-header {
+                background-color: #f2f2f2;
+                padding: 15px 10px;
+                border-top-right-radius: 3px;
+
+            }
+
+            /*.box-header h2 {
+                font-size: 16px;
+                color: #e98024 !important;
+                font-weight: 100;
+                margin: 0;
+                letter-spacing: 0.5px;
+            }*/
+
+            .box-content {
+                background-color: #FFF;
+                padding: 10px;
+
+            }
+
+            .box-content h3 {
+                color: #000 !important;
+                font-size: 13px;
+                font-weight: 100;
+                font-style: normal;
+                margin: 0;
+            }
+
+            .box-content .status {
+                color: #000;
+                margin-top: 2px;
+                font-size: 10px;
+            }
+
+            .box-content p {
+                color: #000;
+                margin: 5px 0;
+            }
+
+            .box-content .date {
+                color: #000;
+                font-size: 13px;
+                display: inline-block;
+                margin-top: 5px;
+            }
+
+            .box-content .cta a {
+                color: #e98024;
+                font-size: 16px;
+                float: right;
+                text-decoration: none;
+            }
+
+            .tclinks a {
+                color: #2a3052 !important;
+                font-size: 12px;
+            }
+
+            .unsubscribe {
+                background-color: #ffffff !important;
+                padding: 20px;
+                font-size: 18px;
+                color: #2a3052 !important;
+            }
+            .logo {
+                padding: 10px 20px;
+            }
+            .logo img {
+                width: 120px;
+                max-width: 50%;
+            }
+            .head-content {
+                font-size: 18px;
+                padding: 0 20px;
+                color: white;
+                font-weight: 100;
+                line-height: 24px;
+                text-align: justify;
+                margin: 10px 0;
+                max-width: 60%;
+                text-align: left;
+            }
+            .head-link {
+                padding: 10px 20px;
+                margin-bottom: 0;
+            }
+            .head-link a {
+                color: white !important;
+                font-weight: bold!important;
+            }
+            .bold-p {
+                font-size: 24px;
+            }
+            .button {
+                margin-bottom: 0.5em;
+                cursor: pointer;
+            }
+            .button span {
+                font-family: inherit;
+                font-weight: 400;
+                line-height: 100%;
+                display: inline-block;
+                overflow: visible;
+                padding: 10px 25px;
+                text-align: center;
+                text-decoration: none;
+                text-transform: capitalize;
+                color: #fff;
+                border: 0;
+                border-radius: 3px;
+                background: #2e8836;
+            }
+            .button span:active,
+            .button span:hover {
+                text-decoration: none;
+            }
+            .button span:hover {
+                background-color: #14602b;
+            }
+            .button spanvisited {
+                color: #fff;
+            }
+            .font-s {
+              font-size: 13px;
+            }
+            .social img{
+              max-width: 50px;
+            }
+            /*ashkan End*/
+            /* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
+            @media only screen and (max-width: 480px) {
+                /* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
+                a,
+                blockquote,
+                body,
+                li,
+                p,
+                table,
+                td {
+                    -webkit-text-size-adjust: none !important;
+                }
+                /* Prevent Webkit platforms from changing default text sizes */
+                body {
+                    width: 100% !important;
+                    min-width: 100% !important;
+                }
+                /* Prevent iOS Mail from adding padding to the body */
+                /* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
+                #bodyCell {
+                    padding: 10px !important;
+                }
+                /* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
+                /* ======== Page Styles ======== */
+                /**
+				* @tab Mobile Styles
+				* @section template width
+				* @tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.
+				*/
+                #templateContainer {
+                    max-width: 600px !important;
+                    /*@editable*/
+                    width: 100% !important;
+                }
+                /**
+				* @tab Mobile Styles
+				* @section heading 1
+				* @tip Make the first-level headings larger in size for better readability on small screens.
+				*/
+                h1 {
+                    /*@editable*/
+                    font-size: 24px !important;
+                    /*@editable*/
+                    line-height: 100% !important;
+                }
+                /**
+				* @tab Mobile Styles
+				* @section heading 2
+				* @tip Make the second-level headings larger in size for better readability on small screens.
+				*/
+                h2 {
+                    /*@editable*/
+                    font-size: 20px !important;
+                    /*@editable*/
+                    line-height: 100% !important;
+                }
+                /**
+				* @tab Mobile Styles
+				* @section heading 3
+				* @tip Make the third-level headings larger in size for better readability on small screens.
+				*/
+                h3 {
+                    /*@editable*/
+                    color: #2A3052;
+                    font-size: 22px;
+                    font-weight: 300;
+                    /*@editable*/
+                    line-height: 100% !important;
+                }
+                /**
+				* @tab Mobile Styles
+				* @section heading 4
+				* @tip Make the fourth-level headings larger in size for better readability on small screens.
+				*/
+                h4 {
+                    /*@editable*/
+                    font-size: 16px !important;
+                    /*@editable*/
+                    line-height: 100% !important;
+                }
+                /* ======== Header Styles ======== */
+                #templatePreheader {
+                    display: none !important;
+                }
+                /* Hide the template preheader to save space */
+                /**
+				* @tab Mobile Styles
+				* @section header image
+				* @tip Make the main header image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+				*/
+                #headerImage {
+                    height: auto !important;
+                    /*@editable*/
+                    max-width: 600px !important;
+                    /*@editable*/
+                    width: 100% !important;
+                }
+                /**
+				* @tab Mobile Styles
+				* @section header text
+				* @tip Make the header content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+				*/
+                .headerContent {
+                    /*@editable*/
+                    font-size: 20px !important;
+                    /*@editable*/
+                    line-height: 125% !important;
+                }
+                /* ======== Body Styles ======== */
+                /**
+				* @tab Mobile Styles
+				* @section body text
+				* @tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+				*/
+                .bodyContent {
+                    /*@editable*/
+                    font-size: 18px !important;
+                    /*@editable*/
+                    line-height: 125% !important;
+                }
+                /* ======== Footer Styles ======== */
+                /**
+				* @tab Mobile Styles
+				* @section footer text
+				* @tip Make the body content text larger in size for better readability on small screens.
+				*/
+                .footerContent {
+                    /*@editable*/
+                    font-size: 14px !important;
+                    /*@editable*/
+                    line-height: 115% !important;
+                }
+                .footerContent a {
+                    /*display: block !important;*/
+                }
+                /* Place footer social and utility links on their own lines, for easier access */
+            }
+
+        </style>
+    </head>
+
+    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+        <center>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+                <tr>
+                    <td align="center" valign="top" id="bodyCell">
+                        <!-- BEGIN TEMPLATE // -->
+                        <table border="0" cellpadding="0" cellspacing="0" id="templateContainer">
+                            <tr>
+                                <td align="center" valign="top"></td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top">
+                                    <!-- BEGIN HEADER // -->
+                                    <table border="0" cellpadding="" cellspacing="0" width="100%" id="templateHeader">
+                                        <tr>
+                                            <td valign="top" class="headerContent">
+                                                <div class="emailhead">
+                                                    <div class="logo"><img src=" https://offers.binary.com/binary/email/customer_io/email-webinar/binary_logo_white_ID.png" alt="">
+                                                    </div>
+<br><br>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END HEADER -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top">
+                                    <!-- BEGIN BODY // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
+                                        <!-- ////////////////////////////////////////////////////////// -->
+                                        {{content}}
+
+                                        <!-- ////////////////////////////////////////////////////////// -->
+                                    </table>
+                                    <!-- // END BODY -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top">
+                                    <!-- BEGIN FOOTER // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
+                                        <tr>
+                                            <td valign="top" class="footerContent">
+                                                <div class="social center">
+                                                    <h3>Ikuti berita terbaru Binary di:</h3>
+                                                    <a href="https://www.youtube.com/user/BinaryTradingVideos"><img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" alt=""></a>&nbsp;
+                                                    <a href="https://plus.google.com/+Binarydotcom/posts"><img src="https://offers.binary.com/binary/email/customer_io/email-webinar/g+.png" alt=""></a>&nbsp;
+                                                    <a href="https://www.facebook.com/binarydotcom"><img src="https://offers.binary.com/binary/email/customer_io/email-webinar/fb.png" alt=""></a>&nbsp;
+                                                    <a href="https://twitter.com/Binarydotcom"><img src="https://offers.binary.com/binary/email/customer_io/email-webinar/twitter.png" alt=""></a>&nbsp;
+                                                    <a href="https://www.linkedin.com/company/binary-com"><img src="https://offers.binary.com/binary/email/customer_io/email-webinar/linkedn.png" alt=""></a>&nbsp;
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="footerContent">
+                                                <p>Email ini dikeluarkan oleh Binary (IOM) Ltd, Binary (Europe) Ltd dan Binary Investments (Europe) Ltd. Binary (IOM) Ltd yang berijin dan diatur oleh Malta Financial Services Authority, Notabile Road, Attard, BKR4000, Malta. Trading opsi Binary memiliki resiko tinggi dan mungkin tidak cocok untuk semua investor. Pastikan untuk memahami berbagai resiko yang terlibat termasuk mempertimbangkan tujuan, situasi keuangan, kebutuhan dan tingkat pengalaman trading Anda.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="footerContent" style="padding-bottom:20px;">
+                                                <div class="center tclinks">
+                                                    <a href="https://www.binary.com/id/terms-and-conditions.html">Syarat & Kondisi</a>&nbsp;&nbsp;&nbsp;<a href="https://www.binary.com/id/terms-and-conditions.html#risk-tab">Sanggahan Risiko</a>&nbsp;&nbsp;&nbsp;<a href="https://www.binary.com/id/terms-and-conditions.html?selected_tab=conflicts-policy-tac-tab">Konflik Kebijakan</a>&nbsp;&nbsp;&nbsp;<a href="https://www.binary.com/id/terms-and-conditions.html#order-execution-tab">Eksekusi Order</a>&nbsp;
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                                    <table>
+                                        <tr>
+                                            <td valign="top">
+                                                <div class=" center unsubscribe">
+                                                    <a href="{% unsubscribe_url %}" class="untracked" style="color:#2a3052;">Berhenti berlangganan</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END FOOTER -->
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- // END TEMPLATE -->
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+
+</html>
