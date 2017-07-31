@@ -23,7 +23,7 @@ body {
 	height: 100%;
     margin: 0 !important;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #eee;
 	-webkit-font-smoothing:antialiased; 
 	 -webkit-text-size-adjust:none; 	
 	font-family: Roboto, Helvetica, Arial, sans-serif; 	
@@ -53,6 +53,7 @@ div[style*="margin: 16px 0"] {
 .webkit {
     max-width: 600px;
     margin: 0 auto;
+	background-color: #ffffff;
 }
 .outer {
 	Margin: 0 auto;
@@ -476,7 +477,7 @@ table.default_table.centered td:not(:first-child) {
     padding-top: 10px;
 }
 /* ------------------------------------- 
-    LEFT SIDEBAR LAYOUT 
+    WEBINAR LEFT SIDEBAR LAYOUT 
 ------------------------------------- */
 .left-sidebar {
 	text-align: center;
@@ -485,20 +486,20 @@ table.default_table.centered td:not(:first-child) {
 .left-sidebar .column {
     width: 100%;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
 }
 .left-sidebar .left {
-    max-width: 30%;
+    max-width: 17%;
 }
 .left-sidebar .right {
-    max-width: 70%;
+    max-width: 83%;
 }
 .left-sidebar img {
     max-width: 100%;
     height: auto;
 }
 .left-sidebar .contents {
-    text-align: center;
+    text-align: left;
 }
 /* ------------------------------------- 
     RIGHT SIDEBAR LAYOUT 
@@ -532,6 +533,36 @@ table.default_table.centered td:not(:first-child) {
 	background-color: #dedede;
 	min-height: 100px;
 	border: 1px solid #cccccc;
+}
+.date-box {
+	margin-top: 20px;
+	padding: 10px;
+	background-color: #E98024;
+	color: #ffffff;
+	width: 60px;
+}
+.date-box_month {
+	display: block;
+	margin: 0;
+	font-size: 13px;
+}
+.date-box_day {
+	display: block;
+	margin: 0;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 28px;
+}
+.date-box_time {
+	display: block;
+	margin: 0;
+	font-size: 11px;
+}
+.speaker {
+	margin: -10px 0px 0px 0px;
+}
+.date-box p{
+	color: #ffffff;
 }
 .contents p {
 	text-align: left;
@@ -665,6 +696,13 @@ table.default_table.centered td:not(:first-child) {
 	.social-ch {
 		text-align: center !important;
 	}
+	.date-box {
+		text-align: center !important;
+		margin: 0 auto;
+	}
+	.mob-bottom-border {
+
+	}
 }
 @media screen and (min-width: 481px) {
 	.three-column .column {
@@ -718,62 +756,29 @@ table.default_table.centered td:not(:first-child) {
 			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
 				<tr>
 					<td class="centered">
-						<h1><strong>The Trending Market</strong></h1>
+						<h1>The Trending Market</h1>
 						<div class="separator-line-thin-gray-sm"></div>						
 					</td>					
 				</tr>
-				<!-- ------------------------------------- 
-						2 columns layout
-				----------------------------------------->				
 				<tr>
-					<td class="two-column">
-						<!--[if mso]>
+					<td class="one-column">
 						<table width="100%">
-						<tr>
-						<td width="50%" valign="top">
-						<![endif]-->
-						<div class="column">
-							<table width="100%">
-								<tr>
-									<td class="inner">
-										<table class="contents">
-											<tr>
-												<td class="txt-left">
-													<h2>Latest Happenings at Binary.com</h2>
-													<p><a href="https://academy.binary.com/en/Trade-Ethereum-and-Litecoin-on-MT5/">Trade Ethereum and Litecoin on MT5</a></p>
-													<p><a href="https://academy.binary.com/en/Best-Binary-Options-Broker-2017/">We did it again: Best Binary Options Broker 2017</a></p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div>
-						<!--[if mso]>
-						</td><td width="50%" valign="top">
-						<![endif]-->
-						<div class="column">
-							<table width="100%">
-								<tr>
-									<td class="inner">
-										<table class="contents">
-											<tr>
-												<td class="txt-left">
-													<h2>Monthly Trading times can be viewed here</<h2>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div>
-						<!--[if mso]>
-						</td>
-						</tr>
+							<tr>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td class="text">
+												<h2>Latest Happenings at Binary.com</h2>
+													<h3><a href="https://academy.binary.com/en/Trade-Ethereum-and-Litecoin-on-MT5/">Trade Ethereum and Litecoin on MT5</a></h3>
+													<h3><a href="https://academy.binary.com/en/Best-Binary-Options-Broker-2017/">We did it again: Best Binary Options Broker 2017</a></h3>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
 						</table>
-						<![endif]-->
 					</td>
-				</tr>								
+				</tr>										
 			</table>
 			<table class="outer primary-bg-color" align="center" cellpadding="0" cellspacing="0" border="0">
 				<!-- ------------------------------------- 
@@ -820,58 +825,139 @@ table.default_table.centered td:not(:first-child) {
 					</td>
 				</tr>
 			</table>
-			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">				
-				<!-- ------------------------------------- 
-						2 columns layout
-				----------------------------------------->				
+			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
 				<tr>
-					<td class="two-column">
+					<td class="one-column">
+						<table width="100%">
+							<tr>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td class="text">
+												<h2>Upcoming Webinars</h2>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- ------------------------------------- 
+					Left Side bar -- multiple classes
+				----------------------------------------->	
+				
+				<tr>
+					<td class="left-sidebar mob-bottom-border">
 						<!--[if mso]>
 						<table width="100%">
 						<tr>
-						<td width="50%" valign="top">
+						<td width="100">
 						<![endif]-->
-						<div class="column">
+						<div class="column left">
 							<table width="100%">
 								<tr>
 									<td class="inner">
-										<table class="contents">
-											<tr>
-												<td class="txt-left">
-													<h2>Upcoming Webinars</h2>
-													<p><a href="https://trade.binary.com/webinar_en_goldsilverclub/?utm_source=blog&utm_medium=social&utm_campaign=oct2016_header_events_philandnik_en">Trends and Correlated Markets - Finding The Best Trades On Binary.com</a>
-													<span class="block-element font-s">25 July 2017, 16:00 GMT</span>Speaker: Phil Carr 
-													</p>
-													<p><a href="https://trade.binary.com/liveroom_en_ehabgubil/?utm_source=blog&utm_medium=social&utm_campaign=oct2016_header_events_weeklytradingsignalssubscribe_en">Weekly Trading Signals</a>
-													<span class="block-element font-s">Every Monday</span>Dr. Ehab Gubil
-													</p>														
-													<p><a href="https://trade.binary.com/webinar_en_thegoldsilverclub/?utm_source=blog&utm_medium=social&utm_campaign=fxspecial_June2017_philandnik_en">How To Trade Commodity Linked Currencies</a>
-													<span class="block-element font-s">9 August 2017, 16:00 GMT</span>Speaker: Phil Carr 
-													</p>
-												</td>
-											</tr>
-										</table>
+										<div class="date-box">
+											<span class="date-box_month">July</span>
+											<span class="date-box_day">25</span>
+											<span class="date-box_time">16:00 GMT</span>
+										</div>
+										
 									</td>
 								</tr>
 							</table>
 						</div>
 						<!--[if mso]>
-						</td><td width="50%" valign="top">
+						</td><td width="500">
 						<![endif]-->
-						<div class="column">
+						<div class="column right">
+							<table width="100%">
+								<tr>
+									<td class="inner contents">										
+										<h3><a href="https://trade.binary.com/webinar_en_goldsilverclub/?utm_source=blog&utm_medium=social&utm_campaign=oct2016_header_events_philandnik_en">Trends and Correlated Markets - Finding The Best Trades On Binary.com</a></h3>
+										<p class="font-s speaker">Speaker: Phil Carr </p>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if mso]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+
+				<tr>
+					<td class="left-sidebar mob-bottom-border">
+						<!--[if mso]>
+						<table width="100%">
+						<tr>
+						<td width="100">
+						<![endif]-->
+						<div class="column left">
 							<table width="100%">
 								<tr>
 									<td class="inner">
-										<table class="contents">
-											<tr>
-												<td class="txt-left">
-													<h2>Free Resources</h2>
-													<p><a href="https://shop.binary.com/products/binary-com-daily-report-by-dave-evans">Daily Report by Dave evans gives you daily trading ideas on how to find value in trade setups</a></p>
-													<p><a href="https://shop.binary.com/collections/guides/products/jim-market-commentary">Read Jim Mellon and his monthly report on the state of the markets</a></p>
-													<p><a href="https://shop.binary.com/collections/guides/products/what-are-cryptocurrencies">Still confused about how to trade crypto currencies? Study our guides here</a></p>
-												</td>
-											</tr>
-										</table>
+										<div class="date-box">
+											<span class="date-box_month">July</span>
+											<span class="date-box_day">25</span>
+											<span class="date-box_time">16:00 GMT</span>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if mso]>
+						</td><td width="500">
+						<![endif]-->
+						<div class="column right">
+							<table width="100%">
+								<tr>
+									<td class="inner contents">
+										<h3><a href="https://trade.binary.com/liveroom_en_ehabgubil/?utm_source=blog&utm_medium=social&utm_campaign=oct2016_header_events_weeklytradingsignalssubscribe_en">Weekly Trading Signals</a></h3>
+										<p class="font-s speaker">Dr. Ehab Gubil</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if mso]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="left-sidebar mob-bottom-border">
+						<!--[if mso]>
+						<table width="100%">
+						<tr>
+						<td width="100">
+						<![endif]-->
+						<div class="column left">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<div class="date-box">
+											<span class="date-box_month">August</span>
+											<span class="date-box_day">9</span>
+											<span class="date-box_time">16:00 GMT</span>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if mso]>
+						</td><td width="500">
+						<![endif]-->
+						<div class="column right">
+							<table width="100%">
+								<tr>
+									<td class="inner contents">
+										<h3><a href="https://trade.binary.com/webinar_en_thegoldsilverclub/?utm_source=blog&utm_medium=social&utm_campaign=fxspecial_June2017_philandnik_en">How To Trade Commodity Linked Currencies</a></h3>
+										<p class="font-s speaker">Speaker: Phil Carr </p>
 									</td>
 								</tr>
 							</table>
@@ -883,6 +969,44 @@ table.default_table.centered td:not(:first-child) {
 						<![endif]-->
 					</td>
 				</tr>				
+			</table>
+			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td class="one-column">
+						<table width="100%">
+							<tr>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td class="text">
+												<h2>Free Resources</h2>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="one-column">
+						<table width="100%">
+							<tr>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td class="text">
+												<h3><a href="https://shop.binary.com/products/binary-com-daily-report-by-dave-evans">Daily Report by Dave evans gives you daily trading ideas on how to find value in trade setups</a></h3>												
+												<h3><a href="https://shop.binary.com/collections/guides/products/jim-market-commentary">Read Jim Mellon and his monthly report on the state of the markets</a></h3>
+												<h3><a href="https://shop.binary.com/collections/guides/products/what-are-cryptocurrencies">Still confused about how to trade crypto currencies? Study our guides here</a></h3>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
 			</table>
 			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">					
 				<tr>
