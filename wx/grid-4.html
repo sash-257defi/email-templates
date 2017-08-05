@@ -133,15 +133,6 @@ a:visited:active {
 	color: #000000;
 	Margin-bottom: 2px !important;
 }
-.unsubscribe {
-	margin: 20px 0 !important;
-	padding: 20px;
-	font-size: 13px !important;
-	text-align: center;
-}
-.unsubscribe span {
-	margin: 0 auto;
-}
 /* ------------------------------------- 
     ELEMENTS 
 ------------------------------------- */
@@ -293,8 +284,7 @@ table.default_table.centered td:not(:first-child) {
 }
 .footer-title {
 	text-align: center;
-	padding: 10px;
-	Margin-top: 20px;
+	padding: 0 10px;
 }
 .sidebar-title {
 	font-family: Roboto, Helvetica, Arial, sans-serif; 
@@ -569,7 +559,8 @@ table.default_table.centered td:not(:first-child) {
 			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
 			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
 				<tr>
-					<td class="border-top">
+					<td>
+					    <div class="separator-line-thin-gray"></div>
 						<h2 class="footer-title">Want to learn more?</h2>
 					</td>
 				</tr>
@@ -695,19 +686,15 @@ table.default_table.centered td:not(:first-child) {
 								<td class="inner contents">
 									<p class="font-xs justify">This email has been issued by Binary (IOM) Ltd, Binary (Europe) Ltd and Binary Investments (Europe) Ltd. Binary (IOM) Ltd is licensed and regulated by the Isle of Man Gambling Supervision Commission, and by the UK Gambling Commission. Binary (Europe) Ltd is licensed by the UK Gambling Commission and by the Malta Gaming Authority. Binary Investments (Europe) Ltd is licensed and regulated by the Malta Financial Services Authority, Notabile Road, Attard, BKR4000, Malta.</p>
 									<p class="font-xs justify">Binary options trading may incur losses as well as gains. Prices shown on website may vary and/or fluctuate due to changes in the currency exchange rates and/or price movements, which may impact your return of investment. Clients must be 18 years and above. Gambling can be addictive, please play responsibly. To find out how, please visit: www.gambleaware.co.uk.</p>
+									<p class="font-s centered"><a href="https://www.binary.com/en/terms-and-conditions.html?#legal" target="_blank">Terms and Conditions</a>  &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?#risk" target="_blank">Risk Disclaimer</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?section=conflicts-policy" target="_blank">Conflicts Policy</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?#order-execution" target="_blank">Order Execution</a></p>
+								</td>
+							</tr>
+							<tr>
+								<td class="inner contents fill-bg-color">
+									<p class="font-s centered">Don't wish to receive these emails anymore? <a href="{% unsubscribe_url %}" class="untracked">Unsubscribe</a></p>
 								</td>
 							</tr>
 						</table>
-					</td>
-				</tr>
-				<tr>
-					<td class="centered">
-						<p class="font-s centered"><a href="https://www.binary.com/en/terms-and-conditions.html?#legal" target="_blank">Terms and Conditions</a>  &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?#risk" target="_blank">Risk Disclaimer</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?section=conflicts-policy" target="_blank">Conflicts Policy</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?#order-execution" target="_blank">Order Execution</a></p>
-					</td>
-				</tr>
-				<tr>
-					<td class="centered fill-bg-color unsubscribe">
-						<span class="font-s">Don't wish to receive these emails anymore? <a href="{% unsubscribe_url %}" class="untracked">Unsubscribe</a></span>
 					</td>
 				</tr>
 			</table><!--[if mso></td></tr></table><![endif]-->

@@ -17,7 +17,7 @@
 /* ------------------------------------- 
 	GLOBAL
 ------------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin,vietnamese,cyrillic-ext,latin-ext,cyrillic);
 body {
 	width: 100%!important; 
 	height: 100%;
@@ -48,7 +48,7 @@ div[style*="margin: 16px 0"] {
     width: 100%;
     table-layout: fixed;
     -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;	
+    -ms-text-size-adjust: 100%;
 }
 .webkit {
     max-width: 600px;
@@ -81,10 +81,6 @@ div[style*="margin: 16px 0"] {
 p {
 	Margin: 1em 0;
     line-height: 1.4em;
-	font-family: Roboto, Helvetica, Arial, sans-serif; 	
-	font-size: 18px; 
-	color: #000000;
-	font-weight: 400;
 }
 a,
 a:visited {
@@ -97,9 +93,6 @@ a:active,
 a:visited:hover,
 a:visited:active {
     text-decoration: underline
-}
-h1, h2, h3 {
-    margin-top: 25px;
 }
 .h1, h1 { 
 	font-family: Roboto, Helvetica, Arial, sans-serif; 
@@ -296,11 +289,6 @@ ul.bullet li {
 	margin: 20px 0;
 	text-align: center !important;
 }
-.cta p {
-    display: block;
-	color: #000000;
-	text-align: center;
-}
 .cta-lg {
 	Margin: 20px 10px;	
 	padding: 20px 10px;
@@ -312,12 +300,7 @@ ul.bullet li {
 	text-align: center !important;
 	Margin-top: 0px;
 }
-.cta-last {
-	margin: 20px 0;
-	padding: 5px 0 0 0;
-	text-align: center !important;
-}
-.cta-last p {
+.cta p {
     display: block;
 	color: #000000;
 	text-align: center;
@@ -369,20 +352,6 @@ table.default_table.centered td:not(:first-child) {
 	text-align: left;
 	Margin-top: 0px !important;
 	Margin-bottom: 10px !important;
-}
-.bullet_table {
-	margin: 10px 0 ;
-}
-.bullet_table_li {
-	padding: 5px 0 5px 0px;
-	font-family: Roboto, Helvetica, Arial, sans-serif; 	
-	font-size: 18px !important;
-	color: #000;
-}
-.bullet-img {
-	width: 23px;
-	vertical-align: top !important;
-	padding: 8px 0px 0px 17px !important;
 }
 /* ------------------------------------- 
     ONE COLUMN LAYOUT 
@@ -476,54 +445,29 @@ table.default_table.centered td:not(:first-child) {
     padding-top: 10px;
 }
 /* ------------------------------------- 
-    LEFT SMALL SIDEBAR LAYOUT 
-------------------------------------- */
-.left-sm-sidebar {
-	text-align: center;
-    font-size: 0;
-}
-.left-sm-sidebar .column {
-    width: 100%;
-    display: inline-block;
-    vertical-align: top;
-}
-.left-sm-sidebar .left {
-    max-width: 17%;
-}
-.left-sm-sidebar .right {
-    max-width: 83%;
-}
-.left-sm-sidebar img {
-    max-width: 100%;
-    height: auto;
-}
-.left-sm-sidebar .contents {
-    text-align: left;
-}
-/* ------------------------------------- 
     LEFT SIDEBAR LAYOUT 
 ------------------------------------- */
 .left-sidebar {
 	text-align: center;
-	font-size: 0;
+    font-size: 0;
 }
 .left-sidebar .column {
-	width: 100%;
-	display: inline-block;
-	vertical-align: middle;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
 }
 .left-sidebar .left {
-	max-width: 30%;
+    max-width: 30%;
 }
 .left-sidebar .right {
-	max-width: 70%;
+    max-width: 70%;
 }
 .left-sidebar img {
-	max-width: 100%;
-	height: auto;
+    max-width: 100%;
+    height: auto;
 }
 .left-sidebar .contents {
-	text-align: left;
+    text-align: center;
 }
 /* ------------------------------------- 
     RIGHT SIDEBAR LAYOUT 
@@ -558,49 +502,6 @@ table.default_table.centered td:not(:first-child) {
 	min-height: 100px;
 	border: 1px solid #cccccc;
 }
-.sidebar-img {
-	margin-top: 20px;
-}
-.date-box {
-	margin-top: 20px;
-	padding: 10px;
-	background-color: #E98024;
-	color: #ffffff;
-	width: 60px;
-}
-.date-box_month {
-	display: block;
-	margin: 0;
-	font-size: 13px;
-}
-.date-box_day {
-	display: block;
-	margin: 0;
-	font-weight: bold;
-	font-size: 22px;
-	line-height: 28px;
-}
-.date-box_time {
-	display: block;
-	margin: 0;
-	font-size: 11px;
-}
-.speaker {
-	margin: -10px 0px 0px 0px;
-}
-.date-box p{
-	color: #ffffff;
-}
-.date-box-signals {
-	margin-top: 20px;
-	padding: 17px 10px;
-	background-color: #E98024;
-	color: #ffffff;
-	width: 60px;
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 22px;
-}
 .contents p {
 	text-align: left;
 }
@@ -615,7 +516,7 @@ table.default_table.centered td:not(:first-child) {
     background-color: #2A3052;
 }
 .secondary-color {
-    color: #E98024 !important;
+    color: #E98024
 }
 .secondary-bg-color {
     background-color: #E98024;
@@ -676,26 +577,9 @@ table.default_table.centered td:not(:first-child) {
 .centered {
 	text-align: center !important;
 }
-.txt-left {
-	text-align: left;
-}
 .justify {
 	text-align: justify !important;
     text-justify: inter-word;
-}
-.padding-md {
-	padding: 0 20px;
-}
-.block-element {
-	display: block;
-}
-.thumb-left {
-	float: left;
-	margin: 10px 20px 0px 0;
-}
-.post-date {
-	display: block;
-	margin: -5px 0;
 }
 /* ------------------------------------- 
     RESPONSIVE
@@ -719,13 +603,11 @@ table.default_table.centered td:not(:first-child) {
         max-width: 100% !important;
     }
 	.left-sidebar .left, .left-sidebar .right,
-	.left-sm-sidebar .left, .left-sm-sidebar .right,
 	.right-sidebar .left, .right-sidebar .right {	 
 		max-width: 100%;
 		text-align: center;
 	}
 	.left-sidebar .left *, .left-sidebar .right *,
-	.left-sm-sidebar .left *, .left-sm-sidebar .right *,
 	.right-sidebar .left *, .right-sidebar .right * {
 		text-align: center;
 	}
@@ -738,20 +620,6 @@ table.default_table.centered td:not(:first-child) {
 	}
 	.social-ch {
 		text-align: center !important;
-	}
-	.date-box {
-		text-align: center !important;
-		margin: 0 auto;
-	}
-	.date-box-signals {
-		text-align: center !important;
-		margin: 0 auto;
-	}
-	.mob-bottom-border {
-		display: block;
-		padding-top: 40px;
-		padding-bottom: 20px;
-		border-bottom: 1px solid #DEDEDE;
 	}
 }
 @media screen and (min-width: 481px) {
@@ -778,286 +646,14 @@ table.default_table.centered td:not(:first-child) {
 						<table class="outer" align="center">
 							<tr>
 								<td class="logo">
-									<img src="https://marketing.binary.com/images/email/logo_notagline.png" width="300" alt="Binary.com" />
+									<img src="https://offers.binary.com/binary/customer-io/logo/binary-wite.jpg" width="300" alt="Binary.com" />
 								</td>
 							</tr>
 						</table>
 					</td>
 				</tr>
 			</table>
-			<!-- {{content}} -->
-			<!-- Start Templete -->
-			<table class="outer primary-bg-color" align="center" cellpadding="0" cellspacing="0" border="0">			
-				<tr>
-					<td>
-						<table class="outer" align="center">
-							<tr>
-								<td class="full-width-image">
-									<img src="https://offers.binary.com/binary/images/header/general-trading.jpg" width="600" alt="Binary.com" />
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-			</table>
-			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
-				<tr>
-					<td class="centered">
-						<h1>The Trending Market</h1>
-						<div class="separator-line-thin-gray-sm"></div>	
-					</td>					
-				</tr>
-				<tr>
-					<td class="centered">
-						<h2>Latest Happenings at Binary.com</h2>
-					</td>					
-				</tr>				
-				<tr>
-					<td class="two-column">
-						<!--[if mso]>
-						<table width="100%">
-						<tr>
-						<td width="50%" valign="top">
-						<![endif]-->
-						<div class="column">
-							<table width="100%">
-								<tr>
-									<td class="inner">
-										<table class="contents">
-											<tr>
-												<td class="text">
-													<h3 class="txt-left"><a href="https://academy.binary.com/en/Vince-Stanzione-introduces-Financial-Mastery-Trading-Live-2017/">Vince Stanzione introduces Binary.com at Financial Mastery Trading Live 2017</a></h3>													
-													<p><a href="https://academy.binary.com/en/Vince-Stanzione-introduces-Financial-Mastery-Trading-Live-2017/">Read more..</a></p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div>
-						<!--[if mso]>
-						</td><td width="50%" valign="top">
-						<![endif]-->
-						<div class="column">
-							<table width="100%">
-								<tr>
-									<td class="inner">
-										<table class="contents">
-											<tr>
-												<td class="text">
-													<h3 class="txt-left"><a href="https://academy.binary.com/en/The-next-generation-Binary-Bot-is-here/">Free and powerful tool - The next generation Binary Bot is here</a></h3>
-													<p><a href="https://academy.binary.com/en/The-next-generation-Binary-Bot-is-here/">Read more..</a></p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div>
-						<!--[if mso]>
-						</td>
-						</tr>
-						</table>
-						<![endif]-->
-					</td>
-				</tr>
-				<tr>
-					<td class="two-column">
-						<!--[if mso]>
-						<table width="100%">
-						<tr>
-						<td width="50%" valign="top">
-						<![endif]-->
-						<div class="column">
-							<table width="100%">
-								<tr>
-									<td class="inner">
-										<table class="contents">
-											<tr>
-												<td class="text">
-													<h3 class="txt-left"><a href="https://academy.binary.com/en/Trade-Ethereum-and-Litecoin-on-MT5/">Trade Ethereum and Litecoin on MT5</a></h3>													
-													<p><a href="">Read more..</a></p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div>
-						<!--[if mso]>
-						</td><td width="50%" valign="top">
-						<![endif]-->
-						<div class="column">
-							<table width="100%">
-								<tr>
-									<td class="inner">
-										<table class="contents">
-											<tr>
-												<td class="text">
-													<h3 class="txt-left"><a href="https://academy.binary.com/en/Best-Binary-Options-Broker-2017/">We did it again: Best Binary Options Broker 2017</a></h3>													
-													<p><a href="">Read more..</a></p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div>
-						<!--[if mso]>
-						</td>
-						</tr>
-						</table>
-						<![endif]-->
-					</td>
-				</tr>
-			</table>
-			<table class="outer primary-bg-color" align="center" cellpadding="0" cellspacing="0" border="0">
-				<tr>
-					<td class="centered padding-md">
-						<h2>Shop Promotions</h2>
-					</td>
-				</tr>					
-				<tr>
-					<td class="padding-md">
-						<p class="content-inverse-color"><img class="thumb-left" src="images/strategy.jpg" width="200" alt="Binary.com" />Automate your trading strategies with our simple “jigsaw puzzle-like” strategy creation tool. Easily create strategies that trade for you in autopilot mode.</p>
-						<p class="content-inverse-color">You can also upload strategies built by other people, such as the classic <a class="secondary-color" href="https://shop.binary.com/products/martingale-strategy">Martingale Strategy</a> to use as a sample for your own strategy.</p>
-						<div class="cta-lg">
-							<!--[if mso]>
-							  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://trade.binary.com/commoditiescorner_goldsilverclub/" style="height:40px;v-text-anchor:middle;width:180px;" arcsize="8%" stroke="f" fillcolor="#2E8836">
-								<w:anchorlock/>
-								<center>
-							 <![endif]-->
-							<a class="button" href="https://shop.binary.com/products/martingale-strategy"><span>Download Martingale Strategy </span></a>
-							<!--[if mso]>
-							</center>
-							</v:roundrect>
-							<![endif]-->
-						</div>
-					</td>
-				</tr>
-			</table>
-			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
-				<tr>
-					<td class="centered">
-						<h2>Upcoming Webinars</h2>
-					</td>					
-				</tr>
-				<tr>
-					<td class="three-column">
-						<!--[if mso]>
-						<table width="100%">
-						<tr>
-						<td width="200" valign="top">
-						<![endif]-->
-						<div class="column">
-							<table width="100%">
-								<tr>
-									<td class="inner">
-										<table class="contents">
-											<tr>
-												<td>
-													<div class="date-box-signals">
-														<span class="">Every Monday</span>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td class="text">
-													<p><a href="">Weekly Trading Signals</a></p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div>
-						<!--[if mso]>
-						</td><td width="200" valign="top">
-						<![endif]-->
-						<div class="column">
-							<table width="100%">
-								<tr>
-									<td class="inner">
-										<table class="contents">
-											<tr>
-												<td>
-													<div class="date-box">
-														<span class="date-box_month">August</span>
-														<span class="date-box_day">4</span>
-														<span class="date-box_time">14:30 GMT</span>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td class="text">
-													<p><a href="">The Commodities Corner: Non-Farm Payroll Special</a></p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div>
-						<!--[if mso]>
-						</td><td width="200" valign="top">
-						<![endif]-->
-						<div class="column">
-							<table width="100%">
-								<tr>
-									<td class="inner">
-										<table class="contents">
-											<tr>
-												<td>
-													<div class="date-box">
-														<span class="date-box_month">August</span>
-														<span class="date-box_day">9</span>
-														<span class="date-box_time">16:00 GMT</span>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td class="text">
-													<p><a href="">How To Trade Commodity Linked Currencies</a></p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div>
-						<!--[if mso]>
-						</td>
-						</tr>
-						</table>
-						<![endif]-->
-					</td>
-				</tr>
-			</table>
-			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">					
-				<tr>
-					<td>
-						<div class="separator-line-thin-gray-sm"></div>
-					</td>
-				</tr>
-				<tr>				
-					<td>
-						<div class="cta-last">
-						<p>Feeling bored and wanting something interesting? Click on the button below to take you to a random page within our huge archive of pages. Who knows you might find something interesting.</p>
-							<!--[if mso]>
-							  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="" style="height:40px;v-text-anchor:middle;width:180px;" arcsize="8%" stroke="f" fillcolor="#2E8836">
-								<w:anchorlock/>
-								<center>
-							 <![endif]-->
-							<a class="button" href=""><span>I’m feeling lucky</span></a>
-							<!--[if mso]>
-							</center>
-							</v:roundrect>
-							<![endif]-->
-						</div>
-					</td>					
-				</tr>
-			</table>
-			<!-- End Template -->
+			{{content}}
 			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">		
 				<tr>
 					<td>
@@ -1066,6 +662,18 @@ table.default_table.centered td:not(:first-child) {
 					</td>
 				</tr>
 				<tr>
+					<td class="one-column">
+						<table width="100%">
+							<tr>
+								<td class="inner contents">
+									<p class="h1">Lorem ipsum dolor sit amet</p>
+									<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
 					<td class="three-column">
 						<!--[if mso]>
 						<table width="100%">
@@ -1079,12 +687,12 @@ table.default_table.centered td:not(:first-child) {
 										<table class="contents">
 											<tr>
 												<td>													
-													<a href=""><img src="https://marketing.binary.com/images/email/footer-icon-dailyreport1.png" style="max-width:60px;" class="columnImage" alt="Binary.com" /></a>
+													<a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-dailyreport1.png" style="max-width:60px;" class="columnImage" /></a>
 												</td>
 											</tr>
 											<tr>
 												<td class="text font-s">
-													<p class="centered font-s"><a href="">Daily Report</a></p>
+													<p class="centered font-s"><a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Daily Report</a></p>
 													<p class="font-s">Stay up-to-date with the latest financial news and trends from around the world, with Daily Market Reports written by professional trader, Dave Evans.</p>
 												</td>
 											</tr>
@@ -1092,23 +700,21 @@ table.default_table.centered td:not(:first-child) {
 									</td>
 								</tr>
 							</table>
-						</div>
-						<!--[if mso]>
+						</div><!--[if mso]>
 						</td><td width="200" valign="top">
-						<![endif]-->
-						<div class="column">
+						<![endif]--><div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
 										<table class="contents">
 											<tr>
 												<td>													
-													<a href=""><img src="https://marketing.binary.com/images/email/footer-icon-learningcenter.png" style="max-width:60px;" class="columnImage" alt="Binary.com" /></a>
+													<a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-learningcenter.png" style="max-width:60px;" class="columnImage" /></a>
 												</td>
 											</tr>
 											<tr>
-												<td class="text">
-													<p class="centered font-s"><a href="">Learning Centre</a></p>
+												<td class="text font-s">
+													<p class="centered font-s"><a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Learning Centre</a></p>
 													<p class="font-s">Gain useful knowledge about all aspects of binary options trading. Browse our full library of educational materials, including videos, webinars, ebooks, and more.</p>
 												</td>
 											</tr>
@@ -1116,23 +722,21 @@ table.default_table.centered td:not(:first-child) {
 									</td>
 								</tr>
 							</table>
-						</div>
-						<!--[if mso]>
+						</div><!--[if mso]>
 						</td><td width="200" valign="top">
-						<![endif]-->
-						<div class="column">
+						<![endif]--><div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
 										<table class="contents">
 											<tr>
 												<td>													
-													<a href=""><img src="https://marketing.binary.com/images/email/footer-icon-monthlywebinar.png" style="max-width:60px;" class="columnImage" alt="Binary.com" /></a>
+													<a href="https://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-monthlywebinar.png" style="max-width:60px;" class="columnImage" /></a>
 												</td>
 											</tr>
 											<tr>
 												<td class="text font-s">
-													<p class="centered font-s"><a href="">Monthly Webinars</a></p>
+													<p class="centered font-s"><a href="http://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Monthly Webinars</a></p>
 													<p class="font-s">Watch, earn, and learn for free. Sign up for our monthly webinars and collect exclusive techniques, strategies, and tips from our professional trading partners.</p>
 												</td>
 											</tr>
@@ -1151,11 +755,7 @@ table.default_table.centered td:not(:first-child) {
 				<tr>
 					<td class="two-column">
 						<div class="separator-line-thin-gray-sm"></div>
-						<!--[if mso]>
-						<table width="100%">
-						<tr>
-						<td width="50%" valign="top">
-						<![endif]-->
+						<!--[if mso]><table width="100%"><tr><td width="50%" valign="top"><![endif]-->
 						<div class="column">
 							<table width="100%">
 								<tr>
@@ -1171,11 +771,7 @@ table.default_table.centered td:not(:first-child) {
 									</td>
 								</tr>
 							</table>
-						</div>
-						<!--[if mso]>
-						</td><td width="50%" valign="top">
-						<![endif]-->						
-						<div class="column">
+						</div><!--[if mso]></td><td width="50%" valign="top"><![endif]--><div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
@@ -1183,19 +779,19 @@ table.default_table.centered td:not(:first-child) {
 											<tr>
 												<td class="social-ch">
 													<a href="https://www.youtube.com/user/BinaryTradingVideos">
-														<img src="https://offers.binary.com/binary/customer-io/social/youtube-icon.png" height="35" width="35" alt="Binary.com on YouTube" />
+														<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" height="35" width="35" alt="Binary.com on YouTube" />
 													</a>
 													<a href="https://plus.google.com/+Binarydotcom/posts">
-														<img src="https://offers.binary.com/binary/customer-io/social/google-plus-icon.png" height="35" width="35" alt="Binary.com Google+" />
+														<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/g+.png" height="35" width="35" alt="Binary.com Google+" />
 													</a>
 													<a href="https://www.facebook.com/binarydotcom">
-														<img src="https://offers.binary.com/binary/customer-io/social/facebook-icon.png" height="35" width="35" alt="Binary.com on Facebook" />
+														<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/fb.png" height="35" width="35" alt="Binary.com on Facebook" />
 													</a>
 													<a href="https://twitter.com/Binarydotcom">
-														<img src="https://offers.binary.com/binary/customer-io/social/twitter-icon.png" height="35" width="35" alt="Binary.com on Twitter" />
+														<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/twitter.png" height="35" width="35" alt="Binary.com on Twitter" />
 													</a>
 													<a href="https://www.linkedin.com/company/binary-com?trk=prof-following-company-logo">
-														<img src="https://offers.binary.com/binary/customer-io/social/linkedin-icon.png" height="35" width="35" alt="Binary.com LinkedIn" />
+														<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/linkedn.png" height="35" width="35" alt="Binary.com LinkedIn" />
 													</a>
 												</td>
 											</tr>

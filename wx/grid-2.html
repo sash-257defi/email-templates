@@ -133,15 +133,6 @@ a:visited:active {
 	color: #000000;
 	Margin-bottom: 2px !important;
 }
-.unsubscribe {
-	margin: 20px 0 !important;
-	padding: 20px;
-	font-size: 13px !important;
-	text-align: center;
-}
-.unsubscribe span {
-	margin: 0 auto;
-}
 /* ------------------------------------- 
     ELEMENTS 
 ------------------------------------- */
@@ -224,7 +215,7 @@ ul.bullet li {
 	color: #444;	
 }
 .social-ch {
-	Margin: 1em 0;
+    padding-top: 20px;
 	text-align: right;
 	display: block;
 }
@@ -293,8 +284,7 @@ table.default_table.centered td:not(:first-child) {
 }
 .footer-title {
 	text-align: center;
-	padding: 10px;
-	Margin-top: 20px;
+	padding: 0 10px;
 }
 .sidebar-title {
 	font-family: Roboto, Helvetica, Arial, sans-serif; 
@@ -383,13 +373,7 @@ table.default_table.centered td:not(:first-child) {
 	margin-bottom: 0px;
 }
 .bordered {
-    border: 1px solid #DEDEDE;
-}
-.border-top {
-    border-top: 1px solid #DEDEDE;
-}
-.border-bottom {
-    border-bottom: 1px solid #DEDEDE;
+    border: 1px solid #DEDEDE
 }
 .centered {
 	text-align: center !important;
@@ -398,20 +382,18 @@ table.default_table.centered td:not(:first-child) {
 	text-align: justify !important;
     text-justify: inter-word;
 }
-.test {
-	background-color: #ccc;
-}
 /* ------------------------------------- 
     ONE COLUMN LAYOUT 
 ------------------------------------- */
 .one-column .contents {
     text-align: left;
 }
-.one-column .text {
-    padding-top: 10px;
+.one-column p {
+    font-size: inherit;
+    Margin-bottom: 10px;
 }
 /* ------------------------------------- 
-    TWO COLUMNS LAYOUT 
+    TWO COLUMN LAYOUT 
 ------------------------------------- */
 .two-column {
 	text-align: center;
@@ -460,65 +442,13 @@ table.default_table.centered td:not(:first-child) {
     padding-top: 10px;
 }
 /* ------------------------------------- 
-    FOUR COLUMNS LAYOUT
-------------------------------------- */
-.four-column {
-    text-align: center;
-    font-size: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.four-column .column {
-    width: 25%;
-    display: inline-block;
-    vertical-align: top;
-}
-.four-column .contents {
-    text-align: center;
-}
-.four-column img {
-    max-width: 100%;
-    height: auto;
-}
-.four-column .text {
-    padding-top: 10px;
-}
-/* ------------------------------------- 
-    SIDEBAR LAYOUT 
-------------------------------------- */
-.sidebar {
-	text-align: center;
-    font-size: 0;
-}
-.sidebar .column {
-    width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-}
-.sidebar .left {
-    width: 30%;
-}
-.sidebar .right {
-    width: 70%;
-}
-.sidebar img {
-    max-width: 100%;
-    height: auto;
-}
-.sidebar .contents {
-    text-align: center;
-}
-
-/* ------------------------------------- 
     RESPONSIVE
 ------------------------------------- */
 @media screen and (max-width: 590px) {
     .two-column .column,
-    .three-column .column,
-    .four-column .column,
-    .sidebar .left, .sidebar .right {
+    .three-column .column {
         width: 100% !important;
-    }	
+    }
     .two-column img {
         max-width: 100% !important;
     }
@@ -533,7 +463,7 @@ table.default_table.centered td:not(:first-child) {
 	}
 }
 @media screen and (min-width: 590px)  {
-	.three-column .column {
+.three-column .column {
         max-width: 33% !important;
     }
     .two-column .column {
@@ -564,17 +494,18 @@ table.default_table.centered td:not(:first-child) {
 						</table>
 					</td>
 				</tr>
-			</table><!--[if mso]></td></tr></table><![endif]-->
+			</table><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 			{{content}}
 			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
 			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
 				<tr>
-					<td class="border-top">
+					<td>
+					    <div class="separator-line-thin-gray"></div>
 						<h2 class="footer-title">Want to learn more?</h2>
 					</td>
 				</tr>
 				<tr>
-					<td class="three-column"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="200" valign="top"><![endif]-->
+					<td class="three-column"><!--[if (gte mso 9)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="200" valign="top"><![endif]-->
 						<div class="column">
 							<table width="100%">
 								<tr>
@@ -587,7 +518,7 @@ table.default_table.centered td:not(:first-child) {
 											</tr>
 											<tr>
 												<td class="text">
-													<p class="centered"><a class="h4" href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Daily Report</a></p>
+													<p class="centered font-s"><a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Daily Report</a></p>
 													<p class="font-s">Stay up-to-date with the latest financial news and trends from around the world, with Daily Market Reports written by professional trader, Dave Evans.</p>
 												</td>
 											</tr>
@@ -595,7 +526,7 @@ table.default_table.centered td:not(:first-child) {
 									</td>
 								</tr>
 							</table>
-						</div><!--[if mso]></td><td width="200" valign="top"><![endif]--><div class="column">
+						</div><!--[if (gte mso 9)|(IE)]></td><td width="200" valign="top"><![endif]--><div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
@@ -607,7 +538,7 @@ table.default_table.centered td:not(:first-child) {
 											</tr>
 											<tr>
 												<td class="text">
-													<p class="centered"><a class="h4" href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Learning Centre</a></p>
+													<p class="centered font-s"><a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Learning Centre</a></p>
 													<p class="font-s">Gain useful knowledge about all aspects of binary options trading. Browse our full library of educational materials, including videos, webinars, ebooks, and more.</p>
 												</td>
 											</tr>
@@ -615,7 +546,7 @@ table.default_table.centered td:not(:first-child) {
 									</td>
 								</tr>
 							</table>
-						</div><!--[if mso]></td><td width="200" valign="top"><![endif]--><div class="column">
+						</div><!--[if (gte mso 9)|(IE)]></td><td width="200" valign="top"><![endif]--><div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
@@ -627,7 +558,7 @@ table.default_table.centered td:not(:first-child) {
 											</tr>
 											<tr>
 												<td class="text">
-													<p class="centered"><a class="h4" href="http://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Monthly Webinars</a></p>
+													<p class="centered font-s"><a href="http://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Monthly Webinars</a></p>
 													<p class="font-s">Watch, earn, and learn for free. Sign up for our monthly webinars and collect exclusive techniques, strategies, and tips from our professional trading partners.</p>
 												</td>
 											</tr>
@@ -635,33 +566,33 @@ table.default_table.centered td:not(:first-child) {
 									</td>
 								</tr>
 							</table>
-						</div><!--[if mso]></td></tr></table><![endif]-->
+						</div><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 					</td>
 				</tr>
 				<tr>
-					<td class="two-column border-top border-bottom"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="50%" valign="top"><![endif]-->
+					<td class="two-column"><!--[if (gte mso 9)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="50%" valign="top"><![endif]-->
 						<div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
-										<table class="contents" cellpadding="0" cellspacing="0" border="0">
+										<table class="contents">
 											<tr>
 												<td class="text">
-													<p class="font-s mb-centered">Have a question? Need Help?<br />
-                                                    Email us at <a href="mailto:support@binary.com">marketing@binary.com</a>.</p> 
+													<p class="font-s mb-centered">Have a question? Need Help?</p>
+                                                    <p class="font-s mb-centered">Email us at <a href="mailto:support@binary.com">marketing@binary.com</a>.</p> 
 												</td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 							</table>
-						</div><!--[if mso]></td><td width="50%" valign="top"><![endif]--><div class="column">
+						</div><!--[if (gte mso 9)|(IE)]></td><td width="50%" valign="top"><![endif]--><div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
-										<table class="contents" cellpadding="0" cellspacing="0" border="0">
+										<table class="contents">
 											<tr>
-												<td class="text">
+												<td>
 													<div class="social-ch">
 													<a href="https://www.youtube.com/user/BinaryTradingVideos">
 														<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" height="35" width="35" alt="Binary.com on YouTube" />
@@ -685,7 +616,7 @@ table.default_table.centered td:not(:first-child) {
 									</td>
 								</tr>
 							</table>
-						</div><!--[if mso]></td></tr></table><![endif]-->
+						</div><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 					</td>
 				</tr>
 				<tr>
@@ -695,22 +626,18 @@ table.default_table.centered td:not(:first-child) {
 								<td class="inner contents">
 									<p class="font-xs justify">This email has been issued by Binary (IOM) Ltd, Binary (Europe) Ltd and Binary Investments (Europe) Ltd. Binary (IOM) Ltd is licensed and regulated by the Isle of Man Gambling Supervision Commission, and by the UK Gambling Commission. Binary (Europe) Ltd is licensed by the UK Gambling Commission and by the Malta Gaming Authority. Binary Investments (Europe) Ltd is licensed and regulated by the Malta Financial Services Authority, Notabile Road, Attard, BKR4000, Malta.</p>
 									<p class="font-xs justify">Binary options trading may incur losses as well as gains. Prices shown on website may vary and/or fluctuate due to changes in the currency exchange rates and/or price movements, which may impact your return of investment. Clients must be 18 years and above. Gambling can be addictive, please play responsibly. To find out how, please visit: www.gambleaware.co.uk.</p>
+									<p class="font-s centered"><a href="https://www.binary.com/en/terms-and-conditions.html?#legal" target="_blank">Terms and Conditions</a>  &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?#risk" target="_blank">Risk Disclaimer</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?section=conflicts-policy" target="_blank">Conflicts Policy</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?#order-execution" target="_blank">Order Execution</a></p>
+								</td>
+							</tr>
+							<tr>
+								<td class="inner contents fill-bg-color">
+									<p class="font-s centered">Don't wish to receive these emails anymore? <a href="{% unsubscribe_url %}" class="untracked">Unsubscribe</a></p>
 								</td>
 							</tr>
 						</table>
 					</td>
 				</tr>
-				<tr>
-					<td class="centered">
-						<p class="font-s centered"><a href="https://www.binary.com/en/terms-and-conditions.html?#legal" target="_blank">Terms and Conditions</a>  &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?#risk" target="_blank">Risk Disclaimer</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?section=conflicts-policy" target="_blank">Conflicts Policy</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?#order-execution" target="_blank">Order Execution</a></p>
-					</td>
-				</tr>
-				<tr>
-					<td class="centered fill-bg-color unsubscribe">
-						<span class="font-s">Don't wish to receive these emails anymore? <a href="{% unsubscribe_url %}" class="untracked">Unsubscribe</a></span>
-					</td>
-				</tr>
-			</table><!--[if mso></td></tr></table><![endif]-->
+			</table><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
         </div>
     </center>
 </body>
