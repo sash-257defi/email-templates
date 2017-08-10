@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--<![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Binary.com</title>
+    <title>ChampionFX</title>
     <!--[if mso]>
     <style type="text/css">
         table {border-collapse: collapse;}
@@ -16,7 +16,7 @@
 /* ------------------------------------- 
 	GLOBAL
 ------------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin,vietnamese,cyrillic-ext,latin-ext,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,700&subset=vietnamese);
 body {
 	width: 100%!important;
 	height: 100%;
@@ -25,16 +25,16 @@ body {
 	background-color: #ffffff;
 	-webkit-font-smoothing:antialiased;
 	 -webkit-text-size-adjust:none;
-	font-family: Roboto, Helvetica, Arial, sans-serif;
-	font-size: 18px;
-	line-height: 1.2;
+	font-family: Montserrat, Helvetica, Arial, sans-serif; 	
+	font-size:16px; 
+	line-height:1.4;
 	color: #000000;
 	font-weight: 400;
 }
 
 table {
     border-spacing: 0;
-    font-family: Roboto, Helvetica, Arial, sans-serif;
+    ffont-family: Montserrat, Helvetica, Arial, sans-serif;
     color: #000000;
 }
 td {
@@ -82,7 +82,7 @@ p {
 }
 a,
 a:visited {
-    color: #2A3052;
+    color: #004385;
     text-decoration: none;
     font-weight: bold
 }
@@ -93,42 +93,42 @@ a:visited:active {
     text-decoration: underline
 }
 .h1, h1 { 
-	font-family: Roboto, Helvetica, Arial, sans-serif; 
 	font-weight:300; 
 	font-size: 36px !important; 
-	color: #E98024;
+	color: #004385;
 	Margin-bottom: 18px;
 }
-.h2, h2, h2 a { 
-	font-family: Roboto, Helvetica, Arial, sans-serif; 
+.h2, h2 { 
 	font-weight:300; 
 	font-size: 28px !important; 
-	color: #E98024 !important;
-	Margin-bottom: 10px !important;
+	color: #004385;
+	Margin-bottom: 20px !important;
 }
-.h3, h3, h3 a { 
-	font-family: Roboto, Helvetica, Arial, sans-serif; 
-	color: #2A3052;
-    font-size: 22px !important;
-    font-weight: 300;
+.h2, h2 { 
+	font-weight:300; 
+	font-size: 28px !important; 
+	color: #004385;
+	Margin-bottom: 20px !important;
+}
+.h3, h3 { 
+	font-weight:300; 
+	font-size: 22px !important; 
+	color: #004385;
 	Margin-bottom: 15px !important;
 }
 .h4, h4 { 
-	font-family: Roboto, Helvetica, Arial, sans-serif; 
 	font-weight:400 !important; 
 	font-size: 18px !important; 
-	color: #000000;
+	color: #004385;
 }
 .h5, h5 { 
-	font-family: Roboto, Helvetica, Arial, sans-serif; 
 	font-weight:400; 
 	font-size: 16px;
 	color: #000000;
 	Margin-bottom: 5px !important;
 }
 .h6, h6 { 
-	font-family: Roboto, Helvetica, Arial, sans-serif; 
-	font-weight:bold; 
+	font-weight:400; 
 	font-size: 14px;
 	color: #000000;
 	Margin-bottom: 2px !important;
@@ -174,34 +174,57 @@ a:visited:active {
 	vertical-align: middle; 
 	padding: 10px;
 }
-.button {
+button {
+    text-decoration: none;
+    text-align: center;
+    line-height: 100%;
+    padding: 10px 25px;
+    display: inline-block;
+    font-weight: 400;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    border-radius: 100px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: box-shadow .25s;
+    outline: none;
     cursor: pointer;
-    margin-bottom: 0.5em
+    font-size: 16px;
+    border: 0;
+    background: #013365;
+    color: #FFF
+}
+button:active,
+button:hover {
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+    transition: box-shadow .25s
 }
 .button span {
     text-decoration: none;
     text-align: center;
     line-height: 100%;
-    text-transform: capitalize;
     padding: 10px 25px;
     display: inline-block;
     font-weight: 400;
-    font-family: Roboto, Helvetica, Arial, sans-serif; 
-    font-size: 18px;
-    border-radius: 3px;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    border-radius: 100px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: box-shadow .25s;
+    outline: none;
     overflow: visible;
     border: 0;
     color: #FFF;
-    background: #2E8836
+    background: #013365
 }
 .button span:active,
 .button span:hover {
-    text-decoration: none
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 4px 12px 0 rgba(0, 0, 0, 0.15) !important;
+    transition: box-shadow .25s
 }
 .button span:hover {
-    background-color: #14602B !important;
+    background-color: #004385 !important;
 }
-.button spanvisited {
+.button span:visited {
     color: #FFF
 }
 ol {
@@ -215,11 +238,14 @@ ul li {
 ul.bullet {
     margin: 1.25em 0 1.25em 0
 }
+ul.bullet {
+    margin: 1.25em 0 1.25em 0
+}
 ul.bullet li {
-    list-style-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='18px' height='18px' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath fill='%23e98024' d='M12,17.5A5.5,5.5,0,1,1,17.5,12,5.507,5.507,0,0,1,12,17.5Zm0-9A3.5,3.5,0,1,0,15.5,12,3.5,3.5,0,0,0,12,8.5Z'/%3E%3C/svg%3E")
+    list-style-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='18px' height='18px' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath fill='%23004385' d='M12,17.5A5.5,5.5,0,1,1,17.5,12,5.507,5.507,0,0,1,12,17.5'/%3E%3C/svg%3E")
 }
 .legal {	
-    font-family: Roboto, Helvetica, Arial, sans-serif; 	
+    font-family: Montserrat, Helvetica, Arial, sans-serif; 	
 	font-size: 12px !important;
 	color: #444;	
 }
@@ -297,7 +323,7 @@ table.default_table.centered td:not(:first-child) {
 	Margin-top: 20px;
 }
 .sidebar-title {
-	font-family: Roboto, Helvetica, Arial, sans-serif; 
+	font-family: Montserrat, Helvetica, Arial, sans-serif;
 	font-weight: 400 !important; 
 	font-size: 20px !important; 
 	color: #2a3052;
@@ -321,25 +347,27 @@ table.default_table.centered td:not(:first-child) {
 	border-top: 1px solid #dedede;
 }
 .primary-color {
-    background-color: #2A3052;
+    background-color: #004385;
 }
 .primary-bg-color {
-    background-color: #2A3052;
+    background-color: #FFFFFF;
 }
 .secondary-color {
-    color: #E98024
+    color: #004385;
 }
 .secondary-bg-color {
-    background-color: #E98024;
+    background-color: #004385;
 }
 .primary-color-dark {
-    background-color: #15212D;
+    background-color: #013365;
 }
+
 .primary-bg-color-dark {
-    background-color: #15212D;
+    background-color: #013365;
 }
+
 .content-inverse-color {
-    color: #FFF
+    color: #FFFFFF;
 }
 .fill-bg-color {
     background-color: #F2F2F2;
@@ -348,16 +376,16 @@ table.default_table.centered td:not(:first-child) {
     color: #DEDEDE;
 }
 .font-s, .font-s p {
-    font-size: 13px !important;
+    font-size: 14px !important;
 }
 .font-xs, .font-xs p {
-    font-size: 10px !important;
+    font-size: 12px !important;
 }
 .padding-tb-20 {
 	padding: 20px 0;
 }
 .text {
-    font-family: Roboto, Helvetica, Arial, sans-serif; 
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
     font-size: 18px;
 }
 .separator-line {
@@ -383,7 +411,7 @@ table.default_table.centered td:not(:first-child) {
 	margin-bottom: 0px;
 }
 .bordered {
-    border: 1px solid #DEDEDE;
+    border: 1px solid #004385
 }
 .border-top {
     border-top: 1px solid #DEDEDE;
@@ -558,7 +586,7 @@ table.default_table.centered td:not(:first-child) {
 						<table class="outer" align="center">
 							<tr>
 								<td class="logo">
-									<img src="https://marketing.binary.com/images/email/logo_notagline.png" width="300" alt="Binary.com" />
+									<img src="https://style.champion-fx.com/images/email/logo_600px_b.png" width="300" alt="ChampionFX" />
 								</td>
 							</tr>
 						</table>
@@ -569,76 +597,6 @@ table.default_table.centered td:not(:first-child) {
 			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
 			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
 				<tr>
-					<td class="border-top">
-						<h2 class="footer-title">Want to learn more?</h2>
-					</td>
-				</tr>
-				<tr>
-					<td class="three-column"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="200" valign="top"><![endif]-->
-						<div class="column">
-							<table width="100%">
-								<tr>
-									<td class="inner">
-										<table class="contents">
-											<tr>
-												<td>
-													<a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-dailyreport1.png" style="max-width:60px;" alt="Binary.com" /></a>
-												</td>
-											</tr>
-											<tr>
-												<td class="text">
-													<p class="centered"><a class="h4" href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Daily Report</a></p>
-													<p class="font-s">Stay up-to-date with the latest financial news and trends from around the world, with Daily Market Reports written by professional trader, Dave Evans.</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div><!--[if mso]></td><td width="200" valign="top"><![endif]--><div class="column">
-							<table width="100%">
-								<tr>
-									<td class="inner">
-										<table class="contents">
-											<tr>
-												<td>
-													<a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-learningcenter.png" style="max-width:60px;" alt="Binary.com" /></a>
-												</td>
-											</tr>
-											<tr>
-												<td class="text">
-													<p class="centered"><a class="h4" href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Learning Centre</a></p>
-													<p class="font-s">Gain useful knowledge about all aspects of binary options trading. Browse our full library of educational materials, including videos, webinars, ebooks, and more.</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div><!--[if mso]></td><td width="200" valign="top"><![endif]--><div class="column">
-							<table width="100%">
-								<tr>
-									<td class="inner">
-										<table class="contents">
-											<tr>
-												<td>
-													<a href="https://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-monthlywebinar.png" style="max-width:60px;" alt="Binary.com" /></a>
-												</td>
-											</tr>
-											<tr>
-												<td class="text">
-													<p class="centered"><a class="h4" href="http://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Monthly Webinars</a></p>
-													<p class="font-s">Watch, earn, and learn for free. Sign up for our monthly webinars and collect exclusive techniques, strategies, and tips from our professional trading partners.</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div><!--[if mso]></td></tr></table><![endif]-->
-					</td>
-				</tr>
-				<tr>
 					<td class="two-column border-top border-bottom"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="50%" valign="top"><![endif]-->
 						<div class="column">
 							<table width="100%">
@@ -648,7 +606,7 @@ table.default_table.centered td:not(:first-child) {
 											<tr>
 												<td class="text">
 													<p class="font-s mb-centered">Have a question? Need Help?<br />
-                                                    Email us at <a href="mailto:support@binary.com">marketing@binary.com</a>.</p> 
+                                                    Email us at <a href="mailto:support@champion-fx.com">support@champion-fx.com</a>.</p> 
 												</td>
 											</tr>
 										</table>
@@ -663,21 +621,15 @@ table.default_table.centered td:not(:first-child) {
 											<tr>
 												<td class="text">
 													<div class="social-ch">
-													<a href="https://www.youtube.com/user/BinaryTradingVideos">
-														<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" height="35" width="35" alt="Binary.com on YouTube" />
-													</a>
-													<a href="https://plus.google.com/+Binarydotcom/posts">
-														<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/g+.png" height="35" width="35" alt="Binary.com Google+" />
-													</a>
-													<a href="https://www.facebook.com/binarydotcom">
-														<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/fb.png" height="35" width="35" alt="Binary.com on Facebook" />
-													</a>
-													<a href="https://twitter.com/Binarydotcom">
-														<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/twitter.png" height="35" width="35" alt="Binary.com on Twitter" />
-													</a>
-													<a href="https://t.me/joinchat/CROwo0OY4RGlx0xk2w78Aw">
-                                                    	<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/tel.png" height="35" width="35" alt="Binary.com on Telegram" />
-                                                    </a>
+													<a href="https://www.youtube.com/channel/UCBqTu-uQkmaIh5wgBswo2TA?utm_source=customerio&utm_medium=email&utm_campaign=cfx_template">
+															<img src="https://style.champion-fx.com/images/email/youtube.png" width="35" alt="YouTube" />
+														</a>
+														<a href="https://www.facebook.com/championFX/?utm_source=customerio&utm_medium=email&utm_campaign=cfx_template">
+															<img src="https://style.champion-fx.com/images/email/facebook.png" width="35" alt="Facebook" />
+														</a>
+														<a href="https://twitter.com/champion_fx?utm_source=customerio&utm_medium=email&utm_campaign=cfx_template">
+															<img src="https://style.champion-fx.com/images/email/twitter.png" width="35" alt="Twitter" />
+														</a>
 													</div>
 												</td>
 											</tr>
@@ -693,8 +645,7 @@ table.default_table.centered td:not(:first-child) {
 						<table width="100%">
 							<tr>
 								<td class="inner contents">
-									<p class="font-xs justify">This Email has been issued by Binary Investments (Europe) Ltd. Registered Office: Mompalao Building, Suite 2, Tower Road, Msida, MSD 1825, Malta. Binary Investments (Europe) Ltd is licensed and regulated as a Category 3 Investment Services provider in Europe, by the Malta Financial Services Authority (license no IS/70156), Notabile Road, Attard, BKR4000, Malta, <a href="http://www.mfsa.com.mt">www.mfsa.com.mt</a></p>
-									<p class="font-xs justify">Binary options trading may incur losses as well as gains. Prices shown on website may vary and/or fluctuate due to changes in the currency exchange rates and/or price movements, which may impact your return of investment.</p>
+									<p class="font-xs justify">This email has been issued by ChampionFX. ChampionFX is licensed and regulated by the Vanuatu Financial Services Commission, Rue Bougainville, Port Vila, Vanuatu. Binary options, Forex, and CFD trading may incur losses as well as gains. Prices shown on the website may vary and/or fluctuate due to changes in the currency exchange rates and/or price movements, which may impact your return of investment.</p>
 								</td>
 							</tr>
 						</table>
@@ -702,7 +653,7 @@ table.default_table.centered td:not(:first-child) {
 				</tr>
 				<tr>
 					<td class="centered">
-						<p class="font-s centered"><a href="https://www.binary.com/en/terms-and-conditions.html?#legal" target="_blank">Terms and Conditions</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?#risk" target="_blank">Risk Disclaimer</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?section=conflicts-policy" target="_blank">Conflicts Policy</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?#order-execution" target="_blank">Order Execution</a></p>
+						<p class="font-s centered"><a href="https://www.champion-fx.com/en/terms-and-conditions.html">Terms and Conditions</a>&nbsp;|&nbsp;<a href="https://www.champion-fx.com/en/terms-and-conditions.html#risk-tab">Risk Disclaimer</a>&nbsp;|&nbsp;<a href="https://www.champion-fx.com/en/terms-and-conditions.html#order-tab">Order Execution</a></p>
 					</td>
 				</tr>
 				<tr>
