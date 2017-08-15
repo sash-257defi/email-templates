@@ -178,6 +178,9 @@ a:visited:active {
 .header-acc {
 	text-align: right;
 }
+.header-link {
+	padding: 10px;
+}
 .block-table {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -348,39 +351,7 @@ table.default_table.centered td:not(:first-child) {
 	text-align: left;
 	Margin-top: 0px !important;
 	Margin-bottom: 10px !important;
-}
-
-.date-box {
-	margin-top: 0px;
-	padding: 10px;
-	background-color: #E98024;
-	color: #ffffff;
-	width: 100px;
-	text-align: center;
-}
-.date-box_month {
-	display: block;
-	margin: 0;
-	font-size: 13px;
-}
-.date-box_day {
-	display: block;
-	margin: 0;
-	font-weight: bold;
-	font-size: 28px;
-	line-height: 34px;
-}
-.date-box_time {
-	display: block;
-	margin: 0;
-	font-size: 11px;
-}
-.speaker {
-	margin: -10px 0px 0px 0px;
-}
-.date-box p{
-	color: #ffffff;
-}
+} 
 /* ------------------------------------- 
     MODIFIERS 
 ------------------------------------- */
@@ -430,9 +401,6 @@ table.default_table.centered td:not(:first-child) {
 }
 .padding-tb-20 {
 	padding: 20px 0;
-}
-.padding-tb-50 {
-	padding: 50px 0;
 }
 .text {
     font-family: Roboto, Helvetica, Arial, sans-serif; 
@@ -488,11 +456,9 @@ table.default_table.centered td:not(:first-child) {
 	text-align: justify !important;
     text-justify: inter-word;
 }
+
 .telegram-heading {
     Margin-top: 10px;
-}
-.txt-right {
-	text-align: right !Important;
 }
 /* ------------------------------------- 
     ONE COLUMN LAYOUT 
@@ -652,9 +618,33 @@ table.default_table.centered td:not(:first-child) {
 <body>
     <center class="wrapper">
 		<div class="main">
-			<div class="webkit">
+			<div class="webkit ">
 				<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
-				<table class="outer white-bg-color" align="center" cellpadding="0" cellspacing="0" border="0">			
+				<table class="outer block-table" align="center" cellpadding="0" cellspacing="0" border="0">			
+					<tr>
+					<td class="one-column">
+						<table width="100%">
+							<tr>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td>
+												<div class="logo">
+												<img src="https://offers.binary.com/binary/email/customer_io/logo_notagline-sm.png" alt="Binary.com" />
+											</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				</table><!--[if mso]></td></tr></table><![endif]-->
+				
+				
+				<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+				<table class="outer white-bg-color block-table" align="center" cellpadding="0" cellspacing="0" border="0">			
 					<tr>
 						<td class="sidebar"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100"><![endif]-->
 							<div class="column left">
@@ -685,7 +675,7 @@ table.default_table.centered td:not(:first-child) {
 				</table><!--[if mso]></td></tr></table><![endif]-->
 				
 				<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
-				<table class="outer white-bg-color" align="center" cellpadding="0" cellspacing="0" border="0">			
+				<table class="outer block-table" align="center" cellpadding="0" cellspacing="0" border="0">			
 					<tr>
 						<td class="sidebar"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100"><![endif]-->
 							<div class="column left">
@@ -704,8 +694,68 @@ table.default_table.centered td:not(:first-child) {
 									<tr>
 										<td class="inner">
 											<div class="header-acc">
-											<p>
-											<a class="button" href=""><span>Open A Free Account</span></a></p>
+											<p class="font-s">Trade in the world's financial markets in a simple, user-friendly platform.<br />
+											<a href="">Open A Free Account</a></p>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div><!--[if mso]></td></tr></table><![endif]-->
+						</td>
+					</tr>
+				</table><!--[if mso]></td></tr></table><![endif]-->
+				
+				<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+				<table class="outer white-bg-color block-table" align="center" cellpadding="0" cellspacing="0" border="0">			
+					<tr>
+						<td class="sidebar"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100"><![endif]-->
+							<div class="column left">
+								<table width="100%">
+									<tr>
+										<td class="inner">
+											<div class="header-logo">
+												<img src="https://offers.binary.com/binary/email/customer_io/logo_notagline-sm.png" alt="Binary.com" />
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div><!--[if mso]></td><td width="500"><![endif]-->
+							<div class="column right">
+								<table width="100%">
+									<tr>
+										<td class="inner">
+											<div class="header-acc">
+											<p><a class="button" href=""><span>Open A Free Account</span></a></p>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div><!--[if mso]></td></tr></table><![endif]-->
+						</td>
+					</tr>
+				</table><!--[if mso]></td></tr></table><![endif]-->
+				
+				<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+				<table class="outer block-table" align="center" cellpadding="0" cellspacing="0" border="0">			
+					<tr>
+						<td class="sidebar"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100"><![endif]-->
+							<div class="column left">
+								<table width="100%">
+									<tr>
+										<td class="inner">
+											<div class="header-logo">
+												<img src="https://offers.binary.com/binary/email/customer_io/logo_notagline-sm.png" alt="Binary.com" />
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div><!--[if mso]></td><td width="500"><![endif]-->
+							<div class="column right">
+								<table width="100%">
+									<tr>
+										<td class="inner">
+											<div class="header-acc">
+											<p><a class="button" href=""><span>Open A Free Account</span></a></p>
 											</div>
 										</td>
 									</tr>
@@ -717,8 +767,336 @@ table.default_table.centered td:not(:first-child) {
 				
 				
 				
+				<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+				<table class="outer white-bg-color block-table" align="center" cellpadding="0" cellspacing="0" border="0">			
+					<tr>
+						<td class="sidebar"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100"><![endif]-->
+							<div class="column left">
+								<table width="100%">
+									<tr>
+										<td class="inner">
+											<div class="header-logo">
+												<img src="https://offers.binary.com/binary/email/customer_io/logo_notagline-sm.png" alt="Binary.com" />
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div><!--[if mso]></td><td width="500"><![endif]-->
+							<div class="column right">
+								<table width="100%">
+									<tr>
+										<td class="inner">
+											<div class="header-acc">
+											<p><a class="button" href=""><span>Log in</span></a></p>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div><!--[if mso]></td></tr></table><![endif]-->
+						</td>
+					</tr>
+				</table><!--[if mso]></td></tr></table><![endif]-->
+				
+				<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+				<table class="outer block-table" align="center" cellpadding="0" cellspacing="0" border="0">			
+					<tr>
+						<td class="sidebar"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100"><![endif]-->
+							<div class="column left">
+								<table width="100%">
+									<tr>
+										<td class="inner">
+											<div class="header-logo">
+												<img src="https://offers.binary.com/binary/email/customer_io/logo_notagline-sm.png" alt="Binary.com" />
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div><!--[if mso]></td><td width="500"><![endif]-->
+							<div class="column right">
+								<table width="100%">
+									<tr>
+										<td class="inner">
+											<div class="header-acc">
+											<p><a class="button" href=""><span>Log in</span></a></p>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div><!--[if mso]></td></tr></table><![endif]-->
+						</td>
+					</tr>
+				</table><!--[if mso]></td></tr></table><![endif]-->
+				
+				
+				
+				
+				<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+				<table class="outer white-bg-color block-table" align="center" cellpadding="0" cellspacing="0" border="0">			
+					<tr>
+						<td class="sidebar"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100"><![endif]-->
+							<div class="column left">
+								<table width="100%">
+									<tr>
+										<td class="inner">
+											<div class="header-logo">
+												<img src="https://offers.binary.com/binary/email/customer_io/logo_notagline-sm.png" alt="Binary.com" />
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div><!--[if mso]></td><td width="500"><![endif]-->
+							<div class="column right">
+								<table width="100%">
+									<tr>
+										<td class="inner">
+											<div class="header-acc">
+											
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div><!--[if mso]></td></tr></table><![endif]-->
+						</td>
+					</tr>
+				</table><!--[if mso]></td></tr></table><![endif]-->
+				
+								<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+				<table class="outer block-table" align="center" cellpadding="0" cellspacing="0" border="0">			
+					<tr>
+						<td class="sidebar"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100"><![endif]-->
+							<div class="column left">
+								<table width="100%">
+									<tr>
+										<td class="inner">
+											<div class="header-logo">
+												<img src="https://offers.binary.com/binary/email/customer_io/logo_notagline-sm.png" alt="Binary.com" />
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div><!--[if mso]></td><td width="500"><![endif]-->
+							<div class="column right">
+								<table width="100%">
+									<tr>
+										<td class="inner">
+											<div class="header-acc">
+											
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div><!--[if mso]></td></tr></table><![endif]-->
+						</td>
+					</tr>
+				</table><!--[if mso]></td></tr></table><![endif]-->
+				
+				
+				<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+				<table class="outer white-bg-color block-table" align="center" cellpadding="0" cellspacing="0" border="0">			
+					<tr>
+						<td class="sidebar"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100"><![endif]-->
+							<div class="column left">
+								<table width="100%">
+									<tr>
+										<td class="inner">
+											<div class="header-logo">
+												<img src="https://offers.binary.com/binary/email/customer_io/logo_notagline-sm.png" alt="Binary.com" />
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div><!--[if mso]></td><td width="500"><![endif]-->
+							<div class="column right">
+								<table width="100%">
+									<tr>
+										<td class="inner">
+											<div class="header-acc">
+											<p><a class="header-link" href="">Why Us?</a> <a class="header-link" href="">Get Started</a> <a class="header-link" href="">Tour</a> <a class="header-link" href="">Platforms</a></p>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div><!--[if mso]></td></tr></table><![endif]-->
+						</td>
+					</tr>
+				</table><!--[if mso]></td></tr></table><![endif]-->
+				
+				
+				<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+				<table class="outer block-table" align="center" cellpadding="0" cellspacing="0" border="0">			
+					<tr>
+						<td class="sidebar"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100"><![endif]-->
+							<div class="column left">
+								<table width="100%">
+									<tr>
+										<td class="inner">
+											<div class="header-logo">
+												<img src="https://offers.binary.com/binary/email/customer_io/logo_notagline-sm.png" alt="Binary.com" />
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div><!--[if mso]></td><td width="500"><![endif]-->
+							<div class="column right">
+								<table width="100%">
+									<tr>
+										<td class="inner">
+											<div class="header-acc">
+											<p><a class="header-link" href="">Why Us?</a> <a class="header-link" href="">Get Started</a> <a class="header-link" href="">Tour</a> <a class="header-link" href="">Platforms</a></p>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div><!--[if mso]></td></tr></table><![endif]-->
+						</td>
+					</tr>
+				</table><!--[if mso]></td></tr></table><![endif]-->
+				
+				
+				
+				
+				
 				<!-- {{content}} -->
 				
+			</div>
+			<div class="webkit">
+				<!-- FOOTER -->
+				<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+				<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td>
+							<h2 class="footer-title">Want to learn more?</h2>
+						</td>
+					</tr>
+					<tr>
+						<td class="three-column"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="200" valign="top"><![endif]-->
+							<div class="column">
+								<table width="100%">
+									<tr>
+										<td class="inner">
+											<table class="contents">
+												<tr>
+													<td>
+														<a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-dailyreport1.png" style="max-width:60px;" alt="Binary.com" /></a>
+													</td>
+												</tr>
+												<tr>
+													<td class="text">
+														<p class="centered"><a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Daily Report</a></p>
+														<p class="font-s">Stay up-to-date with the latest financial news and trends from around the world, with Daily Market Reports written by professional trader, Dave Evans.</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</div><!--[if mso]></td><td width="200" valign="top"><![endif]-->
+							<div class="column">
+								<table width="100%">
+									<tr>
+										<td class="inner">
+											<table class="contents">
+												<tr>
+													<td>
+														<a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-learningcenter.png" style="max-width:60px;" alt="Binary.com" /></a>
+													</td>
+												</tr>
+												<tr>
+													<td class="text">
+														<p class="centered"><a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Learning Centre</a></p>
+														<p class="font-s">Gain useful knowledge about all aspects of binary options trading. Browse our full library of educational materials, including videos, webinars, ebooks, and more.</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</div><!--[if mso]></td><td width="200" valign="top"><![endif]-->
+							<div class="column">
+								<table width="100%">
+									<tr>
+										<td class="inner">
+											<table class="contents">
+												<tr>
+													<td>
+														<a href="https://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-monthlywebinar.png" style="max-width:60px;" alt="Binary.com" /></a>
+													</td>
+												</tr>
+												<tr>
+													<td class="text">
+														<p class="centered"><a href="http://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Monthly Webinars</a></p>
+														<p class="font-s">Watch, earn, and learn for free. Sign up for our monthly webinars and collect exclusive techniques, strategies, and tips from our professional trading partners.</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</div><!--[if mso]></td></tr></table><![endif]-->
+						</td>
+					</tr>
+					<!-- ------------------------------------- 
+							1 COLUMN
+					----------------------------------------->
+					<tr>
+						<td class="one-column border-top border-bottom">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td>
+													<div class="cta">
+														<p class="font-s">Have a question? Need Help? Email us at <a href="mailto:support@binary.com">marketing@binary.com</a>.</p> 
+														<div class="">
+															<a href="https://www.youtube.com/user/BinaryTradingVideos">
+																<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" height="45" width="45" alt="Binary.com on YouTube" />
+															</a>&nbsp;&nbsp;
+															<a href="https://plus.google.com/+Binarydotcom/posts">
+																<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/g+.png" height="45" width="45" alt="Binary.com Google+" />
+															</a>&nbsp;&nbsp;
+															<a href="https://www.facebook.com/binarydotcom">
+																<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/fb.png" height="45" width="45" alt="Binary.com on Facebook" />
+															</a>&nbsp;&nbsp;
+															<a href="https://twitter.com/Binarydotcom">
+																<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/twitter.png" height="45" width="45" alt="Binary.com on Twitter" />
+															</a>&nbsp;&nbsp;
+															<a href="https://t.me/joinchat/CROwo0OY4RGlx0xk2w78Aw">
+																<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/tel.png" height="45" width="45" alt="Binary.com on Telegram" />
+															</a>
+														</div>
+													</div>																																							
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="one-column">
+							<table width="100%">
+								<tr>
+									<td class="inner contents">									
+										<p class="font-xs justify">This email has been issued by Binary (IOM) Ltd, Binary (Europe) Ltd and Binary Investments (Europe) Ltd. Binary (IOM) Ltd is licensed and regulated by the Isle of Man Gambling Supervision Commission, and by the UK Gambling Commission. Binary (Europe) Ltd is licensed by the UK Gambling Commission and by the Malta Gaming Authority. Binary Investments (Europe) Ltd is licensed and regulated by the Malta Financial Services Authority, Notabile Road, Attard, BKR4000, Malta.</p>
+										<p class="font-xs justify">Binary options trading may incur losses as well as gains. Prices shown on website may vary and/or fluctuate due to changes in the currency exchange rates and/or price movements, which may impact your return of investment. Clients must be 18 years and above. Gambling can be addictive, please play responsibly. To find out how, please visit: www.gambleaware.co.uk.</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="centered">
+							<p class="font-s centered"><a href="https://www.binary.com/en/terms-and-conditions.html?#legal" target="_blank">Terms and Conditions</a>  &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?#risk" target="_blank">Risk Disclaimer</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?section=conflicts-policy" target="_blank">Conflicts Policy</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?#order-execution" target="_blank">Order Execution</a></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="centered fill-bg-color unsubscribe">
+							<span class="font-s">Don't wish to receive these emails anymore? <a href="{% unsubscribe_url %}" class="untracked">Unsubscribe</a></span>
+						</td>
+					</tr>
+				</table><!--[if mso></td></tr></table><![endif]-->
 			</div>
 		</div>
     </center>
