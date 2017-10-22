@@ -16,13 +16,13 @@
 /* ------------------------------------- 
 	GLOBAL
 ------------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin,vietnamese,cyrillic-ext,latin-ext,cyrillic);
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&subset=cyrillic,vietnamese');
 body {
 	width: 100%!important;
 	height: 100%;
 	margin: 0 !important;
 	padding: 0;
-	background-color: #ffffff;
+	background-color: #f2f2f2 !important;
 	-webkit-font-smoothing:antialiased;
 	 -webkit-text-size-adjust:none;
 	font-family: Roboto, Helvetica, Arial, sans-serif;
@@ -56,7 +56,6 @@ div[style*="margin: 16px 0"] {
 .webkit {
     max-width: 800px;
     margin: 0 auto;
-	background-color: #ffffff;
 }
 .outer {
     Margin: 0 auto;
@@ -95,7 +94,7 @@ a:visited:active {
 }
 .h1, h1 { 
 	font-family: Roboto, Helvetica, Arial, sans-serif; 
-	font-weight:300; 
+	font-weight:300 !important; 
 	font-size: 36px !important; 
 	color: #E98024;
 	Margin-bottom: 18px;
@@ -149,7 +148,7 @@ a:visited:active {
 .logo {
 	text-align: center;
 	Margin: 0 auto;
-	padding: 20px;
+	padding-top: 20px;
 }
 .logo img {
     max-width: 100%;
@@ -312,6 +311,18 @@ table.default_table.centered td:not(:first-child) {
 	Margin-top: 0px !important;
 	Margin-bottom: 10px !important;
 } 
+
+.section {
+	padding: 40px 20px;
+}
+.cta-box {
+	display: inline-block;
+	margin: auto;
+	margin-top: 10px;
+	padding: 20px 40px;
+	text-align: center;
+
+}
 /* ------------------------------------- 
     MODIFIERS 
 ------------------------------------- */
@@ -351,6 +362,12 @@ table.default_table.centered td:not(:first-child) {
 .fill-bg-color {
     background-color: #F2F2F2;
 }
+.white-bg-color {
+	background-color: #ffffff;
+}
+.black-color {
+	color: #000000 !important;
+}
 .border-color {
     color: #DEDEDE;
 }
@@ -359,6 +376,13 @@ table.default_table.centered td:not(:first-child) {
 }
 .font-xs, .font-xs p {
     font-size: 10px !important;
+}
+.font-xl{
+	font-size: 42px !important;
+	line-height: 42px;
+}
+.font-thin {
+	font-weight: 100 !important;
 }
 .padding-tb-20 {
 	padding: 20px 0;
@@ -379,7 +403,7 @@ table.default_table.centered td:not(:first-child) {
 }
 .separator-line-thin-gray {
     height: 1px; 
-	background-color: #DEDEDE;
+	background-color: #f2f2f2;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
@@ -398,6 +422,9 @@ table.default_table.centered td:not(:first-child) {
 .border-bottom {
     border-bottom: 1px solid #DEDEDE;
 }
+.white-border {
+    border: 1px solid #ffffff;
+}
 .centered {
 	text-align: center !important;
 }
@@ -413,6 +440,24 @@ table.default_table.centered td:not(:first-child) {
 }
 .block-element {
     display: block;
+}
+.top-padding-sm {
+	padding-top: 10px !important;
+}
+.top-padding-md {
+	padding-top: 20px !important;
+}
+.vertical-padding-xl {
+	padding: 40px 20px;
+}
+.padding-md {
+	padding: 20px;
+}
+.padding-lg {
+	padding: 30px;
+}
+.flex-childern {
+	display: flex;
 }
 /* ------------------------------------- 
     ONE COLUMN LAYOUT 
@@ -545,6 +590,7 @@ table.default_table.centered td:not(:first-child) {
 		text-align: center !important;
 	}
 }
+
 @media screen and (min-width: 590px)  {
 	.three-column .column {
         max-width: 33% !important;
@@ -561,26 +607,22 @@ table.default_table.centered td:not(:first-child) {
 }
 </style>
 </head>
-<body>
+<body style="background-color: #f2f2f2 !important;">
     <center class="wrapper">
-        <div class="webkit">
-            <!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
-			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">			
+        <div class="webkit">			
+			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+			<table class="outer primary-bg-color section" align="center" cellpadding="0" cellspacing="0" border="0">
 				<tr>
 					<td>
 						<table class="outer" align="center">
 							<tr>
 								<td class="logo">
-									<img src="https://marketing.binary.com/images/email/logo_notagline.png" width="300" alt="Binary.com" />
+									<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/250x58px-white.png" alt="Binary.com" />
 								</td>
 							</tr>
 						</table>
 					</td>
 				</tr>
-			</table><!--[if mso]></td></tr></table><![endif]-->
-			
-			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
-			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">			
 				<tr>
 					<td class="one-column">
 						<table width="100%">
@@ -589,15 +631,23 @@ table.default_table.centered td:not(:first-child) {
 									<table class="contents">
 										<tr>
 											<td class="text">
-												<p>Dear Potential Investor,</p>
-												<p>Thanks for signing up to our ICO mailing list. Now you will receive the latest updates on our ICO and be notified when it goes live. The next few weeks are going to be exciting to say the least.</p>
-												<h2>Create your free Binary.com account</h2>
-												<p>The proposed ICO is only available to Binary.com clients with a real money account and who have completed our account authentication process. This is why we encourage all prospective investors to sign up for a free Binary.com account (if you haven’t done so yet).</p>
-												<p>You should also upgrade and authenticate your account accordingly so that you may start bidding on our tokens immediately after the ICO is launched.</p>
-												<p>Don’t wait any longer! Get started right away:</p>
-												<div class="cta-lg">
-													<!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.binary.com" style="height:40px;v-text-anchor:middle;width:400px;" arcsize="8%" stroke="f" fillcolor="#2E8836"><w:anchorlock/><center><![endif]--><a class="button" href="https://www.binary.com"><span>Yes, I want to create my free Binary.com account now</span></a><!--[if mso]></center></v:roundrect><![endif]-->
-												</div>												
+												<div class="centered ">
+												<div class="content-inverse-color centered font-thin font-xl padding-lg">Thanks for signing up with us!</div>
+												<div class="content-inverse-color">We’re proud to welcome you to the world’s premier platform for trading the financial markets with limited risk through binary options.</div>
+												
+													<div class="content-inverse-color vertical-padding-xl"><span class="secondary-color">Your virtual account ID:</span> VRTC1596398
+													<br><span class="secondary-color">Account balance:</span> $10,000 virtual money
+													</div>
+													<div class="content-inverse-color centered font-thin font-xl">Practice trading<br>using your Virtual Account</div>
+													<div class="centered top-padding-md">
+														<div class="cta-box content-inverse-color white-border">
+															Login to your Virtual Account
+														</div>
+														<div class="cta-box white-border white-bg-color">
+															Upgrade to Real Money Account
+														</div>
+													</div>
+												</div>
 											</td>
 										</tr>
 									</table>
@@ -606,51 +656,65 @@ table.default_table.centered td:not(:first-child) {
 						</table>
 					</td>
 				</tr>
+			</table><!--[if mso]></td></tr></table><![endif]-->
+			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->			
+			<table class="outer section" align="center" cellpadding="0" cellspacing="0" border="0">
 				<tr>
-					<td class="border-top">
-						<h2 class="footer-title">Useful links</h2>
+					<td class="one-column">
+						<table width="100%">
+							<tr>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td class="text">
+												<div class="centered ">
+												<div class="centered font-thin font-xl">Trade binary options using your preferred currency</div>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
 					</td>
 				</tr>
+			</table><!--[if mso]></td></tr></table><![endif]-->
+			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->			
+			<table class="outer  section" align="center" cellpadding="0" cellspacing="0" border="0">
 				<tr>
-					<td class="three-column"><!--[if (gte mso 9)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="200" valign="top"><![endif]-->
+					<td class="two-column"><!--[if (gte mso 9)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="50%" valign="top"><![endif]-->
 						<div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
 										<table class="contents">
 											<tr>
-												<td class="text"><a href="https://www.binary.com/en/ico-disclaimer.html">Information Memorandum</a>
-													<p class="center-text">Download our IM for further information about the proposed offer, including a full disclosure of our financial history and risk factors.</p>
+												<td class="centered">
+													<img src="https://offers.binary.com/binary/email/images/why-us-sharp-prices.png">
+												</td>
+											</tr>
+											<tr>
+												<td class="text centered">
+													<h2>Fiat currency accounts</h2>
 												</td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 							</table>
-						</div><!--[if (gte mso 9)|(IE)]></td><td width="200" valign="top"><![endif]--><div class="column">
+						</div><!--[if (gte mso 9)|(IE)]></td><td width="50%" valign="top"><![endif]--><div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
 										<table class="contents">
 											<tr>
-												<td class="text">
-													<a href="https://ico_documents.binary.com/howto_ico.pdf">How to participate in the ICO</a>
-													<p class="center-text">Learn how to take part in the ICO, from authenticating your account and bidding on tokens, to claiming your tokens for each successful bid.</p>
+												<td class="centered">
+													<img src="https://offers.binary.com/binary/email/images/trade-crypto.png">
 												</td>
 											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div><!--[if (gte mso 9)|(IE)]></td><td width="200" valign="top"><![endif]--><div class="column">
-							<table width="100%">
-								<tr>
-									<td class="inner">
-										<table class="contents">
 											<tr>
-												<td class="text">
-													<a href="https://ico.binary.com">Frequently asked questions</a>
-													<p class="center-text">Get the answers to your most pressing questions, including our reasons for performing an ICO, the risks involved, and more.</p>
+												<td class="text centered">
+													<h2>Cryptocurrency accounts</h2>
 												</td>
 											</tr>
 										</table>
@@ -660,31 +724,168 @@ table.default_table.centered td:not(:first-child) {
 						</div><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 					</td>
 				</tr>
+			</table><!--[if mso]></td></tr></table><![endif]-->
+			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->			
+			<table class="outer section border-top" align="center" cellpadding="0" cellspacing="0" border="0">
 				<tr>
-					<td class="border-top">
-						<h2 class="footer-title">Join the conversation</h2>
-						
-					</td>
-				</tr>
-				<tr>
-					<td class="one-column border-bottom">
+					<td class="one-column">
 						<table width="100%">
 							<tr>
 								<td class="inner">
-									<table class="contents">										
+									<table class="contents">
+										<tr>
+											<td class="text">
+												<div class="centered ">
+												<div class="centered font-thin font-xl">Learn to be a better trader</div>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>				
+			</table><!--[if mso]></td></tr></table><![endif]-->
+			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->			
+			<table class="outer section" align="center" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td class="two-column"><!--[if (gte mso 9)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="50%" valign="top"><![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td>
+													<img src="https://offers.binary.com/binary/email/images/academy.png">
+												</td>												
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div><!--[if (gte mso 9)|(IE)]></td><td width="50%" valign="top"><![endif]--><div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td class="text">
+													<h2>Binary.com Academy</h2>
+													<p>Learn to be a better trader, and keep up with the latest news and trends in binary options, Forex, CFDs, and more.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+					</td>
+				</tr>
+			</table><!--[if mso]></td></tr></table><![endif]-->
+			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->			
+			<table class="outer section" align="center" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td class="two-column" dir="rtl"><!--[if (gte mso 9)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="50%" valign="top"><![endif]-->
+						<div class="column" dir="ltr">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td>
+													<img src="https://offers.binary.com/binary/email/images/daily.png">
+												</td>
+																																				
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div><!--[if (gte mso 9)|(IE)]></td><td width="50%" valign="top"><![endif]--><div class="column" dir="ltr">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td class="text">
+													<h2>Daily Market Report</h2>
+													<p>Stay up-to-date with the latest financial news and trends from around the world, with Daily Market Reports written by professional trader, Dave Evans.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+					</td>
+				</tr>
+			</table><!--[if mso]></td></tr></table><![endif]-->
+			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->			
+			<table class="outer section" align="center" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td class="two-column"><!--[if (gte mso 9)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="50%" valign="top"><![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td>
+													<img src="https://offers.binary.com/binary/email/images/webinars.png">
+												</td>												
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div><!--[if (gte mso 9)|(IE)]></td><td width="50%" valign="top"><![endif]--><div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td class="text">
+													<h2>Webinars</h2>
+													<p>Watch, earn, and learn for free. Sign up for our monthly webinars and collect exclusive techniques, strategies, and tips from our professional trading partners.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+					</td>
+				</tr>
+			</table><!--[if mso]></td></tr></table><![endif]-->
+			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->			
+			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td class="one-column border-bottom border-top">
+						<table width="100%">
+							<tr>
+								<td class="inner">
+									<table class="contents">
 										<tr>
 											<td>
 												<div class="cta">
-													<p>Got ideas or feedback on our proposed ICO? Reach out to us and other prospective investors for in-depth discussions and insights.</p>
-													<div class="social-ch">														
-														<a href="https://www.reddit.com/r/binarydotcom/">
-															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/reddit.png" height="60" width="60" alt="Binary.com on Reddit" title="Binary.com on Reddit" />
-														</a>&nbsp;&nbsp;&nbsp;
-														<a href="https://t.me/binarydotcom">
-															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/tel.png" height="60" width="60" alt="Binary.com on Telegram" title="Binary.com on Telegram" />
-														</a>&nbsp;&nbsp;&nbsp;
-														<a href="https://www.facebook.com/Binarycom-Crypto-283458878790168/">
-															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/fb.png" height="60" width="60" alt="Binary.com on Facebook" title="Binary.com on Facebook" />
+													<p class="font-s">Have a question? Need Help? Email us at <a href="mailto:support@binary.com">marketing@binary.com</a></p> 
+													<div class="">
+														<a href="https://www.youtube.com/user/BinaryTradingVideos">
+															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" height="50" width="50" alt="Binary.com on YouTube" title="Binary.com on YouTube" />
+														</a>&nbsp;&nbsp;
+														<a href="https://plus.google.com/+Binarydotcom/posts">
+															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/g+.png" height="50" width="50" alt="Binary.com Google+" title="Binary.com on Google+" />
+														</a>&nbsp;&nbsp;
+														<a href="https://www.facebook.com/binarydotcom">
+															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/fb.png" height="50" width="50" alt="Binary.com on Facebook" title="Binary.com on Facebook" />
+														</a>&nbsp;&nbsp;
+														<a href="https://twitter.com/Binarydotcom">
+															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/twitter.png" height="50" width="50" alt="Binary.com on Twitter" title="Binary.com on Twitter" />
+														</a>&nbsp;&nbsp;
+														<a href="https://t.me/joinchat/CROwo0OY4RGlx0xk2w78Aw">
+															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/tel.png" height="50" width="50" alt="Binary.com on Telegram" title="Binary.com on Telegram" />
 														</a>
 													</div>
 												</div>																																							
@@ -700,8 +901,9 @@ table.default_table.centered td:not(:first-child) {
 					<td class="one-column">
 						<table width="100%">
 							<tr>
-								<td class="inner contents">
-									<p class="font-s justify"><strong>Disclaimer:</strong> The proposed ICO is only available to residents of selected countries. In certain countries, prospective investors are required to verify their status as qualified or professional investors. The proposed ICO is expected to involve a high degree of risk; there will be no assurance that investors will be able to receive a return of their capital or any returns on their investment. Prospective investors in the ICO should carefully consider the risk factors that will be detailed in the <a href="https://ico.binary.com">Information Memorandum</a>. UK residents will have their account opened with Binary IOM Ltd. Other European Union residents will have their account opened with Binary Investments (Europe) Ltd. which is licensed and regulated by the Malta Financial Services Authority (Notabile Road, Attard, BKR4000, Malta, <a href="https://www.mfsa.com.mt">www.mfsa.com.mt</a>), as a Category 3 Investment Services provider in Europe.</p>
+								<td class="inner contents">									
+									<p class="font-xs justify">This email has been issued by Binary (IOM) Ltd, Binary (Europe) Ltd and Binary Investments (Europe) Ltd. Binary (IOM) Ltd is licensed and regulated by the Isle of Man Gambling Supervision Commission, and by the UK Gambling Commission. Binary (Europe) Ltd is licensed by the UK Gambling Commission and by the Malta Gaming Authority. Binary Investments (Europe) Ltd is licensed and regulated by the Malta Financial Services Authority, Notabile Road, Attard, BKR4000, Malta.</p>
+									<p class="font-xs justify">Binary options trading may incur losses as well as gains. Prices shown on website may vary and/or fluctuate due to changes in the currency exchange rates and/or price movements, which may impact your return of investment. Clients must be 18 years and above. Gambling can be addictive, please play responsibly. To find out how, please visit: www.gambleaware.co.uk.</p>
 								</td>
 							</tr>
 						</table>
@@ -710,6 +912,11 @@ table.default_table.centered td:not(:first-child) {
 				<tr>
 					<td class="centered">
 						<p class="font-s centered"><a href="https://www.binary.com/en/terms-and-conditions.html?#legal" target="_blank">Terms and Conditions</a>  &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?#risk" target="_blank">Risk Disclaimer</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?section=conflicts-policy" target="_blank">Conflicts Policy</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?#order-execution" target="_blank">Order Execution</a></p>
+					</td>
+				</tr>
+				<tr>
+					<td class="centered fill-bg-color unsubscribe">
+						<span class="font-s">Don't wish to receive these emails anymore? <a href="{% unsubscribe_url %}" class="untracked">Unsubscribe</a></span>
 					</td>
 				</tr>
 			</table><!--[if mso]></td></tr></table><![endif]-->
