@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -83,7 +84,7 @@ p {
 }
 a,
 a:visited {
-    color: #2A3052;
+    color: #2A3052!important;
     text-decoration: none;
     font-weight: bold
 }
@@ -98,7 +99,7 @@ a:visited:active {
 	font-weight:300; 
 	font-size: 36px !important; 
 	color: #E98024;
-	Margin-bottom: 18px;
+	margin: 0 0 30px 0;
 }
 .h2, h2, h2 a { 
 	font-family: Roboto, Helvetica, Arial, sans-serif; 
@@ -149,7 +150,7 @@ a:visited:active {
 .logo {
 	text-align: center;
 	Margin: 0 auto;
-	padding: 20px;
+	padding-top: 20px;
 }
 .logo img {
     max-width: 100%;
@@ -226,7 +227,7 @@ ul.bullet li {
 }
 .social-ch {
 	Margin: 1em 0;
-	text-align: right;
+	text-align: center;
 	display: block;
 }
 .social-ch a:hover {
@@ -297,10 +298,12 @@ table.default_table.centered th:not(:first-child),
 table.default_table.centered td:not(:first-child) {
     text-align: center
 }
+
 .footer-title {
 	text-align: center;
-	padding: 10px;
-	Margin-top: 20px;
+	padding: 20px 20px 0 20px;
+	Margin-top: 10px;
+	margin-bottom: -5px!important;
 }
 .sidebar-title {
 	font-family: Roboto, Helvetica, Arial, sans-serif; 
@@ -397,7 +400,10 @@ table.default_table.centered td:not(:first-child) {
 .border-bottom {
     border-bottom: 1px solid #DEDEDE;
 }
-.centered {
+.centered, .centered p {
+	text-align: center !important;
+}
+.center-text {
 	text-align: center !important;
 }
 .justify {
@@ -409,6 +415,9 @@ table.default_table.centered td:not(:first-child) {
 }
 .block-element {
     display: block;
+}
+.no-margin {
+	margin: 0 !important;
 }
 /* ------------------------------------- 
     ONE COLUMN LAYOUT 
@@ -540,6 +549,7 @@ table.default_table.centered td:not(:first-child) {
 	.social-ch {
 		text-align: center !important;
 	}
+
 }
 @media screen and (min-width: 590px)  {
 	.three-column .column {
@@ -549,19 +559,13 @@ table.default_table.centered td:not(:first-child) {
         max-width: 50% !important;
     }
 }
-
-.s-box {
-	background-color: #dedede;
-	min-height: 100px;
-	border: 1px solid #cccccc;
-}
 </style>
 </head>
 <body>
     <center class="wrapper">
-        <div class="webkit">
-            <!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
-			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">			
+        <div class="webkit">		
+			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
 				<tr>
 					<td>
 						<table class="outer" align="center">
@@ -573,13 +577,36 @@ table.default_table.centered td:not(:first-child) {
 						</table>
 					</td>
 				</tr>
-			</table><!--[if mso]></td></tr></table><![endif]-->
-			{{content}}
-			<!--[if mso]><table width="800" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
-			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td class="one-column">
+						<table width="100%">
+							<tr>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td class="text">
+												<div class="centered">
+												<p><img src="https://offers.binary.com/binary/email/images/blog-contributors.jpg" alt="Binary.com Webinars"></p>
+												</div>
+												<p>Gentile Cliente,</p>
+												<p>Come ringraziamento per aver partecipato al nostro recente webinar, ci piacerebbe offrirti un bonus gratis* di $20.</p>												
+												<p>Per richiederlo, <a href="http://record.binary.com/_PZpvrcZowd1Dp78Ph1_jCGNd7ZgqdRLk/1/">apri un account reale oggi</a>!</p>
+												<p>Inviaci un'email all'indirizzo <a href="mailto:webinar@binary.com">webinar@binary.com</a> con oggetto "bonus del webinar" insieme al tuo ID d'accesso e ti accrediteremo 20 GRATIS sul tuo account.</p>
+												<p>In attesa di una tua comunicazione in merito</p>
+												<p>Cordiali saluti,</p>
+												<p>Charisse Bartoli<br/><a href="https://www.binary.com/en/home.html">Binary.com</a></p>
+												<p><strong>*Si applicano i termini e le condizioni</strong></p>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
 				<tr>
 					<td class="border-top">
-						<h2 class="footer-title">Want to learn more?</h2>
+						<h2 class="footer-title">Desideri saperne di più?</h2>
 					</td>
 				</tr>
 				<tr>
@@ -596,8 +623,8 @@ table.default_table.centered td:not(:first-child) {
 											</tr>
 											<tr>
 												<td class="text">
-													<p class="centered"><a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Daily Report</a></p>
-													<p class="font-s">Stay up-to-date with the latest financial news and trends from around the world, with Daily Market Reports written by professional trader, Dave Evans.</p>
+													<p class="centered"><a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Report giornaliero</a></p>
+													<p class="font-s">Controlla i nostri Report giornalieri dei mercati scritti da Dave Evans, trader professionista. Rimani aggiornato con le ultime novità e i trend finanziari di tutto il mondo.</p>
 												</td>
 											</tr>
 										</table>
@@ -616,8 +643,8 @@ table.default_table.centered td:not(:first-child) {
 											</tr>
 											<tr>
 												<td class="text">
-													<p class="centered"><a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Learning Centre</a></p>
-													<p class="font-s">Gain useful knowledge about all aspects of binary options trading. Browse our full library of educational materials, including videos, webinars, ebooks, and more.</p>
+													<p class="centered"><a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Centro di apprendimento</a></p>
+													<p class="font-s">Ottieni una conoscenza utile su tutti gli aspetti del trading in opzioni binarie. Esplora tutta la nostra libreria di materiali utili, compresi video formativi, webinar, e-book, FAQ e altro.</p>
 												</td>
 											</tr>
 										</table>
@@ -636,8 +663,8 @@ table.default_table.centered td:not(:first-child) {
 											</tr>
 											<tr>
 												<td class="text">
-													<p class="centered"><a href="http://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Monthly Webinars</a></p>
-													<p class="font-s">Watch, earn, and learn for free. Sign up for our monthly webinars and collect exclusive techniques, strategies, and tips from our professional trading partners.</p>
+													<p class="centered"><a href="http://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Webinar mensili</a></p>
+													<p class="font-s">Guarda, guadagna e impara gratuitamente! Registrati per partecipare ai nostri webinar mensili. Colleziona tecniche esclusive, strategie e suggerimenti dei nostri trader professionisti.</p>
 												</td>
 											</tr>
 										</table>
@@ -656,7 +683,7 @@ table.default_table.centered td:not(:first-child) {
 										<tr>
 											<td>
 												<div class="cta">
-													<p class="font-s">Have a question? Need Help? Email us at <a href="mailto:support@binary.com">marketing@binary.com</a></p> 
+													<p class="font-s">Hai una domanda? Hai bisogno di aiuto? Inviaci una email all’indirizzo <a href="mailto:support@binary.com">marketing@binary.com</a></p> 
 													<div class="">
 														<a href="https://www.youtube.com/user/BinaryTradingVideos">
 															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" height="45" width="45" alt="Binary.com on YouTube" title="Binary.com on YouTube" />
@@ -673,7 +700,7 @@ table.default_table.centered td:not(:first-child) {
 														<a href="https://www.reddit.com/r/binarydotcom/">
 															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/reddit.png" height="45" width="45" alt="Binary.com on Reddit" title="Binary.com on Reddit" />
 														</a>&nbsp;&nbsp;
-														<a href="https://t.me/binarydotcom">
+														<a href="https://t.me/joinchat/CROwo0OY4RGlx0xk2w78Aw">
 															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/tel.png" height="45" width="45" alt="Binary.com on Telegram" title="Binary.com on Telegram" />
 														</a>
 													</div>
@@ -691,8 +718,9 @@ table.default_table.centered td:not(:first-child) {
 						<table width="100%">
 							<tr>
 								<td class="inner contents">
-									<p class="font-xs justify">This email has been issued by Binary (IOM) Ltd, Binary (Europe) Ltd and Binary Investments (Europe) Ltd. Binary (IOM) Ltd is licensed and regulated by the Isle of Man Gambling Supervision Commission, and by the UK Gambling Commission. Binary (Europe) Ltd is licensed by the UK Gambling Commission and by the Malta Gaming Authority. Binary Investments (Europe) Ltd is licensed and regulated by the Malta Financial Services Authority, Notabile Road, Attard, BKR4000, Malta.</p>
-									<p class="font-xs justify">Binary options trading may incur losses as well as gains. Prices shown on website may vary and/or fluctuate due to changes in the currency exchange rates and/or price movements, which may impact your return of investment. Clients must be 18 years and above. Gambling can be addictive, please play responsibly. To find out how, please visit: www.gambleaware.co.uk.</p>
+									<p class="font-xs justify">Questa email è stata inviata da Binary (IOM) Ltd, Binary (Europe) Ltd e Binary Investments (Europe) Ltd. Binary (IOM) Ltd è autorizzato e regolamentato dalla Gambling Supervision Commission dell’Isola di Man e dalla Gambling Commission del Regno Unito. Binary (Europe) Ltd è autorizzata dalla Gambling Commission del Regno Unito e dalla Gaming Authority di Malta. Binary Investments (Europe) Ltd è autorizzata e regolamentata dalla Malta Financial Services Authority, Notabile Road, Attard, BKR4000, Malta.</p>
+									<p class="font-xs justify">Il trading in opzioni binarie può comportare delle perdite così come dei profitti. I prezzi indicati sul sito internet possono variare e/o oscillare a causa delle variazioni nei tassi di cambio delle valute e/o dei movimenti dei prezzi, che possono influire sul rendimento degli investimenti.</p>
+									<p class="font-xs">Il gioco d’azzardo può creare dipendenza, si prega di giocare in modo responsabile.</p>
 								</td>
 							</tr>
 						</table>
@@ -700,15 +728,10 @@ table.default_table.centered td:not(:first-child) {
 				</tr>
 				<tr>
 					<td class="centered">
-						<p class="font-s centered"><a href="https://www.binary.com/en/terms-and-conditions.html?#legal" target="_blank">Terms and Conditions</a>  &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?#risk" target="_blank">Risk Disclaimer</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?section=conflicts-policy" target="_blank">Conflicts Policy</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?#order-execution" target="_blank">Order Execution</a></p>
+						<p class="font-s centered"><a href="https://www.binary.com/it/terms-and-conditions.html">Termini e condizioni</a> &nbsp;|&nbsp; <a href="https://www.binary.com/it/terms-and-conditions.html#risk-tab">Informativa sui rischi</a> &nbsp;|&nbsp; <a href="https://www.binary.com/it/terms-and-conditions.html?selected_tab=conflicts-policy-tac-tab">Politica sui conflitti d’interesse</a> &nbsp;|&nbsp; <a href="https://www.binary.com/it/terms-and-conditions.html#order-execution-tab">Esecuzione degli ordini</a></p>
 					</td>
 				</tr>
-				<tr>
-					<td class="centered fill-bg-color unsubscribe">
-						<span class="font-s">Don't wish to receive these emails anymore? <a href="{% unsubscribe_url %}" class="untracked">Unsubscribe</a></span>
-					</td>
-				</tr>
-			</table><!--[if mso></td></tr></table><![endif]-->
+			</table><!--[if mso]></td></tr></table><![endif]-->
         </div>
     </center>
 </body>

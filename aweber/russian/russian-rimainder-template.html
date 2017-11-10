@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -83,7 +84,7 @@ p {
 }
 a,
 a:visited {
-    color: #2A3052;
+    color: #2A3052!important;
     text-decoration: none;
     font-weight: bold
 }
@@ -98,7 +99,7 @@ a:visited:active {
 	font-weight:300; 
 	font-size: 36px !important; 
 	color: #E98024;
-	Margin-bottom: 18px;
+	margin: 0 0 30px 0;
 }
 .h2, h2, h2 a { 
 	font-family: Roboto, Helvetica, Arial, sans-serif; 
@@ -149,7 +150,7 @@ a:visited:active {
 .logo {
 	text-align: center;
 	Margin: 0 auto;
-	padding: 20px;
+	padding-top: 20px;
 }
 .logo img {
     max-width: 100%;
@@ -226,7 +227,7 @@ ul.bullet li {
 }
 .social-ch {
 	Margin: 1em 0;
-	text-align: right;
+	text-align: center;
 	display: block;
 }
 .social-ch a:hover {
@@ -297,10 +298,12 @@ table.default_table.centered th:not(:first-child),
 table.default_table.centered td:not(:first-child) {
     text-align: center
 }
+
 .footer-title {
 	text-align: center;
-	padding: 10px;
-	Margin-top: 20px;
+	padding: 20px 20px 0 20px;
+	Margin-top: 10px;
+	margin-bottom: -5px!important;
 }
 .sidebar-title {
 	font-family: Roboto, Helvetica, Arial, sans-serif; 
@@ -397,7 +400,10 @@ table.default_table.centered td:not(:first-child) {
 .border-bottom {
     border-bottom: 1px solid #DEDEDE;
 }
-.centered {
+.centered, .centered p {
+	text-align: center !important;
+}
+.center-text {
 	text-align: center !important;
 }
 .justify {
@@ -409,6 +415,9 @@ table.default_table.centered td:not(:first-child) {
 }
 .block-element {
     display: block;
+}
+.no-margin {
+	margin: 0 !important;
 }
 /* ------------------------------------- 
     ONE COLUMN LAYOUT 
@@ -540,6 +549,7 @@ table.default_table.centered td:not(:first-child) {
 	.social-ch {
 		text-align: center !important;
 	}
+
 }
 @media screen and (min-width: 590px)  {
 	.three-column .column {
@@ -549,19 +559,13 @@ table.default_table.centered td:not(:first-child) {
         max-width: 50% !important;
     }
 }
-
-.s-box {
-	background-color: #dedede;
-	min-height: 100px;
-	border: 1px solid #cccccc;
-}
 </style>
 </head>
 <body>
     <center class="wrapper">
-        <div class="webkit">
-            <!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
-			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">			
+        <div class="webkit">		
+			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
 				<tr>
 					<td>
 						<table class="outer" align="center">
@@ -573,108 +577,166 @@ table.default_table.centered td:not(:first-child) {
 						</table>
 					</td>
 				</tr>
-			</table><!--[if mso]></td></tr></table><![endif]-->
-			{{content}}
-			<!--[if mso]><table width="800" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
-			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
 				<tr>
-					<td class="border-top">
-						<h2 class="footer-title">Want to learn more?</h2>
+					<td class="one-column">
+						<table width="100%">
+							<tr>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td class="text">
+												<div class="centered">
+												<p><img src="https://offers.binary.com/binary/email/images/blog-contributors.jpg" alt="Binary.com Webinars"></p>
+												</div>
+												<p>Уважаемый клиент,</p>
+												<p>Вебинар "Торговля товарами и биржевыми индексами" пройдёт сегодня, <strong>19 октября 2017 г. в 19:00 MCK (16:00 GMT)</strong>.</p>
+												<div class="cta">
+														<div class="padding-tb-20">Ваш пароль для входа:</div>
+														<div class="padding-tb-20 fill-bg-color">rcW2mWF2</div>
+														<p class="centered"><!--[if mso]>
+														  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.binary.com/en/home.html" style="height:40px;v-text-anchor:middle;width:260px;" arcsize="8%" stroke="f" fillcolor="#2E8836">
+															<w:anchorlock/>
+															<center>
+														 <![endif]-->
+														<a class="button" href="https://www.binary.com/en/home.html"><span>Подпишитесь Сейчас</span></a>
+														<!--[if mso]>
+														</center>
+														</v:roundrect>
+														<![endif]--></p>
+												</div>
+												<p>На протяжении вебинара Сергей Романюк, специалист по психологии трейдинга и торговле по уровням, расскажет Вам про основные особенности торговли сырьевыми товарами и биржевыми индексами. Во время сессии участники смогут задать ведущему вопросы.</p>
+												<p>Ждем Вас на вебинаре!</p>
+												<p>С уважением,</p>
+												<p>Шерисс Бартоли<br/><a href="https://www.binary.com/en/home.html">Binary.com</a></p>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
 					</td>
 				</tr>
 				<tr>
-					<td class="three-column"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="200" valign="top"><![endif]-->
+					<td class="border-top">
+						<h2 class="footer-title">Хотите узнать больше?</h2>
+					</td>
+				</tr>
+				<tr>
+					<td class="three-column">
+						<!--[if mso]>
+						<table width="100%">
+						<tr>
+						<td width="200" valign="top">
+						<![endif]-->
 						<div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
 										<table class="contents">
 											<tr>
-												<td>
-													<a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-dailyreport1.png" style="max-width:60px;" alt="Binary.com" /></a>
+												<td>													
+													<a href="https://academy.binary.com/ru/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-dailyreport1.png" style="max-width:60px;" class="columnImage" /></a>
 												</td>
 											</tr>
 											<tr>
-												<td class="text">
-													<p class="centered"><a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Daily Report</a></p>
-													<p class="font-s">Stay up-to-date with the latest financial news and trends from around the world, with Daily Market Reports written by professional trader, Dave Evans.</p>
+												<td class="text font-s">
+													<p class="centered font-s"><a href="https://academy.binary.com/ru/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Ежедневный прогноз</a></p>
+													<p class="font-s">Читайте наш ежедневный прогноз от профессионального трейдера Дэйва Эванса, где он публикует советы в соответствии с новостями рынка.</p>
 												</td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 							</table>
-						</div><!--[if mso]></td><td width="200" valign="top"><![endif]--><div class="column">
+						</div>
+						<!--[if mso]>
+						</td><td width="200" valign="top">
+						<![endif]-->
+						<div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
 										<table class="contents">
 											<tr>
-												<td>
-													<a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-learningcenter.png" style="max-width:60px;" alt="Binary.com" /></a>
+												<td>													
+													<a href="http://academy.binary.com/ru/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-learningcenter.png" style="max-width:60px;" class="columnImage" /></a>
 												</td>
 											</tr>
 											<tr>
-												<td class="text">
-													<p class="centered"><a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Learning Centre</a></p>
-													<p class="font-s">Gain useful knowledge about all aspects of binary options trading. Browse our full library of educational materials, including videos, webinars, ebooks, and more.</p>
+												<td class="text font-s">
+													<p class="centered font-s"><a href="http://academy.binary.com/ru/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Еженедельные торговые сессии (на английском)</a></p>
+													<p class="font-s">Также Вы можете дважды в неделю присоединиться к нашей ЖИВОЙ сессии по анализу рынков (на английском).</p>
 												</td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 							</table>
-						</div><!--[if mso]></td><td width="200" valign="top"><![endif]--><div class="column">
+						</div>
+						<!--[if mso]>
+						</td><td width="200" valign="top">
+						<![endif]-->
+						<div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
 										<table class="contents">
 											<tr>
-												<td>
-													<a href="https://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-monthlywebinar.png" style="max-width:60px;" alt="Binary.com" /></a>
+												<td>													
+													<a href="https://academy.binary.com/ru/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-monthlywebinar.png" style="max-width:60px;" class="columnImage" /></a>
 												</td>
 											</tr>
 											<tr>
-												<td class="text">
-													<p class="centered"><a href="http://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Monthly Webinars</a></p>
-													<p class="font-s">Watch, earn, and learn for free. Sign up for our monthly webinars and collect exclusive techniques, strategies, and tips from our professional trading partners.</p>
+												<td class="text font-s">
+													<p class="centered font-s"><a href="http://academy.binary.com/ru/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Ежемесячные вебинары</a></p>
+													<p class="font-s">Смотрите и учитесь зарабатывать! Binary.com совместно с профессиональными трейдерами предлагает вебинары, которые помогут вам научиться определять торговые возможности.</p>
 												</td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 							</table>
-						</div><!--[if mso]></td></tr></table><![endif]-->
+						</div>
+						<!--[if mso]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
 					</td>
 				</tr>
 				<tr>
-					<td class="one-column border-top border-bottom">
+					<td class="border-top">
+						<p class="centered">У Вас есть вопросы? Требуется помощь? Hапишите нам на <a href="mailto:support@binary.com">marketing@binary.com</a></p>
+						
+					</td>
+				</tr>
+				<tr>
+					<td class="one-column border-bottom">
 						<table width="100%">
 							<tr>
 								<td class="inner">
-									<table class="contents">
+									<table class="contents">										
 										<tr>
 											<td>
 												<div class="cta">
-													<p class="font-s">Have a question? Need Help? Email us at <a href="mailto:support@binary.com">marketing@binary.com</a></p> 
-													<div class="">
+													<div class="social-ch">														
 														<a href="https://www.youtube.com/user/BinaryTradingVideos">
-															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" height="45" width="45" alt="Binary.com on YouTube" title="Binary.com on YouTube" />
+															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" height="60" width="60" alt="Binary.com on YouTube" title="Binary.com on YouTube" />
 														</a>&nbsp;&nbsp;
 														<a href="https://plus.google.com/+Binarydotcom/posts">
-															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/g+.png" height="45" width="45" alt="Binary.com Google+" title="Binary.com on Google+" />
+															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/g+.png" height="60" width="60" alt="Binary.com Google+" title="Binary.com on Google+" />
 														</a>&nbsp;&nbsp;
 														<a href="https://www.facebook.com/binarydotcom">
-															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/fb.png" height="45" width="45" alt="Binary.com on Facebook" title="Binary.com on Facebook" />
+															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/fb.png" height="60" width="60" alt="Binary.com on Facebook" title="Binary.com on Facebook" />
 														</a>&nbsp;&nbsp;
 														<a href="https://twitter.com/Binarydotcom">
-															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/twitter.png" height="45" width="45" alt="Binary.com on Twitter" title="Binary.com on Twitter" />
+															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/twitter.png" height="60" width="60" alt="Binary.com on Twitter" title="Binary.com on Twitter" />
 														</a>&nbsp;&nbsp;
 														<a href="https://www.reddit.com/r/binarydotcom/">
-															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/reddit.png" height="45" width="45" alt="Binary.com on Reddit" title="Binary.com on Reddit" />
+															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/reddit.png" height="60" width="60" alt="Binary.com on Reddit" title="Binary.com on Reddit" />
 														</a>&nbsp;&nbsp;
 														<a href="https://t.me/binarydotcom">
-															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/tel.png" height="45" width="45" alt="Binary.com on Telegram" title="Binary.com on Telegram" />
+															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/tel.png" height="60" width="60" alt="Binary.com on Telegram" title="Binary.com on Telegram" />
 														</a>
 													</div>
 												</div>																																							
@@ -691,8 +753,9 @@ table.default_table.centered td:not(:first-child) {
 						<table width="100%">
 							<tr>
 								<td class="inner contents">
-									<p class="font-xs justify">This email has been issued by Binary (IOM) Ltd, Binary (Europe) Ltd and Binary Investments (Europe) Ltd. Binary (IOM) Ltd is licensed and regulated by the Isle of Man Gambling Supervision Commission, and by the UK Gambling Commission. Binary (Europe) Ltd is licensed by the UK Gambling Commission and by the Malta Gaming Authority. Binary Investments (Europe) Ltd is licensed and regulated by the Malta Financial Services Authority, Notabile Road, Attard, BKR4000, Malta.</p>
-									<p class="font-xs justify">Binary options trading may incur losses as well as gains. Prices shown on website may vary and/or fluctuate due to changes in the currency exchange rates and/or price movements, which may impact your return of investment. Clients must be 18 years and above. Gambling can be addictive, please play responsibly. To find out how, please visit: www.gambleaware.co.uk.</p>
+									<p class="font-xs justify">Данный электронный адрес используется компаниями Binary (IOM) Ltd, Binary (Europe) Ltd и Binary Investments (Europe) Ltd. Компания Binary (IOM) Ltd лицензирована и регулируется Комиссией по надзору за азартными играми острова Мэн и Комиссией по азартным играм Великобритании. Компания Binary (Europe) Ltd лицензирована Комиссией по азартным играм Великобритании и Управлением по азартным играм Мальты. Компания Binary Investments (Europe) Ltd лицензирована и регулируется Мальтийским управлением финансовых услуг, Notabile Road, Attard, BKR4000, Malta.</p>
+									<p class="font-xs justify">Торговля бинарными опционами может принести не только прибыль, но и убытки. Цены, указанные на вебсайте, могут меняться и/или колебаться в связи с изменением. курсов на валютной бирже и/или движением цен, что может отразиться на окупаемости Ваших инвестиций.</p>
+									<p class="font-xs justify">Азартные игры могут вызывать привыкание, поэтому, пожалуйста, играйте ответственно.</p>
 								</td>
 							</tr>
 						</table>
@@ -700,15 +763,10 @@ table.default_table.centered td:not(:first-child) {
 				</tr>
 				<tr>
 					<td class="centered">
-						<p class="font-s centered"><a href="https://www.binary.com/en/terms-and-conditions.html?#legal" target="_blank">Terms and Conditions</a>  &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?#risk" target="_blank">Risk Disclaimer</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?section=conflicts-policy" target="_blank">Conflicts Policy</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?#order-execution" target="_blank">Order Execution</a></p>
+						<p class="font-s centered"><a href="https://www.binary.com/ru/terms-and-conditions.html?#legal">Правила и условия</a> &nbsp;|&nbsp; <a href="https://www.binary.com/ru/terms-and-conditions.html?#risk">О рисках</a> &nbsp;|&nbsp; <a href=" https://www.binary.com/ru/terms-and-conditions.html?section=conflicts-policy">Политика по конфликтам</a> &nbsp;|&nbsp; <a href="https://www.binary.com/ru/terms-and-conditions.html?#order-execution">Исполнение ордеров</a></p>
 					</td>
 				</tr>
-				<tr>
-					<td class="centered fill-bg-color unsubscribe">
-						<span class="font-s">Don't wish to receive these emails anymore? <a href="{% unsubscribe_url %}" class="untracked">Unsubscribe</a></span>
-					</td>
-				</tr>
-			</table><!--[if mso></td></tr></table><![endif]-->
+			</table><!--[if mso]></td></tr></table><![endif]-->
         </div>
     </center>
 </body>

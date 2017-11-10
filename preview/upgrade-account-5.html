@@ -16,13 +16,13 @@
 /* ------------------------------------- 
 	GLOBAL
 ------------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin,vietnamese,cyrillic-ext,latin-ext,cyrillic);
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&subset=cyrillic,vietnamese');
 body {
 	width: 100%!important;
 	height: 100%;
 	margin: 0 !important;
 	padding: 0;
-	background-color: #ffffff;
+	background-color: #fff !important;
 	-webkit-font-smoothing:antialiased;
 	 -webkit-text-size-adjust:none;
 	font-family: Roboto, Helvetica, Arial, sans-serif;
@@ -56,7 +56,6 @@ div[style*="margin: 16px 0"] {
 .webkit {
     max-width: 800px;
     margin: 0 auto;
-	background-color: #ffffff;
 }
 .outer {
     Margin: 0 auto;
@@ -83,7 +82,7 @@ p {
 }
 a,
 a:visited {
-    color: #2A3052;
+    color: #2A3052!important;
     text-decoration: none;
     font-weight: bold
 }
@@ -95,7 +94,7 @@ a:visited:active {
 }
 .h1, h1 { 
 	font-family: Roboto, Helvetica, Arial, sans-serif; 
-	font-weight:300; 
+	font-weight:300 !important; 
 	font-size: 36px !important; 
 	color: #E98024;
 	Margin-bottom: 18px;
@@ -149,7 +148,7 @@ a:visited:active {
 .logo {
 	text-align: center;
 	Margin: 0 auto;
-	padding: 20px;
+	padding-top: 20px;
 }
 .logo img {
     max-width: 100%;
@@ -205,6 +204,37 @@ a:visited:active {
 .button spanvisited {
     color: #FFF
 }
+.button-secondary {
+    background: #F2F2F2;
+    color: #000;
+	cursor: pointer;
+    margin-bottom: 0.5em;
+}
+.button-secondary span {
+    text-decoration: none;
+    text-align: center;
+    line-height: 100%;
+    text-transform: capitalize;
+    padding: 10px 25px;
+    display: inline-block;
+    font-weight: 400;
+    font-family: inherit;
+    border-radius: 3px;
+    overflow: visible;
+    border: 0;
+    color: #000000;
+    background: #F2F2F2;
+}
+
+.button-secondary span:active,
+.button-secondary span:hover {
+    text-decoration: none;
+}
+
+.button-secondary span:hover {
+    text-decoration: none;
+    background: #DEDEDE;
+}
 ol {
 	margin: 1.25em 0 1.25em 0;
 }
@@ -226,7 +256,7 @@ ul.bullet li {
 }
 .social-ch {
 	Margin: 1em 0;
-	text-align: right;
+	text-align: center;
 	display: block;
 }
 .social-ch a:hover {
@@ -299,8 +329,9 @@ table.default_table.centered td:not(:first-child) {
 }
 .footer-title {
 	text-align: center;
-	padding: 10px;
-	Margin-top: 20px;
+	padding: 20px 20px 0 20px;
+	Margin-top: 10px;
+	margin-bottom: -5px!important;
 }
 .sidebar-title {
 	font-family: Roboto, Helvetica, Arial, sans-serif; 
@@ -311,6 +342,18 @@ table.default_table.centered td:not(:first-child) {
 	Margin-top: 0px !important;
 	Margin-bottom: 10px !important;
 } 
+
+.section {
+	padding: 40px 20px;
+}
+.cta-box {
+	display: inline-block;
+	margin: auto;
+	margin-top: 10px;
+	padding: 20px 40px;
+	text-align: center;
+
+}
 /* ------------------------------------- 
     MODIFIERS 
 ------------------------------------- */
@@ -327,7 +370,7 @@ table.default_table.centered td:not(:first-child) {
 	border-top: 1px solid #dedede;
 }
 .primary-color {
-    background-color: #2A3052;
+    color: #2A3052 !important;
 }
 .primary-bg-color {
     background-color: #2A3052;
@@ -345,10 +388,16 @@ table.default_table.centered td:not(:first-child) {
     background-color: #15212D;
 }
 .content-inverse-color {
-    color: #FFF
+    color: #FFF !important;
 }
 .fill-bg-color {
     background-color: #F2F2F2;
+}
+.white-bg-color {
+	background-color: #ffffff;
+}
+.black-color {
+	color: #000000 !important;
 }
 .border-color {
     color: #DEDEDE;
@@ -358,6 +407,13 @@ table.default_table.centered td:not(:first-child) {
 }
 .font-xs, .font-xs p {
     font-size: 10px !important;
+}
+.font-xl{
+	font-size: 42px !important;
+	line-height: 42px;
+}
+.font-thin {
+	font-weight: 100 !important;
 }
 .padding-tb-20 {
 	padding: 20px 0;
@@ -378,7 +434,7 @@ table.default_table.centered td:not(:first-child) {
 }
 .separator-line-thin-gray {
     height: 1px; 
-	background-color: #DEDEDE;
+	background-color: #f2f2f2;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
@@ -397,18 +453,48 @@ table.default_table.centered td:not(:first-child) {
 .border-bottom {
     border-bottom: 1px solid #DEDEDE;
 }
+.white-border {
+    border: 1px solid #ffffff;
+}
 .centered {
+	text-align: center !important;
+}
+.center-text {
 	text-align: center !important;
 }
 .justify {
 	text-align: justify !important;
     text-justify: inter-word;
 }
+.align-right {
+	text-align: right;
+}
 .test {
 	background-color: #ccc;
 }
 .block-element {
     display: block;
+}
+.top-padding-sm {
+	padding-top: 10px !important;
+}
+.top-padding-md {
+	padding-top: 20px !important;
+}
+.vertical-padding-xl {
+	padding: 40px 20px;
+}
+.vertical-padding-xxl {
+	padding: 60px 20px;
+}
+.padding-md {
+	padding: 20px;
+}
+.padding-lg {
+	padding: 30px;
+}
+.flex-childern {
+	display: flex;
 }
 /* ------------------------------------- 
     ONE COLUMN LAYOUT 
@@ -502,7 +588,7 @@ table.default_table.centered td:not(:first-child) {
 .sidebar .column {
     width: 100%;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
 }
 .sidebar .left {
     width: 30%;
@@ -540,7 +626,11 @@ table.default_table.centered td:not(:first-child) {
 	.social-ch {
 		text-align: center !important;
 	}
+	.header-nav a {
+		display: block;
+	}
 }
+
 @media screen and (min-width: 590px)  {
 	.three-column .column {
         max-width: 33% !important;
@@ -555,26 +645,132 @@ table.default_table.centered td:not(:first-child) {
 	min-height: 100px;
 	border: 1px solid #cccccc;
 }
+.header-nav {
+	text-align: center;
+	display: block;
+	margin-top: 40px;
+	padding: 10px;
+	border-top: 1px solid #15212D;
+	border-bottom: 1px solid #15212D;
+}
+.header-nav a {
+	color: #fff !important;
+	padding: 10px;
+	font-weight: normal;
+	line-height: 36px;
+}
 </style>
 </head>
-<body>
+<body style="background-color: #f2f2f2 !important;">
     <center class="wrapper">
-        <div class="webkit">
-            <!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
-			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">			
+        <div class="webkit">			
+			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+			<table class="outer section white-bg-color" align="center" cellpadding="0" cellspacing="0" border="0">
 				<tr>
 					<td>
 						<table class="outer" align="center">
 							<tr>
 								<td class="logo">
-									<img src="https://marketing.binary.com/images/email/logo_notagline.png" width="300" alt="Binary.com" />
+									<img src="https://offers.binary.com/binary/email/customer_io/logo_notagline.png" width="250" alt="Binary.com" />
+								</td>
+							</tr>
+
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="one-column">
+						<table width="100%">
+							<tr>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td class="text">
+												<div class="centered ">
+													<div class="centered font-thin font-xl padding-lg">Thank you for choosing to trade with Binary.com</div>
+													<div class="">You’ve received this email after upgrading your <a class="" href="https://www.binary.com/en/home.html?utm_source=customer_io&amp;utm_medium=email&amp;utm_content=real_money_welcome_email&amp;utm_campaign=automailer">binary.com</a> account. This email tells you a few things you need to know to start trading.</div>
+													<h2 class="primary-color centered">Deposits and withdrawals</h2>
+													<div class="">If you’d like to deposit money into your trading account, simply go to the cashier. There you can choose a wide range of ways to deposit and withdraw funds, such as bank-wire, credit card, and e-cash. You can start trading once you’ve deposited $5.</div>
+													<div class="centered top-padding-md">
+														<a class="button" href=""><span>Take me to the cashier</span></a>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>				
+			</table><!--[if mso]></td></tr></table><![endif]-->
+			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->			
+			<table class="outer section" align="center" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td class="sidebar"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100"><![endif]-->
+						<div class="column left">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<img src="images/acc-authentication.png">
+									</td>
+								</tr>
+							</table>
+						</div><!--[if mso]></td><td width="500"><![endif]-->
+						<div class="column right">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<h2>Account authentication</h2>
+										<p>Do you need to authenticate your account? Learn more about our simple authentication process with this <a href="">handy infographic</a>.</p>
+									</td>
+								</tr>
+							</table>
+						</div><!--[if mso]></td></tr></table><![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="sidebar top-padding-md" dir="rtl"><!--[if mso]><table width="100%" dir="rtl" cellpadding="0" cellspacing="0" border="0"><tr><td width="100"><![endif]-->
+						<div class="column left" dir="ltr">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<img src="images/security.png">
+									</td>
+								</tr>
+							</table>
+						</div><!--[if mso]></td><td width="500"><![endif]-->
+						<div class="column right" dir="ltr">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<h2>Online security</h2>
+										<p>At <a href="">binary.com</a>, we take cyber security seriously. To prevent security issues:</p>
+										<ul class="bullet">
+											<li>Don't click links in suspicious emails, SMSs or pop-ups</li>
+											<li>Always type the web address yourself. Our URL is <a href="">www.binary.com</a></li>
+											<li>Check out the padlock icon on your browser. This icon indicates that the website uses a secure connection.</li>
+										</ul>
+										<p>For more security tips, please read our <a href="">security blog</a>.</p>
+									</td>
+								</tr>
+							</table>
+						</div><!--[if mso]></td></tr></table><![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="one-column">
+						<table width="100%">
+							<tr>
+								<td class="inner">
+									<p class="centered font-s">Disclaimer: binary options or fixed odds trading might incur losses as well as wins.</p>
 								</td>
 							</tr>
 						</table>
 					</td>
 				</tr>
-			</table><!--[if mso]></td></tr></table><![endif]-->
-			{{content}}
+			</table><!--[if mso]></td></tr></table><![endif]-->			
+			
 			<!--[if mso]><table width="800" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
 			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
 				<tr>

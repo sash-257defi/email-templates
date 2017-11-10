@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -83,7 +84,7 @@ p {
 }
 a,
 a:visited {
-    color: #2A3052;
+    color: #2A3052!important;
     text-decoration: none;
     font-weight: bold
 }
@@ -98,7 +99,7 @@ a:visited:active {
 	font-weight:300; 
 	font-size: 36px !important; 
 	color: #E98024;
-	Margin-bottom: 18px;
+	margin: 0 0 30px 0;
 }
 .h2, h2, h2 a { 
 	font-family: Roboto, Helvetica, Arial, sans-serif; 
@@ -149,7 +150,7 @@ a:visited:active {
 .logo {
 	text-align: center;
 	Margin: 0 auto;
-	padding: 20px;
+	padding-top: 20px;
 }
 .logo img {
     max-width: 100%;
@@ -226,7 +227,7 @@ ul.bullet li {
 }
 .social-ch {
 	Margin: 1em 0;
-	text-align: right;
+	text-align: center;
 	display: block;
 }
 .social-ch a:hover {
@@ -297,10 +298,12 @@ table.default_table.centered th:not(:first-child),
 table.default_table.centered td:not(:first-child) {
     text-align: center
 }
+
 .footer-title {
 	text-align: center;
-	padding: 10px;
-	Margin-top: 20px;
+	padding: 20px 20px 0 20px;
+	Margin-top: 10px;
+	margin-bottom: -5px!important;
 }
 .sidebar-title {
 	font-family: Roboto, Helvetica, Arial, sans-serif; 
@@ -397,7 +400,10 @@ table.default_table.centered td:not(:first-child) {
 .border-bottom {
     border-bottom: 1px solid #DEDEDE;
 }
-.centered {
+.centered, .centered p {
+	text-align: center !important;
+}
+.center-text {
 	text-align: center !important;
 }
 .justify {
@@ -409,6 +415,9 @@ table.default_table.centered td:not(:first-child) {
 }
 .block-element {
     display: block;
+}
+.no-margin {
+	margin: 0 !important;
 }
 /* ------------------------------------- 
     ONE COLUMN LAYOUT 
@@ -540,6 +549,7 @@ table.default_table.centered td:not(:first-child) {
 	.social-ch {
 		text-align: center !important;
 	}
+
 }
 @media screen and (min-width: 590px)  {
 	.three-column .column {
@@ -549,19 +559,13 @@ table.default_table.centered td:not(:first-child) {
         max-width: 50% !important;
     }
 }
-
-.s-box {
-	background-color: #dedede;
-	min-height: 100px;
-	border: 1px solid #cccccc;
-}
 </style>
 </head>
 <body>
     <center class="wrapper">
-        <div class="webkit">
-            <!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
-			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">			
+        <div class="webkit">		
+			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
 				<tr>
 					<td>
 						<table class="outer" align="center">
@@ -573,17 +577,54 @@ table.default_table.centered td:not(:first-child) {
 						</table>
 					</td>
 				</tr>
-			</table><!--[if mso]></td></tr></table><![endif]-->
-			{{content}}
-			<!--[if mso]><table width="800" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
-			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td class="one-column">
+						<table width="100%">
+							<tr>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td class="text">
+												<div class="centered">
+												<p><img src="https://offers.binary.com/binary/email/images/blog-contributors.jpg" alt="Binary.com Webinars"></p>
+												</div>
+												<p>Dear Valued Customer,</p>
+												<p>The Commodities Corner: Non-Farm Payroll Special will be held today, <strong>3 November 2017 at 15.30GMT (3.30pm London Time)</strong>.</p>
+												<div class="cta">
+														<div class="padding-tb-20">Your password for this event is:</div>
+														<div class="padding-tb-20 fill-bg-color">ApHcNHqv</div>
+														<p class="centered"><!--[if mso]>
+														  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.binary.com/en/home.html" style="height:40px;v-text-anchor:middle;width:260px;" arcsize="8%" stroke="f" fillcolor="#2E8836">
+															<w:anchorlock/>
+															<center>
+														 <![endif]-->
+														<a class="button" href="https://www.binary.com/en/home.html"><span>Join the webinar session</span></a>
+														<!--[if mso]>
+														</center>
+														</v:roundrect>
+														<![endif]--></p>
+												</div>
+												<p>The US Non-Farm Payroll measures the change in the number of people employed last month (excluding the farming industry in the US). Job creation is the foremost indicator of consumer spending, which accounts for the majority of economic activity in the US. Since the USD is strongly inversely correlated to Gold, any economic activity in the US may impact the price of Gold.</p>
+												<p>Join us for this webinar to learn more!</p>
+												<p>We look forward to seeing you there. </p>
+												<p>Kind Regards,</p>
+												<p>Charisse Bartoli<br/><a href="https://www.binary.com/en/home.html">Binary.com</a></p>
+												<p><strong>P.S. The Webex Meetings app may be downloaded from either Google Play Store or the Apple App store.</strong></p>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
 				<tr>
 					<td class="border-top">
 						<h2 class="footer-title">Want to learn more?</h2>
 					</td>
 				</tr>
 				<tr>
-					<td class="three-column"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="200" valign="top"><![endif]-->
+					<td class="three-column"><!--[if (gte mso 9)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="200" valign="top"><![endif]-->
 						<div class="column">
 							<table width="100%">
 								<tr>
@@ -604,7 +645,7 @@ table.default_table.centered td:not(:first-child) {
 									</td>
 								</tr>
 							</table>
-						</div><!--[if mso]></td><td width="200" valign="top"><![endif]--><div class="column">
+						</div><!--[if (gte mso 9)|(IE)]></td><td width="200" valign="top"><![endif]--><div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
@@ -624,7 +665,7 @@ table.default_table.centered td:not(:first-child) {
 									</td>
 								</tr>
 							</table>
-						</div><!--[if mso]></td><td width="200" valign="top"><![endif]--><div class="column">
+						</div><!--[if (gte mso 9)|(IE)]></td><td width="200" valign="top"><![endif]--><div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
@@ -644,37 +685,42 @@ table.default_table.centered td:not(:first-child) {
 									</td>
 								</tr>
 							</table>
-						</div><!--[if mso]></td></tr></table><![endif]-->
+						</div><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 					</td>
 				</tr>
 				<tr>
-					<td class="one-column border-top border-bottom">
+					<td class="border-top">
+						<p class="centered">Have a question? Need Help? Email us at <a href="mailto:support@binary.com">marketing@binary.com</a></p>
+						
+					</td>
+				</tr>
+				<tr>
+					<td class="one-column border-bottom">
 						<table width="100%">
 							<tr>
 								<td class="inner">
-									<table class="contents">
+									<table class="contents">										
 										<tr>
 											<td>
 												<div class="cta">
-													<p class="font-s">Have a question? Need Help? Email us at <a href="mailto:support@binary.com">marketing@binary.com</a></p> 
-													<div class="">
+													<div class="social-ch">														
 														<a href="https://www.youtube.com/user/BinaryTradingVideos">
-															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" height="45" width="45" alt="Binary.com on YouTube" title="Binary.com on YouTube" />
+															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" height="60" width="60" alt="Binary.com on YouTube" title="Binary.com on YouTube" />
 														</a>&nbsp;&nbsp;
 														<a href="https://plus.google.com/+Binarydotcom/posts">
-															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/g+.png" height="45" width="45" alt="Binary.com Google+" title="Binary.com on Google+" />
+															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/g+.png" height="60" width="60" alt="Binary.com Google+" title="Binary.com on Google+" />
 														</a>&nbsp;&nbsp;
 														<a href="https://www.facebook.com/binarydotcom">
-															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/fb.png" height="45" width="45" alt="Binary.com on Facebook" title="Binary.com on Facebook" />
+															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/fb.png" height="60" width="60" alt="Binary.com on Facebook" title="Binary.com on Facebook" />
 														</a>&nbsp;&nbsp;
 														<a href="https://twitter.com/Binarydotcom">
-															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/twitter.png" height="45" width="45" alt="Binary.com on Twitter" title="Binary.com on Twitter" />
+															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/twitter.png" height="60" width="60" alt="Binary.com on Twitter" title="Binary.com on Twitter" />
 														</a>&nbsp;&nbsp;
 														<a href="https://www.reddit.com/r/binarydotcom/">
-															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/reddit.png" height="45" width="45" alt="Binary.com on Reddit" title="Binary.com on Reddit" />
+															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/reddit.png" height="60" width="60" alt="Binary.com on Reddit" title="Binary.com on Reddit" />
 														</a>&nbsp;&nbsp;
 														<a href="https://t.me/binarydotcom">
-															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/tel.png" height="45" width="45" alt="Binary.com on Telegram" title="Binary.com on Telegram" />
+															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/tel.png" height="60" width="60" alt="Binary.com on Telegram" title="Binary.com on Telegram" />
 														</a>
 													</div>
 												</div>																																							
@@ -703,12 +749,7 @@ table.default_table.centered td:not(:first-child) {
 						<p class="font-s centered"><a href="https://www.binary.com/en/terms-and-conditions.html?#legal" target="_blank">Terms and Conditions</a>  &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?#risk" target="_blank">Risk Disclaimer</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?section=conflicts-policy" target="_blank">Conflicts Policy</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html?#order-execution" target="_blank">Order Execution</a></p>
 					</td>
 				</tr>
-				<tr>
-					<td class="centered fill-bg-color unsubscribe">
-						<span class="font-s">Don't wish to receive these emails anymore? <a href="{% unsubscribe_url %}" class="untracked">Unsubscribe</a></span>
-					</td>
-				</tr>
-			</table><!--[if mso></td></tr></table><![endif]-->
+			</table><!--[if mso]></td></tr></table><![endif]-->
         </div>
     </center>
 </body>
