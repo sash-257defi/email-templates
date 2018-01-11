@@ -393,6 +393,9 @@ table.default_table.centered td:not(:first-child) {
 .fill-bg-color {
     background-color: #F2F2F2;
 }
+.fill-bg-color-dark {
+    background-color: #dedede;
+} 
 .white-bg-color {
 	background-color: #ffffff;
 }
@@ -415,6 +418,9 @@ table.default_table.centered td:not(:first-child) {
 .font-thin {
 	font-weight: 100 !important;
 }
+.ft-300 {
+	font-weight: 300 !important;
+}   
 .padding-tb-20 {
 	padding: 20px 0;
 }
@@ -446,7 +452,7 @@ table.default_table.centered td:not(:first-child) {
 }
 .bordered {
     border: 1px solid #DEDEDE;
-}
+}  
 .border-top {
     border-top: 1px solid #DEDEDE;
 }
@@ -456,6 +462,9 @@ table.default_table.centered td:not(:first-child) {
 .white-border {
     border: 1px solid #ffffff;
 }
+.border-radius {
+    border-radius: 5px;
+}   
 .centered {
 	text-align: center !important;
 }
@@ -490,11 +499,17 @@ table.default_table.centered td:not(:first-child) {
 .padding-lg {
 	padding: 30px;
 }
+.margin-md {
+    margin: 20px 0;
+}
+.h-200 {
+    min-height: 250px;
+}
 .flex-childern {
 	display: flex;
 }
-.heading {
-
+.ft-700 {
+    font-weight: 700 !important;
 }
 .heading span {
   display: block;
@@ -673,15 +688,15 @@ table.default_table.centered td:not(:first-child) {
 </head>
 <body style="background-color: #f2f2f2 !important;">
     <center class="wrapper">
-        <div class="webkit">
+        <div class="webkit bordered border-radius white-bg-color section margin-md">
 			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
-			<table class="outer primary-bg-color section" align="center" cellpadding="0" cellspacing="0" border="0">
+			<table class="outer " align="center" cellpadding="0" cellspacing="0" border="0">
 				<tr>
 					<td>
 						<table class="outer" align="center">
 							<tr>
-								<td class="logo">
-									<img src="https://offers.binary.com/binary/email/customer_io/logo_notagline-white.png" width="250" alt="Binary.com" />
+								<td class="centered">
+									<img src="images/logomark.png" width="200" alt="Binary.com" />
 								</td>
 							</tr>
 
@@ -697,21 +712,39 @@ table.default_table.centered td:not(:first-child) {
 										<tr>
 											<td class="text">
 												<div class="centered">
-												<div class="content-inverse-color centered font-thin font-xl padding-lg heading">Welcome to Binary.com!<span>The world’s premier platform for binary options trading.</span></div>
+                                                    <div class="centered font-xl ft-300 heading secondary-color">Welcome to Binary.com!<span class="black-color">The world’s premier platform for binary options trading.</span></div>
 
-                                                <h2 class="content-inverse-color centered">We’re glad you signed up. Thank you for the trust!</h2>
-                                                <div class="padding-md content-inverse-color">
-                                                    <h3 class="content-inverse-color centered">Get started using your Virtual Account</h3>
-                                                    <div class="display-inline">Your virtual account ID: <strong>VRTC1596398</strong>
-                                                    <br>Account balance: <strong>$10,000 virtual money</strong></div>
-                                                    <div class="display-inline"><a class="button-secondary" href=""><span>Log in</span></a></div>
+                                                     <h1 class="centered">We’re glad you signed up. Thank you for the trust!</h1>
+                                                    <div class="padding-md">
+                                                        <h4 class="centered">Get started using your Virtual Account</h4>
+                                                        <div class="display-inline">Your virtual account ID: <strong>VRTC1596398</strong>
+                                                        <br>Account balance: <strong>$10,000 virtual money</strong></div>
+                                                        <div class="display-inline"><a class="button-secondary" href=""><span>Log in</span></a></div>
+                                                    </div>
                                                 </div>
-                                                
-                                                <h2 class="centered content-inverse-color">Ready for actual trading?</h2>
-                                                <div class="centered top-padding-sm"><a class="button" href=""><span>Upgrade to Real Money Account</span></a></div>
-												
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table><!--[if mso]></td></tr></table><![endif]-->
+            <!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+			<table class="outer section-sm " align="center" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td class="one-column ">
+						<table width="100%">
+							<tr>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td class="text">
+												<div class="centered">
+                                                    <h2 class="centered primary-color-dark">Ready for actual trading?</h2>
+                                                    <p class="centered"><a class="button" href=""><span>Upgrade to Real Money Account</span></a></p>
                                                 </div>
-												
 											</td>
 										</tr>
 									</table>
@@ -722,7 +755,7 @@ table.default_table.centered td:not(:first-child) {
 				</tr>
 			</table><!--[if mso]></td></tr></table><![endif]-->
 			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
-			<table class="outer section" align="center" cellpadding="0" cellspacing="0" border="0">
+			<table class="outer primary-bg-color section" align="center" cellpadding="0" cellspacing="0" border="0">
 				<tr>
 					<td class="one-column">
 						<table width="100%">
@@ -747,7 +780,7 @@ table.default_table.centered td:not(:first-child) {
 			<table class="outer section-sm" align="center" cellpadding="0" cellspacing="0" border="0">
 				<tr>
 					<td class="two-column"><!--[if (gte mso 9)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="50%" valign="top"><![endif]-->
-						<div class="column">
+						<div class="column fill-bg-color-dark h-200">
 							<table width="100%">
 								<tr>
 									<td class="inner">
@@ -767,7 +800,8 @@ table.default_table.centered td:not(:first-child) {
 									</td>
 								</tr>
 							</table>
-						</div><!--[if (gte mso 9)|(IE)]></td><td width="50%" valign="top"><![endif]--><div class="column">
+						</div><!--[if (gte mso 9)|(IE)]></td><td width="50%" valign="top"><![endif]-->
+                        <div class="column fill-bg-color h-200">
 							<table width="100%">
 								<tr>
 									<td class="inner">
@@ -792,7 +826,7 @@ table.default_table.centered td:not(:first-child) {
 				</tr>
 			</table><!--[if mso]></td></tr></table><![endif]-->
 			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
-			<table class="outer section border-top" align="center" cellpadding="0" cellspacing="0" border="0">
+			<table class="outer section" align="center" cellpadding="0" cellspacing="0" border="0">
 				<tr>
 					<td class="one-column">
 						<table width="100%">
@@ -890,7 +924,7 @@ table.default_table.centered td:not(:first-child) {
 										<tr>
 											<td>
 												<div class="cta">
-													<p class="font-s">For further assistance, email us at <a href="mailto:support@binary.com">marketing@binary.com</a></p>
+													<p class="">For further assistance, email us at <a href="mailto:support@binary.com">marketing@binary.com</a></p>
 													<div class="">
 														<a href="https://www.youtube.com/user/BinaryTradingVideos">
 															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" height="50" width="50" alt="Binary.com on YouTube" title="Binary.com on YouTube" />
@@ -936,7 +970,7 @@ table.default_table.centered td:not(:first-child) {
 				</tr>
 				<tr>
 					<td class="centered fill-bg-color unsubscribe">
-						<span class="font-s"><a href="{% unsubscribe_url %}" class="untracked">Click here</a> to opt out from email updates.
+                        <span class="font-s"><a href="{% unsubscribe_url %}" class="untracked">Click here</a> to opt out from email updates.</span>
 					</td>
 				</tr>
 			</table><!--[if mso]></td></tr></table><![endif]-->
