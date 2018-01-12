@@ -260,7 +260,7 @@ ul.bullet li {
 	display: block;
 }
 .social-ch a:hover {
-	text-decoration: none;
+	text-decoration: none !important;
 }
 .note {
 	border: 2px solid #dedede;
@@ -327,6 +327,13 @@ table.default_table.centered th:not(:first-child),
 table.default_table.centered td:not(:first-child) {
     text-align: center
 }
+    .bullet_table_li, .bullet-img {
+        padding: 3px 0 ;
+        vertical-align: top;
+    }
+    .bullet-img {
+        padding-left: 5px;
+    }
 .footer-title {
 	text-align: center;
 	padding: 20px 20px 0 20px;
@@ -639,7 +646,9 @@ table.default_table.centered td:not(:first-child) {
     .two-column .column,
     .three-column .column,
     .four-column .column,
-    .sidebar .left, .sidebar .right {
+    .sidebar .left, .sidebar .right,
+    .sidebar-sm .left, .sidebar-sm .right
+    {
         width: 100% !important;
     }	
     .two-column img {
@@ -741,8 +750,8 @@ table.default_table.centered td:not(:first-child) {
 						<div class="column left">
 							<table width="100%">
 								<tr>
-									<td class="inner align-left">
-										<img src="https://offers.binary.com/binary/email/images/acc-authentication-icon.png">
+									<td class="inner align-left mb-centered">
+										<img src="https://offers.binary.com/binary/email/images/acc-authentication-icon.png" width="80"  alt="binary.com">
 									</td>
 								</tr>
 							</table>
@@ -764,8 +773,8 @@ table.default_table.centered td:not(:first-child) {
 						<div class="column left">
 							<table width="100%">
 								<tr>
-									<td class="inner">
-										<img src="https://offers.binary.com/binary/email/images/acc-security-icon.png">
+									<td class="inner mb-centered">
+										<img src="https://offers.binary.com/binary/email/images/acc-security-icon.png" width="80" alt="binary.com">
 									</td>
 								</tr>
 							</table>
@@ -915,7 +924,7 @@ table.default_table.centered td:not(:first-child) {
 											<td>
 												<div class="cta">
 													<p class="font-s">Have a question? Need Help? Email us at <a href="mailto:support@binary.com">marketing@binary.com</a></p> 
-													<div class="">
+													<div class="social-ch">
 														<a href="https://www.youtube.com/user/BinaryTradingVideos">
 															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" height="45" width="45" alt="Binary.com on YouTube" title="Binary.com on YouTube" />
 														</a>&nbsp;&nbsp;
