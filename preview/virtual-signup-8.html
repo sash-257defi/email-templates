@@ -176,7 +176,7 @@ a:visited:active {
 }
 .button {
     cursor: pointer;
-    margin-bottom: 0.5em
+    margin-bottom: 0.5em;
 }
 .button span {
     text-decoration: none;
@@ -205,8 +205,6 @@ a:visited:active {
     color: #FFF
 }
 .button-secondary {
-    background: #F2F2F2;
-    color: #000;
 	cursor: pointer;
     margin-bottom: 0.5em;
 }
@@ -627,6 +625,10 @@ table.default_table.centered td:not(:first-child) {
 	.header-nav a {
 		display: block;
 	}
+    .button, .button-secondary {
+        display: block;
+        margin: 10px 0;
+    }
 }
 
 @media screen and (min-width: 590px)  {
