@@ -108,7 +108,6 @@ a:visited:active {
 	color: #2A3052;
     font-size: 22px !important;
     font-weight: 300;
-	Margin-bottom: 15px !important;
 }
 .h4, h4 {
 	font-family: Roboto, Helvetica, Arial, sans-serif;
@@ -400,12 +399,18 @@ table.default_table.centered td:not(:first-child) {
 .border-color {
     color: #DEDEDE;
 }
+a.content-inverse-color {
+    color: #FFFFFF !important;
+}
 .font-s, .font-s p {
     font-size: 13px !important;
 }
 .font-xs, .font-xs p {
     font-size: 10px !important;
 }
+.font-m, .font-m p {
+    font-size: 16px !important;
+}   
 .font-xl{
 	font-size: 42px !important;
 	line-height: 42px;
@@ -512,6 +517,9 @@ table.default_table.centered td:not(:first-child) {
 }
 .padding-lg {
 	padding: 30px;
+}
+.no-margin {
+    margin: 0;
 }
 .heading span {
     display: block;
@@ -693,12 +701,13 @@ table.default_table.centered td:not(:first-child) {
 										<tr>
 											<td class="text">
 												<div class="centered">
-												<h1 class="centered content-inverse-color heading padding-md">Thank you for trusting Binary.com!</h1>
-                                                    <p class="secondary-color">An industry leader dedicated to high ethical standards and a quality trading experience</p>
+												<h1 class="centered content-inverse-color no-margin">Thank you for trusting <a class="content-inverse-color" href="https://www.binary.com/en/home.html">Binary.com!</a></h1>
+                                                    <p class="centered no-margin secondary-color font-m">An industry leader dedicated to high ethical standards and a quality trading experience</p>
 
-                                                <h3 class="centered padding-md content-inverse-color">Trade the financial markets with the world’s premier platform</h3>
+                                                <h3 class="centered content-inverse-color padding-md">Trade the financial markets with the world’s premier platform</h3>
                                                 <div class="border-top-dark"></div>
-                                                    <h3 class="centered content-inverse-color heading">Get started<span class="block-element">Practise trading using your demo account</span></h3>
+                                                    <h3 class="centered content-inverse-color no-margin top-padding-md">Get started</h3>
+                                                    <p class="centered content-inverse-color no-margin">Practise trading using your demo account</p>
                                                      <div class="content-inverse-color padding-md">Your virtual account ID: VRTC1596398
                                                     <br>Account balance: $10,000 virtual money</div>
                                                     
@@ -742,7 +751,8 @@ table.default_table.centered td:not(:first-child) {
 										<tr>
 											<td class="text">
 												<div class="centered ">
-												<h1 class="heading">Go live<span class="black-color">Trade binary options using your preferred currency</span></h1>
+												<h1 class="no-margin">Go live</h1>
+                                                    <p class="centered no-margin bottom-padding-md">Trade binary options using your preferred currency</p>
                                                 
 												</div>
 											</td>
@@ -808,10 +818,10 @@ table.default_table.centered td:not(:first-child) {
 											<td class="text">
 												<div class="centered">
                                                     <!--[if mso]>
-                                                          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.binary.com/en/home.html" style="height:40px;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:18px;v-text-anchor:middle;width:320px;" arcsize="8%" stroke="f" fillcolor="#2e8836">
-                                                            <w:anchorlock/>
-                                                            <center>
-                                                          <![endif]-->
+									  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.binary.com/en/home.html" style="height:40px;v-text-anchor:middle;width:320px;" arcsize="8%" stroke="f" fillcolor="#2E8836">
+										<w:anchorlock/>
+										<center>
+									 <![endif]-->
                                                               <a class="button" href="https://www.binary.com/en/home.html" style="font-family:Roboto,Helvetica,Arial,sans-serif;font-size:18px;"><span>Upgrade To Real Money Account</span></a>
                                                           <!--[if mso]>
                                                             </center>
@@ -858,7 +868,7 @@ table.default_table.centered td:not(:first-child) {
 										<table class="contents">
 											<tr>
 												<td>
-													<img src="https://offers.binary.com/binary/email/images/academy.png">
+													<a href="https://academy.binary.com"><img src="https://offers.binary.com/binary/email/images/academy.png" alt="Academy"></a>
 												</td>
 											</tr>
 										</table>
@@ -895,7 +905,7 @@ table.default_table.centered td:not(:first-child) {
 										<table class="contents">
 											<tr>
 												<td>
-													<img src="https://offers.binary.com/binary/email/images/daily.png">
+                                                    <a href="https://dailyreport.binary.com"><img src="https://offers.binary.com/binary/email/images/daily.png"alt="Daily Market Reports"></a>
 												</td>
 
 											</tr>
@@ -933,7 +943,7 @@ table.default_table.centered td:not(:first-child) {
 										<table class="contents">
 											<tr>
 												<td>
-													<img src="https://offers.binary.com/binary/email/images/webinars.png">
+                                                    <a href="https://academy.binary.com/en/webinars/"><img src="https://offers.binary.com/binary/email/images/webinars.png" alt="Webinars"></a>
 												</td>
 											</tr>
 										</table>
