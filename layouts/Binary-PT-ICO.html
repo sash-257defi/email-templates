@@ -1,10 +1,11 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!--[if !mso]><!-->
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--<![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Binary.com</title>
     <!--[if mso]>
     <style type="text/css">
@@ -18,31 +19,27 @@
 ------------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin,vietnamese,cyrillic-ext,latin-ext,cyrillic);
 body {
-	width: 100%!important;
+	width: 100%!important; 
 	height: 100%;
-	margin: 0 !important;
-	padding: 0;
-	background-color: #ffffff;
-	-webkit-font-smoothing:antialiased;
-	 -webkit-text-size-adjust:none;
-	font-family: Roboto, Helvetica, Arial, sans-serif;
-	font-size: 18px;
+    margin: 0 !important;
+    padding: 0;
+    background-color: #ffffff;
+	-webkit-font-smoothing:antialiased; 
+	 -webkit-text-size-adjust:none; 	
+	font-family: Roboto, Helvetica, Arial, sans-serif; 	
+	font-size: 18px; 
 	line-height: 1.2;
 	color: #000000;
 	font-weight: 400;
 }
-
 table {
     border-spacing: 0;
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-    color: #000000;
 }
 td {
-    padding: 0;
+    padding: 0;	
 }
 img {
     border: 0;
-    max-width: 100%;
 }
 div[style*="margin: 16px 0"] { 
     margin:0 !important;
@@ -56,10 +53,9 @@ div[style*="margin: 16px 0"] {
 .webkit {
     max-width: 800px;
     margin: 0 auto;
-	background-color: #ffffff;
 }
 .outer {
-    Margin: 0 auto;
+	Margin: 0 auto;
     width: 100%;
     max-width: 800px;
 }
@@ -68,17 +64,22 @@ div[style*="margin: 16px 0"] {
     max-width: 800px;
     height: auto;
 }
-
 .inner {
 	padding: 10px;
+	font-family: Roboto, Helvetica, Arial, sans-serif; 	
+	font-size: 18px; 
+	line-height: 1.2;
+	color: #000000;
+	font-weight: 400;
 }
-
+.contents img {
+    max-width: 100%;
+}
 /* ------------------------------------- 
     TYPOGRAPHY 
 ------------------------------------- */
 p {
 	Margin: 1em 0;
-	font-size: 18px;
     line-height: 1.4em;
 }
 a,
@@ -134,22 +135,13 @@ a:visited:active {
 	color: #000000;
 	Margin-bottom: 2px !important;
 }
-.unsubscribe {
-	margin: 20px 0 !important;
-	padding: 20px;
-	font-size: 13px !important;
-	text-align: center;
-}
-.unsubscribe span {
-	margin: 0 auto;
-}
 /* ------------------------------------- 
     ELEMENTS 
 ------------------------------------- */
 .logo {
 	text-align: center;
 	Margin: 0 auto;
-	padding: 20px;
+	padding: 30px;
 }
 .logo img {
     max-width: 100%;
@@ -183,7 +175,6 @@ a:visited:active {
     text-decoration: none;
     text-align: center;
     line-height: 100%;
-    text-transform: capitalize;
     padding: 10px 25px;
     display: inline-block;
     font-weight: 400;
@@ -205,8 +196,80 @@ a:visited:active {
 .button spanvisited {
     color: #FFF
 }
+.button-secondary {
+    cursor: pointer;
+    margin-bottom: 0.5em
+}
+.button-secondary span {
+    text-decoration: none;
+    text-align: center;
+    line-height: 100%;
+    padding: 10px 25px;
+    display: inline-block;
+    font-weight: 400;
+    font-family: Roboto, Helvetica, Arial, sans-serif; 
+    border-radius: 3px;
+    overflow: visible;
+    border: 0;
+    color: #000;
+    background: #F2F2F2
+}
+.button-secondary span:active,
+.button-secondary span:hover {
+    text-decoration: none
+}
+.button-secondary span:hover {
+    text-decoration: none;
+    background: #DEDEDE
+}
+.button-disabled {
+    cursor: pointer;
+    margin-bottom: 0.5em
+}
+.button-disabled span {
+    text-decoration: none;
+    text-align: center;
+    line-height: 100%;
+    padding: 10px 25px;
+    display: inline-block;
+    font-weight: 400;
+    font-family: Roboto, Helvetica, Arial, sans-serif; 
+    border-radius: 3px;
+    overflow: visible;
+    white-space: nowrap;
+    border: 0;
+    color: #DEDEDE;
+    background: #F2F2F2;
+    cursor: default
+}
+.button-disabled span:active,
+.button-disabled span:hover {
+    text-decoration: none
+}
+.button-disabled span:active,
+.button-disabled span:hover {
+    color: #DEDEDE;
+    background: #F2F2F2
+}
+.legal {	
+    font-family: Roboto, Helvetica, Arial, sans-serif; 	
+	font-size: 12px !important;
+	color: #444;	
+}
+.social-ch {
+    padding-top: 20px;
+	text-align: right;
+}
+.social-ch a:hover {
+	text-decoration: none;
+}
+.note {
+	border: 2px solid #dedede;
+	padding: 10px;
+	Margin: 10px 0;
+}
 ol {
-	margin: 1.25em 0 1.25em 0;
+	margin: margin: 1.25em 0 1.25em 0;
 }
 ol li,
 ul li {
@@ -219,24 +282,6 @@ ul.bullet {
 ul.bullet li {
     list-style-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='18px' height='18px' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath fill='%23e98024' d='M12,17.5A5.5,5.5,0,1,1,17.5,12,5.507,5.507,0,0,1,12,17.5Zm0-9A3.5,3.5,0,1,0,15.5,12,3.5,3.5,0,0,0,12,8.5Z'/%3E%3C/svg%3E")
 }
-.legal {	
-    font-family: Roboto, Helvetica, Arial, sans-serif; 	
-	font-size: 12px !important;
-	color: #444;	
-}
-.social-ch {
-	Margin: 1em 0;
-	text-align: right;
-	display: block;
-}
-.social-ch a:hover {
-	text-decoration: none;
-}
-.note {
-	border: 2px solid #dedede;
-	padding: 10px;
-	Margin: 10px 0;
-} 
 .cta {
 	margin: 20px 0;
 	text-align: center !important;
@@ -247,7 +292,7 @@ ul.bullet li {
 	text-align: center !important;
 }
 .cta-lg {
-	Margin: 20px 10px;	
+	Margin: 20px 0px;	
 	padding: 20px 10px;
 	text-align: center;
 }
@@ -265,7 +310,7 @@ ul.bullet li {
 .regards {
 	Margin-top: 50px;
 	Margin-bottom: 40px;
-} 
+}
 table.default_table  {
     border-collapse: collapse;
     font-size: 16px;
@@ -299,8 +344,7 @@ table.default_table.centered td:not(:first-child) {
 }
 .footer-title {
 	text-align: center;
-	padding: 10px;
-	Margin-top: 20px;
+	padding: 0 10px;
 }
 .sidebar-title {
 	font-family: Roboto, Helvetica, Arial, sans-serif; 
@@ -310,105 +354,20 @@ table.default_table.centered td:not(:first-child) {
 	text-align: left;
 	Margin-top: 0px !important;
 	Margin-bottom: 10px !important;
-} 
-/* ------------------------------------- 
-    MODIFIERS 
-------------------------------------- */
-.s-box {
-	background-color: #dedede;
-	min-height: 100px;
-	border: 1px solid #cccccc;
 }
-.contents p {
-	text-align: left;
+.bullet_table {
+	margin: 10px 0 ;
 }
-.section-title {
-	text-align: left;
-	border-top: 1px solid #dedede;
+.bullet_table_li {
+	padding: 5px 0 5px 0px;
+	font-family: Roboto, Helvetica, Arial, sans-serif; 	
+	font-size: 18px !important;
+	color: #000;
 }
-.primary-color {
-    background-color: #2A3052;
-}
-.primary-bg-color {
-    background-color: #2A3052;
-}
-.secondary-color {
-    color: #E98024
-}
-.secondary-bg-color {
-    background-color: #E98024;
-}
-.primary-color-dark {
-    background-color: #15212D;
-}
-.primary-bg-color-dark {
-    background-color: #15212D;
-}
-.content-inverse-color {
-    color: #FFF
-}
-.fill-bg-color {
-    background-color: #F2F2F2;
-}
-.border-color {
-    color: #DEDEDE;
-}
-.font-s, .font-s p {
-    font-size: 13px !important;
-}
-.font-xs, .font-xs p {
-    font-size: 10px !important;
-}
-.padding-tb-20 {
-	padding: 20px 0;
-}
-.text {
-    font-family: Roboto, Helvetica, Arial, sans-serif; 
-    font-size: 18px;
-}
-.separator-line {
-    margin-top: 10px;
-    margin-bottom: 10px
-}
-.separator {
-    height: 2px
-}
-.separator-lg {
-    height: 10px
-}
-.separator-line-thin-gray {
-    height: 1px; 
-	background-color: #DEDEDE;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-.separator-line-thin-gray-sm {
-    height: 1px; 
-	background-color: #DEDEDE;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-.bordered {
-    border: 1px solid #DEDEDE;
-}
-.border-top {
-    border-top: 1px solid #DEDEDE;
-}
-.border-bottom {
-    border-bottom: 1px solid #DEDEDE;
-}
-.centered {
-	text-align: center !important;
-}
-.justify {
-	text-align: justify !important;
-    text-justify: inter-word;
-}
-.test {
-	background-color: #ccc;
-}
-.block-element {
-    display: block;
+.bullet-img {
+	width: 23px;
+	vertical-align: top !important;
+	padding: 8px 0px 0px 17px !important;
 }
 /* ------------------------------------- 
     ONE COLUMN LAYOUT 
@@ -519,21 +478,132 @@ table.default_table.centered td:not(:first-child) {
 }
 
 /* ------------------------------------- 
+    MODIFIERS 
+------------------------------------- */
+.s-box {
+	background-color: #dedede;
+	min-height: 100px;
+	border: 1px solid #cccccc;
+}
+.contents p {
+	text-align: left;
+}
+.section-title {
+	text-align: left;
+	border-top: 1px solid #dedede;
+}
+.primary-color {
+    background-color: #2A3052;
+}
+.primary-bg-color {
+    background-color: #2A3052;
+}
+.secondary-color {
+    color: #E98024
+}
+.secondary-bg-color {
+    background-color: #E98024;
+}
+.primary-color-dark {
+    background-color: #15212D;
+}
+.primary-bg-color-dark {
+    background-color: #15212D;
+}
+.content-inverse-color {
+    color: #FFF
+}
+.fill-bg-color {
+    background-color: #F2F2F2;
+}
+.border-color {
+    color: #DEDEDE;
+}
+.font-s, .font-s p {
+    font-size: 13px !important;
+}
+.font-xs, .font-xs p {
+    font-size: 10px !important;
+}
+.padding-tb-20 {
+	padding: 20px 0;
+}
+.text {
+    font-family: Roboto, Helvetica, Arial, sans-serif; 
+    font-size: 18px;
+}
+.separator-line {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+.separator {
+    height: 2px
+}
+.separator-lg {
+    height: 10px
+}
+.separator-line-thin-gray {
+    height: 1px; 
+	background-color: #DEDEDE;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.separator-line-thin-gray-sm {
+    height: 1px; 
+	background-color: #DEDEDE;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.bordered {
+    border: 1px solid #DEDEDE
+}
+.border-top {
+    border-top: 1px solid #DEDEDE;
+}
+.border-bottom {
+    border-bottom: 1px solid #DEDEDE;
+}
+.centered {
+	text-align: center !important;
+}
+.justify {
+	text-align: justify !important;
+    text-justify: inter-word;
+}
+/* ------------------------------------- 
     RESPONSIVE
 ------------------------------------- */
-@media screen and (max-width: 590px) {
-    .two-column .column,
+@media screen and (max-width: 480px) {	
+	.two-column .column,
     .three-column .column,
-    .four-column .column,
-    .sidebar .left, .sidebar .right {
-        width: 100% !important;
-    }	
+	.four-column .column	{
+        max-width: 100% !important;
+    }
     .two-column img {
         max-width: 100% !important;
     }
     .three-column img {
         max-width: 50% !important;
     }
+	.four-column img {
+        max-width: 50% !important;
+    }
+	.one-third-column  {
+        max-width: 100% !important;
+    }
+	.left-sidebar .left, .left-sidebar .right,
+	.right-sidebar .left, .right-sidebar .right {	 
+		max-width: 100%;
+		text-align: center;
+	}
+	.left-sidebar .left *, .left-sidebar .right *,
+	.right-sidebar .left *, .right-sidebar .right * {
+		text-align: center;
+	}
+	.FX_table td {
+		width: 94% !important;
+		display: block !important;
+	}
 	.mb-centered, .mb-centered p {
 		text-align: center !important;
 	}
@@ -541,7 +611,7 @@ table.default_table.centered td:not(:first-child) {
 		text-align: center !important;
 	}
 }
-@media screen and (min-width: 590px)  {
+@media screen and (min-width: 481px) {
 	.three-column .column {
         max-width: 33% !important;
     }
@@ -549,102 +619,119 @@ table.default_table.centered td:not(:first-child) {
         max-width: 50% !important;
     }
 }
-
-.s-box {
-	background-color: #dedede;
-	min-height: 100px;
-	border: 1px solid #cccccc;
-}
 </style>
 </head>
 <body>
     <center class="wrapper">
         <div class="webkit">
-            <!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+            <!--[if mso]>
+			<table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+			<td>
+			<![endif]-->
 			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">			
 				<tr>
 					<td>
 						<table class="outer" align="center">
 							<tr>
 								<td class="logo">
-									<img src="https://marketing.binary.com/images/email/logo_notagline.png" width="300" alt="Binary.com" />
+									<a href="https://www.binary.com/pt/home.html"><img src="https://marketing.binary.com/images/email/logo_notagline.png" width="300" alt="Binary.com" /></a>
 								</td>
 							</tr>
 						</table>
 					</td>
 				</tr>
-			</table><!--[if mso]></td></tr></table><![endif]-->
+			</table>
 			{{content}}
-			<!--[if mso]><table width="800" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
-			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
+			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">		
 				<tr>
-					<td class="border-top">
-						<h2 class="footer-title">Want to learn more?</h2>
+					<td>
+					    <div class="separator-line-thin-gray"></div>
+						<h2 class="footer-title">Deseja saber mais?</h2>
 					</td>
 				</tr>
+				
 				<tr>
-					<td class="three-column"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="200" valign="top"><![endif]-->
+					<td class="three-column">
+						<!--[if mso]>
+						<table width="100%">
+						<tr>
+						<td width="200" valign="top">
+						<![endif]-->
 						<div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
 										<table class="contents">
 											<tr>
-												<td>
-													<a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-dailyreport1.png" style="max-width:60px;" alt="Binary.com" /></a>
+												<td>													
+													<a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-dailyreport1.png" style="max-width:60px;" class="columnImage" /></a>
 												</td>
 											</tr>
 											<tr>
 												<td class="text">
-													<p class="centered"><a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Daily Report</a></p>
-													<p class="font-s">Stay up-to-date with the latest financial news and trends from around the world, with Daily Market Reports written by professional trader, Dave Evans.</p>
+													<p class="centered"><a href="http://academy.binary.com/pt/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Relatórios diários</a></p>
+													<p class="font-s">Conheça os nossos Relatórios Diários de Mercados, elaborados pelo negociador profissional Dave Evans. Mantenha-se atualizado com as notícias financeiras e tendências mais recentes de todo o mundo.</p>
 												</td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 							</table>
-						</div><!--[if mso]></td><td width="200" valign="top"><![endif]--><div class="column">
+						</div>
+						<!--[if mso]>
+						</td><td width="200" valign="top">
+						<![endif]-->
+						<div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
 										<table class="contents">
 											<tr>
-												<td>
-													<a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-learningcenter.png" style="max-width:60px;" alt="Binary.com" /></a>
+												<td>													
+													<a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-learningcenter.png" style="max-width:60px;" class="columnImage" /></a>
 												</td>
 											</tr>
 											<tr>
 												<td class="text">
-													<p class="centered"><a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Learning Centre</a></p>
-													<p class="font-s">Gain useful knowledge about all aspects of binary options trading. Browse our full library of educational materials, including videos, webinars, ebooks, and more.</p>
+													<p class="centered"><a href="http://academy.binary.com/pt/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Centro de aprendizagem</a></p>
+													<p class="font-s">Adquira conhecimentos úteis sobre todos os aspectos da negociação de opções binárias. Pesquise em toda a nossa biblioteca de materiais de apoio, incluindo vídeos educativos, webinars, livros eletrônicos, perguntas frequentes e mais.</p>
 												</td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 							</table>
-						</div><!--[if mso]></td><td width="200" valign="top"><![endif]--><div class="column">
+						</div>
+						<!--[if mso]>
+						</td><td width="200" valign="top">
+						<![endif]-->
+						<div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
 										<table class="contents">
 											<tr>
-												<td>
-													<a href="https://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-monthlywebinar.png" style="max-width:60px;" alt="Binary.com" /></a>
+												<td>													
+													<a href="https://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-monthlywebinar.png" style="max-width:60px;" class="columnImage" /></a>
 												</td>
 											</tr>
 											<tr>
 												<td class="text">
-													<p class="centered"><a href="http://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Monthly Webinars</a></p>
-													<p class="font-s">Watch, earn, and learn for free. Sign up for our monthly webinars and collect exclusive techniques, strategies, and tips from our professional trading partners.</p>
+													<p class="centered"><a href="http://academy.binary.com/pt/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Webinars mensais</a></p>
+													<p class="font-s">Assista, aprenda e ganhe gratuitamente! Inscreva-se nos nossos webinars mensais. Colete técnicas, estratégias e dicas exclusivas dos nossos parceiros de negociação profissional.</p>
 												</td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 							</table>
-						</div><!--[if mso]></td></tr></table><![endif]-->
+						</div>
+						<!--[if mso]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
 					</td>
 				</tr>
 				<tr>
@@ -656,24 +743,24 @@ table.default_table.centered td:not(:first-child) {
 										<tr>
 											<td>
 												<div class="cta">
-													<p class="font-s">Have a question? Need Help? Email us at <a href="mailto:marketing@binary.com">marketing@binary.com</a></p> 
+													<p class="font-s">Tem dúvidas? Precisa de ajuda? Envie um e-mail para <a href="mailto:support@binary.com">marketing@binary.com</a></p> 
 													<div class="">
 														<a href="https://www.youtube.com/user/BinaryTradingVideos">
 															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" height="45" width="45" alt="Binary.com on YouTube" title="Binary.com on YouTube" />
-														</a>&nbsp;
+														</a>&nbsp;&nbsp;
 														<a href="https://plus.google.com/+Binarydotcom/posts">
 															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/g+.png" height="45" width="45" alt="Binary.com Google+" title="Binary.com on Google+" />
-														</a>&nbsp;
+														</a>&nbsp;&nbsp;
 														<a href="https://www.facebook.com/binarydotcom">
 															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/fb.png" height="45" width="45" alt="Binary.com on Facebook" title="Binary.com on Facebook" />
-														</a>&nbsp;
+														</a>&nbsp;&nbsp;
 														<a href="https://twitter.com/Binarydotcom">
 															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/twitter.png" height="45" width="45" alt="Binary.com on Twitter" title="Binary.com on Twitter" />
-														</a>&nbsp;
+														</a>&nbsp;&nbsp;
 														<a href="https://www.reddit.com/r/binarydotcom/">
 															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/reddit.png" height="45" width="45" alt="Binary.com on Reddit" title="Binary.com on Reddit" />
-														</a>&nbsp;
-														<a href="https://t.me/binarydotcom">
+														</a>&nbsp;&nbsp;
+														<a href="https://t.me/joinchat/CROwo0OY4RGlx0xk2w78Aw">
 															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/tel.png" height="45" width="45" alt="Binary.com on Telegram" title="Binary.com on Telegram" />
 														</a>
 													</div>
@@ -685,30 +772,36 @@ table.default_table.centered td:not(:first-child) {
 							</tr>
 						</table>
 					</td>
-				</tr>
+				</tr>				
 				<tr>
-					<td class="one-column">
+					<td class="one-column footer">
 						<table width="100%">
 							<tr>
-								<td class="inner contents">
-									<p class="font-xs justify">This email has been issued by Binary (IOM) Ltd, Binary (Europe) Ltd and Binary Investments (Europe) Ltd. Binary (IOM) Ltd is licensed and regulated by the Isle of Man Gambling Supervision Commission, and by the UK Gambling Commission. Binary (Europe) Ltd is licensed by the UK Gambling Commission and by the Malta Gaming Authority. Binary Investments (Europe) Ltd is licensed and regulated by the Malta Financial Services Authority, Notabile Road, Attard, BKR4000, Malta.</p>
-									<p class="font-xs justify">Binary options trading may incur losses as well as gains. Prices shown on website may vary and/or fluctuate due to changes in the currency exchange rates and/or price movements, which may impact your return of investment. Clients must be 18 years and above. Gambling can be addictive, please play responsibly. To find out how, please visit:<a href="http://www.gambleaware.co.uk">www.gambleaware.co.uk.</a>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td>
+												<p class="font-xs">Aviso de isenção de responsabilidade: A OIM proposta está disponível apenas para residentes de países pré-selecionados. Em determinados países, potenciais investidores serão obrigados a verificarem o seu status enquanto investidores qualificados ou profissionais. Espera-se que a OIM proposta envolva um alto grau de risco. Não haverá nenhuma garantia de que os investidores possam receber uma devolução do seu capital nem qualquer retorno sobre os seus investimentos. Investidores potenciais devem considerar cuidadosamente os fatores de risco que serão descritos no Memorando de informações.</p>
+												<p class="font-s centered"><a href="https://www.binary.com/pt/terms-and-conditions.html#legal" target="_blank">Termos e Condições</a> &nbsp;|&nbsp; <a href="https://www.binary.com/pt/terms-and-conditions.html#risk" target="_blank">Isenção de responsabilidade de riscos</a> &nbsp;|&nbsp; <a href="https://www.binary.com/pt/terms-and-conditions.html#conflicts-policy" target="_blank">Política de conflitos</a> &nbsp;|&nbsp; <a href="https://www.binary.com/pt/terms-and-conditions.html#order-execution" target="_blank">Execução de ordens</a></p>
+											</td>
+										</tr>
+										<tr>
+											<td class="fill-bg-color">
+												<p class="font-s centered"><a href="{% unsubscribe_url %}" class="untracked">Cancelar assinatura</a></p>
+											</td>
+										</tr>
+									</table>
 								</td>
 							</tr>
 						</table>
 					</td>
 				</tr>
-				<tr>
-					<td class="centered">
-						<p class="font-s centered"><a href="https://www.binary.com/en/terms-and-conditions.html#legal" target="_blank">Terms and Conditions</a>  &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html#risk" target="_blank">Risk Disclaimer</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html#conflicts-policy" target="_blank">Conflicts Policy</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html#order-execution" target="_blank">Order Execution</a></p>
-					</td>
-				</tr>
-				<tr>
-					<td class="centered fill-bg-color unsubscribe">
-						<span class="font-s">Don't wish to receive these emails anymore? <a href="{% unsubscribe_url %}" class="untracked">Unsubscribe</a></span>
-					</td>
-				</tr>
-			</table><!--[if mso></td></tr></table><![endif]-->
+			</table>
+			<!--[if mso]>
+			</td>
+			</tr>
+			</table>
+			<![endif]-->
         </div>
     </center>
 </body>
