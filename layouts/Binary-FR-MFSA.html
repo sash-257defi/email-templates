@@ -1,11 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!--[if !mso]><!-->
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--<![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Binary.com</title>
     <!--[if mso]>
     <style type="text/css">
@@ -19,27 +18,31 @@
 ------------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin,vietnamese,cyrillic-ext,latin-ext,cyrillic);
 body {
-	width: 100%!important; 
+	width: 100%!important;
 	height: 100%;
-    margin: 0 !important;
-    padding: 0;
-    background-color: #ffffff;
-	-webkit-font-smoothing:antialiased; 
-	 -webkit-text-size-adjust:none; 	
-	font-family: Roboto, Helvetica, Arial, sans-serif; 	
-	font-size: 18px; 
+	margin: 0 !important;
+	padding: 0;
+	background-color: #ffffff;
+	-webkit-font-smoothing:antialiased;
+	 -webkit-text-size-adjust:none;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-size: 18px;
 	line-height: 1.2;
 	color: #000000;
 	font-weight: 400;
 }
+
 table {
     border-spacing: 0;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    color: #000000;
 }
 td {
-    padding: 0;	
+    padding: 0;
 }
 img {
     border: 0;
+    max-width: 100%;
 }
 div[style*="margin: 16px 0"] { 
     margin:0 !important;
@@ -53,9 +56,10 @@ div[style*="margin: 16px 0"] {
 .webkit {
     max-width: 800px;
     margin: 0 auto;
+	background-color: #ffffff;
 }
 .outer {
-	Margin: 0 auto;
+    Margin: 0 auto;
     width: 100%;
     max-width: 800px;
 }
@@ -64,22 +68,17 @@ div[style*="margin: 16px 0"] {
     max-width: 800px;
     height: auto;
 }
+
 .inner {
 	padding: 10px;
-	font-family: Roboto, Helvetica, Arial, sans-serif; 	
-	font-size: 18px; 
-	line-height: 1.2;
-	color: #000000;
-	font-weight: 400;
 }
-.contents img {
-    max-width: 100%;
-}
+
 /* ------------------------------------- 
     TYPOGRAPHY 
 ------------------------------------- */
 p {
 	Margin: 1em 0;
+	font-size: 18px;
     line-height: 1.4em;
 }
 a,
@@ -135,13 +134,22 @@ a:visited:active {
 	color: #000000;
 	Margin-bottom: 2px !important;
 }
+.unsubscribe {
+	margin: 20px 0 !important;
+	padding: 20px;
+	font-size: 13px !important;
+	text-align: center;
+}
+.unsubscribe span {
+	margin: 0 auto;
+}
 /* ------------------------------------- 
     ELEMENTS 
 ------------------------------------- */
 .logo {
 	text-align: center;
 	Margin: 0 auto;
-	padding: 30px;
+	padding: 20px;
 }
 .logo img {
     max-width: 100%;
@@ -197,82 +205,8 @@ a:visited:active {
 .button spanvisited {
     color: #FFF
 }
-.button-secondary {
-    cursor: pointer;
-    margin-bottom: 0.5em
-}
-.button-secondary span {
-    text-decoration: none;
-    text-align: center;
-    line-height: 100%;
-    text-transform: capitalize;
-    padding: 10px 25px;
-    display: inline-block;
-    font-weight: 400;
-    font-family: Roboto, Helvetica, Arial, sans-serif; 
-    border-radius: 3px;
-    overflow: visible;
-    border: 0;
-    color: #000;
-    background: #F2F2F2
-}
-.button-secondary span:active,
-.button-secondary span:hover {
-    text-decoration: none
-}
-.button-secondary span:hover {
-    text-decoration: none;
-    background: #DEDEDE
-}
-.button-disabled {
-    cursor: pointer;
-    margin-bottom: 0.5em
-}
-.button-disabled span {
-    text-decoration: none;
-    text-align: center;
-    line-height: 100%;
-    text-transform: capitalize;
-    padding: 10px 25px;
-    display: inline-block;
-    font-weight: 400;
-    font-family: Roboto, Helvetica, Arial, sans-serif; 
-    border-radius: 3px;
-    overflow: visible;
-    white-space: nowrap;
-    border: 0;
-    color: #DEDEDE;
-    background: #F2F2F2;
-    cursor: default
-}
-.button-disabled span:active,
-.button-disabled span:hover {
-    text-decoration: none
-}
-.button-disabled span:active,
-.button-disabled span:hover {
-    color: #DEDEDE;
-    background: #F2F2F2
-}
-.legal {	
-    font-family: Roboto, Helvetica, Arial, sans-serif; 	
-	font-size: 12px !important;
-	color: #444;	
-}
-.social-ch {
-    padding-top: 20px;
-	text-align: right;
-}
-.social-ch a:hover {
-	text-decoration: none;
-}
-.note {
-	border: 2px solid #dedede;
-	padding: 10px;
-	Margin: 10px 0;
-}
 ol {
-	margin: margin: 1.25em 0 1.25em 0;
+	margin: 1.25em 0 1.25em 0;
 }
 ol li,
 ul li {
@@ -285,6 +219,24 @@ ul.bullet {
 ul.bullet li {
     list-style-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='18px' height='18px' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath fill='%23e98024' d='M12,17.5A5.5,5.5,0,1,1,17.5,12,5.507,5.507,0,0,1,12,17.5Zm0-9A3.5,3.5,0,1,0,15.5,12,3.5,3.5,0,0,0,12,8.5Z'/%3E%3C/svg%3E")
 }
+.legal {	
+    font-family: Roboto, Helvetica, Arial, sans-serif; 	
+	font-size: 12px !important;
+	color: #444;	
+}
+.social-ch {
+	Margin: 1em 0;
+	text-align: right;
+	display: block;
+}
+.social-ch a:hover {
+	text-decoration: none;
+}
+.note {
+	border: 2px solid #dedede;
+	padding: 10px;
+	Margin: 10px 0;
+} 
 .cta {
 	margin: 20px 0;
 	text-align: center !important;
@@ -313,7 +265,7 @@ ul.bullet li {
 .regards {
 	Margin-top: 50px;
 	Margin-bottom: 40px;
-}
+} 
 table.default_table  {
     border-collapse: collapse;
     font-size: 16px;
@@ -347,7 +299,8 @@ table.default_table.centered td:not(:first-child) {
 }
 .footer-title {
 	text-align: center;
-	padding: 0 10px;
+	padding: 10px;
+	Margin-top: 20px;
 }
 .sidebar-title {
 	font-family: Roboto, Helvetica, Arial, sans-serif; 
@@ -357,162 +310,7 @@ table.default_table.centered td:not(:first-child) {
 	text-align: left;
 	Margin-top: 0px !important;
 	Margin-bottom: 10px !important;
-}
-.bullet_table {
-	margin: 10px 0 ;
-}
-.bullet_table_li {
-	padding: 5px 0 5px 0px;
-	font-family: Roboto, Helvetica, Arial, sans-serif; 	
-	font-size: 18px !important;
-	color: #000;
-}
-.bullet-img {
-	width: 23px;
-	vertical-align: top !important;
-	padding: 8px 0px 0px 17px !important;
-}
-/* ------------------------------------- 
-    ONE COLUMN LAYOUT 
-------------------------------------- */
-.one-column .contents {
-    text-align: center;
-}
-.one-column .contents {
-    text-align: center;
-}
-.one-column .text {
-    padding-top: 10px;
-	text-align: left !important;
-}
-
-/* ------------------------------------- 
-    TWO COLUMN LAYOUT 
-------------------------------------- */
-.two-column {
-	text-align: center;
-    font-size: 0;
-}
-.two-column .column {
-	width: 100%;
-    max-width: 300px;
-    display: inline-block;
-    vertical-align: top;
-}
-.contents {
-	width: 100%;
-}
-.two-column .contents {
-    text-align: center;
-}
-.two-column img {
-    max-width: 100%;
-    height: auto;
-}
-.two-column .text {
-    padding-top: 10px;
-}
-/* ------------------------------------- 
-    THREE COLUMNS LAYOUT / 1+1+1
-------------------------------------- */
-.three-column {
-    text-align: center;
-    font-size: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.three-column .column {
-    width: 100%;
-    max-width: 200px;
-    display: inline-block;
-    vertical-align: top;
-}
-.three-column .contents {
-    text-align: center;
-}
-.three-column img {
-    max-width: 100%;
-    height: auto;
-}
-.three-column .text {
-    padding-top: 10px;
-}
-/* ------------------------------------- 
-    FOUR COLUMNS LAYOUT / 1+1+1+1
-------------------------------------- */
-.four-column {
-    text-align: center;
-    font-size: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.four-column .column {
-    width: 100%;
-    max-width: 150px;
-    display: inline-block;
-    vertical-align: top;
-}
-.four-column .contents {
-    text-align: center;
-}
-.four-column img {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-}
-.four-column .text {
-    padding-top: 10px;
-}
-/* ------------------------------------- 
-    LEFT SIDEBAR LAYOUT 
-------------------------------------- */
-.left-sidebar {
-	text-align: center;
-    font-size: 0;
-}
-.left-sidebar .column {
-    width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-}
-.left-sidebar .left {
-    max-width: 30%;
-}
-.left-sidebar .right {
-    max-width: 70%;
-}
-.left-sidebar img {
-    max-width: 100%;
-    height: auto;
-}
-.left-sidebar .contents {
-    text-align: center;
-}
-/* ------------------------------------- 
-    RIGHT SIDEBAR LAYOUT 
-------------------------------------- */
-.right-sidebar {
-	text-align: center;
-    font-size: 0;
-}
-.right-sidebar .column {
-    width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-}
-.right-sidebar .left {
-    max-width: 30%;
-}
-.right-sidebar .right {
-    max-width: 70%;
-}
-.right-sidebar img {
-    max-width: 100%;
-    height: auto;
-}
-.right-sidebar .contents {
-    text-align: center;
-}
+} 
 /* ------------------------------------- 
     MODIFIERS 
 ------------------------------------- */
@@ -591,7 +389,7 @@ table.default_table.centered td:not(:first-child) {
 	margin-bottom: 0px;
 }
 .bordered {
-    border: 1px solid #DEDEDE
+    border: 1px solid #DEDEDE;
 }
 .border-top {
     border-top: 1px solid #DEDEDE;
@@ -606,40 +404,136 @@ table.default_table.centered td:not(:first-child) {
 	text-align: justify !important;
     text-justify: inter-word;
 }
+.test {
+	background-color: #ccc;
+}
+.block-element {
+    display: block;
+}
+/* ------------------------------------- 
+    ONE COLUMN LAYOUT 
+------------------------------------- */
+.one-column .contents {
+    text-align: left;
+}
+.one-column .text {
+    padding-top: 10px;
+}
+/* ------------------------------------- 
+    TWO COLUMNS LAYOUT 
+------------------------------------- */
+.two-column {
+	text-align: center;
+    font-size: 0;
+}
+.two-column .column {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+.contents {
+	width: 100%;
+}
+.two-column .contents {
+    text-align: left;
+}
+.two-column img {
+    max-width: 100%;
+    height: auto;
+}
+.two-column .text {
+    padding-top: 10px;
+}
+/* ------------------------------------- 
+    THREE COLUMNS LAYOUT
+------------------------------------- */
+.three-column {
+    text-align: center;
+    font-size: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.three-column .column {
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+}
+.three-column .contents {
+    text-align: center;
+}
+.three-column img {
+    max-width: 100%;
+    height: auto;
+}
+.three-column .text {
+    padding-top: 10px;
+}
+/* ------------------------------------- 
+    FOUR COLUMNS LAYOUT
+------------------------------------- */
+.four-column {
+    text-align: center;
+    font-size: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.four-column .column {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+}
+.four-column .contents {
+    text-align: center;
+}
+.four-column img {
+    max-width: 100%;
+    height: auto;
+}
+.four-column .text {
+    padding-top: 10px;
+}
+/* ------------------------------------- 
+    SIDEBAR LAYOUT 
+------------------------------------- */
+.sidebar {
+	text-align: center;
+    font-size: 0;
+}
+.sidebar .column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.sidebar .left {
+    width: 30%;
+}
+.sidebar .right {
+    width: 70%;
+}
+.sidebar img {
+    max-width: 100%;
+    height: auto;
+}
+.sidebar .contents {
+    text-align: center;
+}
+
 /* ------------------------------------- 
     RESPONSIVE
 ------------------------------------- */
-@media screen and (max-width: 480px) {	
-	.two-column .column,
+@media screen and (max-width: 590px) {
+    .two-column .column,
     .three-column .column,
-	.four-column .column	{
-        max-width: 100% !important;
-    }
+    .four-column .column,
+    .sidebar .left, .sidebar .right {
+        width: 100% !important;
+    }	
     .two-column img {
         max-width: 100% !important;
     }
     .three-column img {
         max-width: 50% !important;
     }
-	.four-column img {
-        max-width: 50% !important;
-    }
-	.one-third-column  {
-        max-width: 100% !important;
-    }
-	.left-sidebar .left, .left-sidebar .right,
-	.right-sidebar .left, .right-sidebar .right {	 
-		max-width: 100%;
-		text-align: center;
-	}
-	.left-sidebar .left *, .left-sidebar .right *,
-	.right-sidebar .left *, .right-sidebar .right * {
-		text-align: center;
-	}
-	.FX_table td {
-		width: 94% !important;
-		display: block !important;
-	}
 	.mb-centered, .mb-centered p {
 		text-align: center !important;
 	}
@@ -647,13 +541,19 @@ table.default_table.centered td:not(:first-child) {
 		text-align: center !important;
 	}
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 590px)  {
 	.three-column .column {
         max-width: 33% !important;
     }
     .two-column .column {
         max-width: 50% !important;
     }
+}
+
+.s-box {
+	background-color: #dedede;
+	min-height: 100px;
+	border: 1px solid #cccccc;
 }
 </style>
 </head>
@@ -782,20 +682,20 @@ table.default_table.centered td:not(:first-child) {
 													<div class="">
 														<a href="https://www.youtube.com/user/BinaryTradingVideos">
 															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" height="45" width="45" alt="Binary.com on YouTube" title="Binary.com on YouTube" />
-														</a>&nbsp;&nbsp;
+														</a>
 														<a href="https://plus.google.com/+Binarydotcom/posts">
 															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/g+.png" height="45" width="45" alt="Binary.com Google+" title="Binary.com on Google+" />
-														</a>&nbsp;&nbsp;
+														</a>
 														<a href="https://www.facebook.com/binarydotcom">
 															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/fb.png" height="45" width="45" alt="Binary.com on Facebook" title="Binary.com on Facebook" />
-														</a>&nbsp;&nbsp;
+														</a>
 														<a href="https://twitter.com/Binarydotcom">
 															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/twitter.png" height="45" width="45" alt="Binary.com on Twitter" title="Binary.com on Twitter" />
-														</a>&nbsp;&nbsp;
+														</a>
 														<a href="https://www.reddit.com/r/binarydotcom/">
 															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/reddit.png" height="45" width="45" alt="Binary.com on Reddit" title="Binary.com on Reddit" />
-														</a>&nbsp;&nbsp;
-														<a href="https://t.me/joinchat/CROwo0OY4RGlx0xk2w78Aw">
+														</a>
+														<a href="https://t.me/binarydotcom">
 															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/tel.png" height="45" width="45" alt="Binary.com on Telegram" title="Binary.com on Telegram" />
 														</a>
 													</div>
