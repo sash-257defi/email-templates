@@ -13,23 +13,23 @@
     </style>
     <![endif]-->
 <style type="text/css">
-/* ------------------------------------- 
+/* -------------------------------------
 	GLOBAL
 ------------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin,vietnamese,cyrillic-ext,latin-ext,cyrillic);
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&subset=cyrillic,vietnamese');
 body {
 	width: 100%!important;
 	height: 100%;
 	margin: 0 !important;
 	padding: 0;
-	background-color: #ffffff;
+	background-color: #fff !important;
 	-webkit-font-smoothing:antialiased;
 	 -webkit-text-size-adjust:none;
 	font-family: Roboto, Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	line-height: 1.2;
 	color: #000000;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 table {
@@ -44,7 +44,7 @@ img {
     border: 0;
     max-width: 100%;
 }
-div[style*="margin: 16px 0"] { 
+div[style*="margin: 16px 0"] {
     margin:0 !important;
 }
 .wrapper {
@@ -56,7 +56,6 @@ div[style*="margin: 16px 0"] {
 .webkit {
     max-width: 800px;
     margin: 0 auto;
-	background-color: #ffffff;
 }
 .outer {
     Margin: 0 auto;
@@ -73,11 +72,11 @@ div[style*="margin: 16px 0"] {
 	padding: 10px;
 }
 
-/* ------------------------------------- 
-    TYPOGRAPHY 
+/* -------------------------------------
+    TYPOGRAPHY
 ------------------------------------- */
 p {
-	Margin: 1em 0;
+	Margin: 5px 0px;
 	font-size: 18px;
     line-height: 1.4em;
 }
@@ -93,43 +92,44 @@ a:visited:hover,
 a:visited:active {
     text-decoration: underline
 }
-.h1, h1 { 
-	font-family: Roboto, Helvetica, Arial, sans-serif; 
-	font-weight:300; 
-	font-size: 36px !important; 
+.h1, h1 {
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-weight:300 !important;
+	font-size: 36px !important;
 	color: #E98024;
 	Margin-bottom: 18px;
 }
-.h2, h2, h2 a { 
-	font-family: Roboto, Helvetica, Arial, sans-serif; 
-	font-weight:300; 
-	font-size: 28px !important; 
-	color: #E98024 !important;
+.h2, h2, h2 a {
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size: 28px !important;
+	color: #E98024;
 	Margin-bottom: 10px !important;
 }
-.h3, h3, h3 a { 
-	font-family: Roboto, Helvetica, Arial, sans-serif; 
+.h3, h3, h3 a {
+	font-family: Roboto, Helvetica, Arial, sans-serif;
 	color: #2A3052;
     font-size: 22px !important;
     font-weight: 300;
 	Margin-bottom: 15px !important;
 }
-.h4, h4 { 
-	font-family: Roboto, Helvetica, Arial, sans-serif; 
-	font-weight:400 !important; 
-	font-size: 18px !important; 
+.h4, h4 {
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-weight:400 !important;
+	font-size: 18px !important;
 	color: #000000;
+    margin: 0px;
 }
-.h5, h5 { 
-	font-family: Roboto, Helvetica, Arial, sans-serif; 
-	font-weight:400; 
+.h5, h5 {
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-weight:400;
 	font-size: 16px;
 	color: #000000;
 	Margin-bottom: 5px !important;
 }
-.h6, h6 { 
-	font-family: Roboto, Helvetica, Arial, sans-serif; 
-	font-weight:bold; 
+.h6, h6 {
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-weight:bold;
 	font-size: 14px;
 	color: #000000;
 	Margin-bottom: 2px !important;
@@ -143,13 +143,13 @@ a:visited:active {
 .unsubscribe span {
 	margin: 0 auto;
 }
-/* ------------------------------------- 
-    ELEMENTS 
+/* -------------------------------------
+    ELEMENTS
 ------------------------------------- */
 .logo {
 	text-align: center;
 	Margin: 0 auto;
-	padding: 20px;
+	padding-top: 80px;
 }
 .logo img {
     max-width: 100%;
@@ -165,14 +165,14 @@ a:visited:active {
 .FX_td__title {
 	background-color: #f2f2f2;
 	border-bottom: 2px solid #DEDEDE !important;
-	vertical-align: middle; 
+	vertical-align: middle;
 	padding: 10px;
 	width: 35%;
 }
 .FX_td {
 	width: 65%;
-	border-bottom: 2px solid #DEDEDE; 
-	vertical-align: middle; 
+	border-bottom: 2px solid #DEDEDE;
+	vertical-align: middle;
 	padding: 10px;
 }
 .button {
@@ -187,7 +187,7 @@ a:visited:active {
     padding: 10px 25px;
     display: inline-block;
     font-weight: 400;
-    font-family: Roboto, Helvetica, Arial, sans-serif; 
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     font-size: 18px;
     border-radius: 3px;
     overflow: visible;
@@ -205,28 +205,54 @@ a:visited:active {
 .button spanvisited {
     color: #FFF
 }
+.button-secondary {
+    background: #F2F2F2;
+    color: #000;
+	cursor: pointer;
+    margin-bottom: 0.5em;
+}
+.button-secondary span {
+    text-decoration: none;
+    text-align: center;
+    line-height: 100%;
+    text-transform: capitalize;
+    padding: 10px 25px;
+    display: inline-block;
+    font-weight: 400;
+    font-family: inherit;
+    border-radius: 3px;
+    overflow: visible;
+    border: 0;
+    color: #000000;
+    background: #F2F2F2;
+}
+
+.button-secondary span:active,
+.button-secondary span:hover {
+    text-decoration: none;
+}
+
+.button-secondary span:hover {
+    text-decoration: none;
+    background: #DEDEDE;
+}
 ol {
 	margin: 1.25em 0 1.25em 0;
 }
 ol li,
 ul li {
     line-height: 1.4em;
-    margin: .5em 0 0
+    margin: .5em 0 0;
+    color: #000000;
 }
-ul.bullet {
-    margin: 1.25em 0 1.25em 0
-}
-ul.bullet li {
-    list-style-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='18px' height='18px' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath fill='%23e98024' d='M12,17.5A5.5,5.5,0,1,1,17.5,12,5.507,5.507,0,0,1,12,17.5Zm0-9A3.5,3.5,0,1,0,15.5,12,3.5,3.5,0,0,0,12,8.5Z'/%3E%3C/svg%3E")
-}
-.legal {	
-    font-family: Roboto, Helvetica, Arial, sans-serif; 	
+.legal {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
 	font-size: 12px !important;
-	color: #444;	
+	color: #444;
 }
 .social-ch {
 	Margin: 1em 0;
-	text-align: right;
+	text-align: center;
 	display: block;
 }
 .social-ch a:hover {
@@ -236,7 +262,7 @@ ul.bullet li {
 	border: 2px solid #dedede;
 	padding: 10px;
 	Margin: 10px 0;
-} 
+}
 .cta {
 	margin: 20px 0;
 	text-align: center !important;
@@ -247,7 +273,7 @@ ul.bullet li {
 	text-align: center !important;
 }
 .cta-lg {
-	Margin: 20px 10px;	
+	Margin: 20px 10px;
 	padding: 20px 10px;
 	text-align: center;
 }
@@ -265,7 +291,7 @@ ul.bullet li {
 .regards {
 	Margin-top: 50px;
 	Margin-bottom: 40px;
-} 
+}
 table.default_table  {
     border-collapse: collapse;
     font-size: 16px;
@@ -297,124 +323,51 @@ table.default_table.centered th:not(:first-child),
 table.default_table.centered td:not(:first-child) {
     text-align: center
 }
+table.bullet_table {
+    Margin: 10px 0 10px 10px;
+}
+table.bullet_table td {
+    vertical-align: top;
+    padding: 3px 0;
+}
+.bullet_table_li {
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+}
 .footer-title {
 	text-align: center;
-	padding: 10px;
-	Margin-top: 20px;
+	padding: 20px 20px 0 20px;
+	Margin-top: 10px;
+	margin-bottom: -5px!important;
 }
 .sidebar-title {
-	font-family: Roboto, Helvetica, Arial, sans-serif; 
-	font-weight: 400 !important; 
-	font-size: 20px !important; 
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-weight: 400 !important;
+	font-size: 20px !important;
 	color: #2a3052;
 	text-align: left;
 	Margin-top: 0px !important;
 	Margin-bottom: 10px !important;
-} 
-/* ------------------------------------- 
-    MODIFIERS 
-------------------------------------- */
-.s-box {
-	background-color: #dedede;
-	min-height: 100px;
-	border: 1px solid #cccccc;
 }
-.contents p {
-	text-align: left;
+
+.section {
+	padding: 40px 0px;
 }
-.section-title {
-	text-align: left;
-	border-top: 1px solid #dedede;
+.cta-box {
+	display: inline-block;
+	margin: auto;
+	margin-top: 10px;
+	padding: 20px 40px;
+	text-align: center;
+
 }
-.primary-color {
-    background-color: #2A3052;
+.sidebar-icon {
+    margin-top: 20px;
 }
-.primary-bg-color {
-    background-color: #2A3052;
-}
-.secondary-color {
-    color: #E98024
-}
-.secondary-bg-color {
-    background-color: #E98024;
-}
-.primary-color-dark {
-    background-color: #15212D;
-}
-.primary-bg-color-dark {
-    background-color: #15212D;
-}
-.content-inverse-color {
-    color: #FFF !important
-}
-.fill-bg-color {
-    background-color: #F2F2F2;
-}
-.border-color {
-    color: #DEDEDE;
-}
-.font-s, .font-s p {
-    font-size: 13px !important;
-}
-.font-xs, .font-xs p {
-    font-size: 10px !important;
-}
-.padding-tb-20 {
-	padding: 20px 0;
-}
-.margin-lg {
-	margin: 30px 0px !important;
-}
-.text {
-    font-family: Roboto, Helvetica, Arial, sans-serif; 
-    font-size: 18px;
-}
-.separator-line {
-    margin-top: 10px;
-    margin-bottom: 10px
-}
-.separator {
-    height: 2px
-}
-.separator-lg {
-    height: 10px
-}
-.separator-line-thin-gray {
-    height: 1px; 
-	background-color: #DEDEDE;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-.separator-line-thin-gray-sm {
-    height: 1px; 
-	background-color: #DEDEDE;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-.bordered {
-    border: 1px solid #DEDEDE;
-}
-.border-top {
-    border-top: 1px solid #DEDEDE;
-}
-.border-bottom {
-    border-bottom: 1px solid #DEDEDE;
-}
-.centered {
-	text-align: center !important;
-}
-.justify {
-	text-align: justify !important;
-    text-justify: inter-word;
-}
-.test {
-	background-color: #ccc;
-}
-.block-element {
-    display: block;
-}
-/* ------------------------------------- 
-    ONE COLUMN LAYOUT 
+
+/* -------------------------------------
+    ONE COLUMN LAYOUT
 ------------------------------------- */
 .one-column .contents {
     text-align: left;
@@ -422,8 +375,8 @@ table.default_table.centered td:not(:first-child) {
 .one-column .text {
     padding-top: 10px;
 }
-/* ------------------------------------- 
-    TWO COLUMNS LAYOUT 
+/* -------------------------------------
+    TWO COLUMNS LAYOUT
 ------------------------------------- */
 .two-column {
 	text-align: center;
@@ -447,7 +400,7 @@ table.default_table.centered td:not(:first-child) {
 .two-column .text {
     padding-top: 10px;
 }
-/* ------------------------------------- 
+/* -------------------------------------
     THREE COLUMNS LAYOUT
 ------------------------------------- */
 .three-column {
@@ -471,7 +424,7 @@ table.default_table.centered td:not(:first-child) {
 .three-column .text {
     padding-top: 10px;
 }
-/* ------------------------------------- 
+/* -------------------------------------
     FOUR COLUMNS LAYOUT
 ------------------------------------- */
 .four-column {
@@ -495,8 +448,8 @@ table.default_table.centered td:not(:first-child) {
 .four-column .text {
     padding-top: 10px;
 }
-/* ------------------------------------- 
-    SIDEBAR LAYOUT 
+/* -------------------------------------
+    SIDEBAR LAYOUT
 ------------------------------------- */
 .sidebar {
 	text-align: center;
@@ -505,7 +458,7 @@ table.default_table.centered td:not(:first-child) {
 .sidebar .column {
     width: 100%;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
 }
 .sidebar .left {
     width: 30%;
@@ -520,17 +473,43 @@ table.default_table.centered td:not(:first-child) {
 .sidebar .contents {
     text-align: center;
 }
+/* -------------------------------------
+    SMALL SIDEBAR LAYOUT
+------------------------------------- */
+.sidebar-sm {
+	text-align: center;
+    font-size: 0;
+}
+.sidebar-sm .column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+.sidebar-sm .left {
+    width: 10%;
+}
+.sidebar-sm .right {
+    width: 90%;
+}
+.sidebar-sm img {
+    max-width: 100%;
+    height: auto;
+}
+.sidebar-sm .contents {
+    text-align: center;
+}
 
-/* ------------------------------------- 
+/* -------------------------------------
     RESPONSIVE
 ------------------------------------- */
 @media screen and (max-width: 590px) {
     .two-column .column,
     .three-column .column,
     .four-column .column,
-    .sidebar .left, .sidebar .right {
+    .sidebar .left, .sidebar .right,
+    .sidebar-sm .left, .sidebar-sm .right {
         width: 100% !important;
-    }	
+    }
     .two-column img {
         max-width: 100% !important;
     }
@@ -543,7 +522,11 @@ table.default_table.centered td:not(:first-child) {
 	.social-ch {
 		text-align: center !important;
 	}
+	.header-nav a {
+		display: block;
+	}
 }
+
 @media screen and (min-width: 590px)  {
 	.three-column .column {
         max-width: 33% !important;
@@ -552,318 +535,329 @@ table.default_table.centered td:not(:first-child) {
         max-width: 50% !important;
     }
 }
-
+/* -------------------------------------
+    MODIFIERS
+------------------------------------- */
 .s-box {
 	background-color: #dedede;
 	min-height: 100px;
 	border: 1px solid #cccccc;
 }
-
-.padding-md {
-	padding: 10px;
+.contents p {
+	text-align: left;
 }
-/* Typography */
-
-.title-xxs {
-    font-size: 16px;
+.section-title {
+	text-align: left;
+	border-top: 1px solid #dedede;
 }
-.title-xs {
+
+.border-color {
+    color: #DEDEDE;
+}
+.font-s, .font-s p {
+    font-size: 13px !important;
+}
+.font-xs, .font-xs p {
+    font-size: 10px !important;
+}
+.font-m, .font-m p {
+    font-size: 14px !important;
+    font-family: Roboto, Arial, sans-serif !important;
+    color: #444;
+}
+.font-xl {
+	font-size: 42px !important;
+	line-height: 42px;
+}
+.font-thin {
+	font-weight: 100 !important;
+}
+ .font-300 {
+	font-weight: 300 !important;
+}
+.padding-tb-20 {
+	padding: 20px 0;
+}
+.text {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     font-size: 18px;
 }
-.title-sm {
-    font-size: 22px;
+.separator-line {
+    margin-top: 10px;
+    margin-bottom: 10px
 }
-.title-md {
-    font-size: 26px;
+.separator {
+    height: 2px
 }
-
-.title-lg {
-    font-size: 32px;
+.separator-lg {
+    height: 10px;
 }
-.title-xl {
-    font-size: 36px;
+ .separator-xl {
+    height: 20px;
 }
-.title-xxl {
-    font-size: 48px;
+.separator-line-thin-gray {
+    height: 1px;
+	background-color: #f2f2f2;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
-.title-2xl {
-    font-size: 56px;
+.separator-line-thin-gray-sm {
+    height: 1px;
+	background-color: #DEDEDE;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
-.title-3xl {
-    font-size: 72px;
+ .thin-gray-divider-sm {
+    height: 1px;
+	background-color: #f2f2f2;
+	padding-top: 20px;
+	padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
-.ft-300 {
-    font-weight: 300;
+.bordered {
+    border: 1px solid #DEDEDE;
+}
+.border-top {
+    border-top: 1px solid #DEDEDE;
+}
+.border-bottom {
+    border-bottom: 1px solid #DEDEDE;
+}
+.white-border {
+    border: 1px solid #ffffff;
+}
+ .border-top-dark {
+    border-top: 1px solid #15212D;
+}
+.centered {
+	text-align: center !important;
+}
+.center-text {
+	text-align: center !important;
+}
+.justify {
+	text-align: justify !important;
+    text-justify: inter-word;
+}
+.align-right {
+	text-align: right;
+}
+.align-left {
+	text-align: left;
+}
+.test {
+	background-color: #ccc;
+}
+.block-element {
+    display: block;
+}
+.top-padding-sm {
+	padding-top: 10px !important;
+}
+.top-padding-md {
+	padding-top: 20px !important;
+}
+.vertical-padding-xl {
+	padding: 40px 20px;
+}
+.vertical-padding-xxl {
+	padding: 60px 20px;
+}
+.padding-md {
+	padding: 20px;
+}
+.padding-lg {
+	padding: 30px;
+}
+.no-margin {
+    margin: 0;
+}
+.flex-childern {
+	display: flex;
+}
+.header-nav {
+	text-align: center;
+	display: block;
+	margin-top: 40px;
+	padding: 10px;
+	border-top: 1px solid #15212D;
+	border-bottom: 1px solid #15212D;
+}
+.header-nav a {
+	color: #fff !important;
+	padding: 10px;
+	font-weight: normal;
+	line-height: 36px;
+}
+.primary-color {
+    color: #2A3052 !important;
+}
+.primary-bg-color {
+    background-color: #2A3052;
+}
+.secondary-color {
+    color: #E98024
+}
+.secondary-bg-color {
+    background-color: #E98024;
+}
+.primary-color-dark {
+    color: #15212D;
+}
+.primary-bg-color-dark {
+    background-color: #15212D;
+}
+.content-inverse-color,
+a.content-inverse-color,
+h3 .content-inverse-color,
+p .content-inverse-color,
+h1 .content-inverse-color {
+    color: #FFFFFF ;
+}
+.fill-bg-color {
+    background-color: #F2F2F2;
+}
+.white-bg-color {
+	background-color: #ffffff;
+}
+.black-color {
+	color: #000000 !important;
+}
+.display-inline {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+}
+.margin-lg {
+    margin: 30px 0;
+}
+.top-20 {
+    margin-top: 20px;
+}
+.bottom-20 {
+    margin-bottom: 20px;
 }
 </style>
 </head>
-<body>
+<body style="background-color: #ffffff !important;">
     <center class="wrapper">
         <div class="webkit">
-            <!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
-			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">			
-				<tr>
-					<td>
-						<table class="outer" align="center">
-							<tr>
-								<td class="logo">
-									<img src="https://marketing.binary.com/images/email/logo_notagline.png" width="300" alt="Binary.com" />
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-			</table><!--[if mso]></td></tr></table><![endif]-->
-			<!-- Start content {{content}} -->
+			<!-- {{content}} -->
+            <!-- Start content -->
 
 
-			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
-			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
-				<tr>
-					<td class="one-column">
-						<table width="100%">
-							<tr>
-								<td class="inner">
-									<table class="contents">
-										<tr>
-											<td class="text">
-												<p>Dear Trader,</p>
-												<p>Thank you for opening an account with us. It seems to be a while now since the last time you visited us. We’d like to let you know that you are always welcome especially now that there are more reasons for you to engage with our award-winning platform for binary options.</p>
-												<p>We’re pleased to inform you that we have introduced an exciting new product and a multi-barrier trading platform to enhance your Binary.com trading experience. Here’s what you missed:</p>
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-				<tr>
-					<td class="two-column border-top border-bottom"><!--[if (gte mso 9)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="50%" valign="top"><![endif]-->
-						<div class="column">
-							<table width="100%">
-								<tr>
-									<td class="inner">
-										<table class="contents">
-											<tr>
-												<td class="secondary-bg-color padding-md centered">
-													<div class="content-inverse-color title-md ft-300">Lookback options</div>
-												</td>
-											</tr>
-											<tr>
-												<td class="text">
-													<p>Let you automatically review the highest and lowest points in your contract to determine your payout.</p>
-													<p>Take advantage of the market’s fluctuating behaviour. Worry less about timing the market as the contract does it for you.</p> 
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div><!--[if (gte mso 9)|(IE)]></td><td width="50%" valign="top"><![endif]--><div class="column">
-							<table width="100%">
-								<tr>
-									<td class="inner">
-										<table class="contents">
-											<tr>
-												<td class="secondary-bg-color padding-md centered">
-													<div class="content-inverse-color title-md ft-300">Ladders</div>
-												</td>
-											</tr>
-											<tr>
-												<td class="text">
-													<p>Let you benefit from how much the market moves rather than just the direction it is moving.</p>
-													<p>Enjoy a great platform for intraday forex trading. Simply select your contract barrier and direction from our predefined values. </p> 
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
-					</td>
-				</tr>
-				<tr>
-					<td class="one-column">
-						<table width="100%">
-							<tr>
-								<td class="inner">
-									<table class="contents">
-										<tr>
-											<td class="text">
-												
-												<h2 class="secondary-color margin-lg">Deposit funds into your account and start trading</h2>
-												<p>Simply follow these steps to fund your real money account:</p>
-												<ol>
-													<li>Log in to your Real Money account</li>
-													<li>Go to the ‘Cashier’ tab and click ‘Deposit’</li>
-													<li>Choose from our wide range of deposit methods</li>
-													<li>Initiate your deposit transaction</li>
-												</ol>
-												<p>We have a comprehensive catalogue of products and platforms for you to choose from. Deposit funds into your real money account to get started. Our payment methods include the following:</p>
-												<div class="cta">
-													<h3 class="secondary-color margin-lg centered">Fund your account now with a minimum of USD 5 and start trading from USD 1 per contract</h3>
-													<p class="centered "><!--[if mso]>
-														<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="" style="height:40px;v-text-anchor:middle;width:320px;" arcsize="8%" stroke="f" fillcolor="#2E8836">
-															<w:anchorlock/>
-															<center>
-														<![endif]-->
-														<a class="button" href=""><span>Deposit Now</span></a>
-														<!--[if mso]>
-														</center>
-														</v:roundrect>
-														<![endif]-->
-													</p>
-												</div>
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-			</table><!--[if mso]></td></tr></table><![endif]-->
+                        <!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table class="outer white-bg-color" align="center" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="inner">
+            <table class="contents">
+                <tr>
+                    <td class="text">
+                        <div class="separator-lg"></div>
+						<p>Dear Trader,</p>
+						<p>Binary.com has recently introduced new products and important updates to our platforms. We want you to be the first to experience the difference and we’ve decided to welcome you back with an exclusive promotion!</p>
+						<p>You are eligible to receive USD 25 when you make a one-time deposit of USD 100 into your real money account and purchase trades of at least five times worth the bonus amount (USD 125). Once credited, you may withdraw the USD 25 bonus and any amount you’ve won at any time.</p>
+						<div class="separator-lg"></div>
+						<div class="separator-line-thin-gray"></div>
+                        <h3 class="centered secondary-color">This offer is valid for a limited time only. We encourage you to take advantage of this promotion, start trading on our platform, and explore tons of exciting products and services.</h3>
+                        	
+                            <div class="padding-md">
+                            <p class="centered">Opportunities await. Make your first trade today:</p>
+                            <p class="centered "><!--[if mso]>
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="" style="height:40px;v-text-anchor:middle;width:360px;" arcsize="8%" stroke="f" fillcolor="#2E8836">
+                                  <w:anchorlock/>
+                                  <center>
+                               <![endif]-->
+                              <a class="button" href=""><span>Yes, I Want To Claim My USD 25 Bonus</span></a>
+                              <!--[if mso]>
+                              </center>
+                              </v:roundrect>
+                              <![endif]-->
+                            </p>
+						</div>
+						<div class="separator-line-thin-gray"></div>
+						<p>Please refer to the full <a href="https://www.binary.com/en/terms-and-conditions.html?anchor=deposit-bonus#legal-binary">terms and conditions</a> of the offer or email us at <a href="mailto:offers@binary.com">offers@binary.com</a>.</p>
+						<div class="separator-lg"></div>
+						<p>Thank you for choosing Binary.com.</p>
+						<div class="separator-lg"></div>
+						<p>Sincerely,</p>
+						<p><a href="https://www.binary.com/">Binary.com</a></p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table><!--[if mso]></td></tr></table><![endif]-->
 
-			
-    
-    
+                        <!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+                        <table class="outer white-bg-color" align="center" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td class="one-column border-bottom border-top">
+                                    <table width="100%">
+                                        <tr>
+                                            <td class="inner">
+                                                <table class="contents">
+                                                    <tr>
+                                                        <td>
+                                                            <div class="cta">
+                                                                <p class="font-s">For further assistance, email us at <a href="mailto:webinar@binary.com">webinar@binary.com</a></p>
+                                                                <div class="">
+                                                                    <a href="https://www.youtube.com/user/BinaryTradingVideos">
+                                                                        <img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" height="45" width="45" alt="Binary.com on YouTube" title="Binary.com on YouTube" />
+                                                                    </a>
+                                                                    <a href="https://plus.google.com/+Binarydotcom/posts">
+                                                                        <img src="https://offers.binary.com/binary/email/customer_io/email-webinar/g+.png" height="45" width="45" alt="Binary.com Google+" title="Binary.com on Google+" />
+                                                                    </a>
+                                                                    <a href="https://www.facebook.com/binarydotcom">
+                                                                        <img src="https://offers.binary.com/binary/email/customer_io/email-webinar/fb.png" height="45" width="45" alt="Binary.com on Facebook" title="Binary.com on Facebook" />
+                                                                    </a>
+                                                                    <a href="https://twitter.com/Binarydotcom">
+                                                                        <img src="https://offers.binary.com/binary/email/customer_io/email-webinar/twitter.png" height="45" width="45" alt="Binary.com on Twitter" title="Binary.com on Twitter" />
+                                                                    </a>
+                                                                    <a href="https://www.reddit.com/r/binarydotcom/">
+                                                                         <img src="https://offers.binary.com/binary/email/customer_io/email-webinar/reddit.png" height="45" width="45" alt="Binary.com on Reddit" title="Binary.com on Reddit" />
+                                                                       </a>
+                                                                    <a href="https://t.me/binarydotcom">
+                                                                        <img src="https://offers.binary.com/binary/email/customer_io/email-webinar/tel.png" height="45" width="45" alt="Binary.com on Telegram" title="Binary.com on Telegram" />
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="one-column">
+                                    <table width="100%">
+                                        <tr>
+                                            <td class="inner contents">
+                                                <p class="font-xs justify">This email has been issued by Binary (IOM) Ltd, Binary (Europe) Ltd and Binary Investments (Europe) Ltd, Binary (V) Ltd and Binary (C.R.) S.A. Binary (IOM) Ltd is licensed and regulated by the Isle of Man Gambling Supervision Commission, and by the UK Gambling Commission. Binary (Europe) Ltd is licensed by the UK Gambling Commission and by the Malta Gaming Authority. Binary Investments (Europe) Ltd is licensed and regulated by the Malta Financial Services Authority, Notabile Road, <span>Attard, BKR4000</span>, Malta. Binary (V) Ltd. is licensed and regulated by the Vanuatu Financial Services Commission, Rue Bougainville, <span>Port Vila</span>, Vanuatu. Binary (C.R.) S.A. is registered in Costa Rica.</p>
+                                                <p class="font-xs justify">Binary options trading may incur losses as well as gains. Prices shown on the website may vary and/or fluctuate due to changes in the currency exchange rates and/or price movements, which may impact your return of investment. Clients must be 18 years old and above. Gambling can be addictive, please play responsibly. To find out how, please visit: <a href="https://www.begambleaware.org">www.begambleaware.org</a></p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centered">
+                                    <p class="font-s centered"><a href="https://www.binary.com/en/terms-and-conditions.html#legal" target="_blank">Terms and Conditions</a>  &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html#risk" target="_blank">Risk Disclaimer</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html#conflicts-policy" target="_blank">Conflicts Policy</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html#order-execution" target="_blank">Order Execution</a></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centered  unsubscribe">
+                                    <p class="font-xs centered">To opt out from email updates, <a href="{% unsubscribe_url %}" class="untracked">click here</a>.</p>
+                                </td>
+                            </tr>
+                        </table><!--[if mso]></td></tr></table><![endif]-->
+                        <div class="separator-lg"></div>
 
-			<!-- End content -->
-			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
-			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
-				<tr>
-					<td class="border-top">
-						<h2 class="footer-title">Want to learn more?</h2>
-					</td>
-				</tr>
-				<tr>
-					<td class="three-column"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="200" valign="top"><![endif]-->
-						<div class="column">
-							<table width="100%">
-								<tr>
-									<td class="inner">
-										<table class="contents">
-											<tr>
-												<td>
-													<a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-dailyreport1.png" style="max-width:60px;" alt="Binary.com" /></a>
-												</td>
-											</tr>
-											<tr>
-												<td class="text">
-													<p class="centered"><a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Daily Report</a></p>
-													<p class="font-s">Stay up-to-date with the latest financial news and trends from around the world, with Daily Market Reports written by professional trader, Dave Evans.</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div><!--[if mso]></td><td width="200" valign="top"><![endif]--><div class="column">
-							<table width="100%">
-								<tr>
-									<td class="inner">
-										<table class="contents">
-											<tr>
-												<td>
-													<a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-learningcenter.png" style="max-width:60px;" alt="Binary.com" /></a>
-												</td>
-											</tr>
-											<tr>
-												<td class="text">
-													<p class="centered"><a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Learning Centre</a></p>
-													<p class="font-s">Gain useful knowledge about all aspects of binary options trading. Browse our full library of educational materials, including videos, webinars, ebooks, and more.</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div><!--[if mso]></td><td width="200" valign="top"><![endif]--><div class="column">
-							<table width="100%">
-								<tr>
-									<td class="inner">
-										<table class="contents">
-											<tr>
-												<td>
-													<a href="https://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-monthlywebinar.png" style="max-width:60px;" alt="Binary.com" /></a>
-												</td>
-											</tr>
-											<tr>
-												<td class="text">
-													<p class="centered"><a href="http://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Monthly Webinars</a></p>
-													<p class="font-s">Watch, trade, and learn for free. Sign up for our monthly webinars and collect exclusive techniques, strategies, and tips from our professional trading partners.</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div><!--[if mso]></td></tr></table><![endif]-->
-					</td>
-				</tr>
-				<tr>
-					<td class="one-column border-top border-bottom">
-						<table width="100%">
-							<tr>
-								<td class="inner">
-									<table class="contents">
-										<tr>
-											<td>
-												<div class="cta">
-													<p class="font-s">Have a question? Need Help? Email us at <a href="mailto:marketing@binary.com">marketing@binary.com</a></p> 
-													<div class="">
-														<a href="https://www.youtube.com/user/BinaryTradingVideos">
-															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" height="45" width="45" alt="Binary.com on YouTube" title="Binary.com on YouTube" />
-														</a>
-														<a href="https://plus.google.com/+Binarydotcom/posts">
-															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/g+.png" height="45" width="45" alt="Binary.com Google+" title="Binary.com on Google+" />
-														</a>
-														<a href="https://www.facebook.com/binarydotcom">
-															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/fb.png" height="45" width="45" alt="Binary.com on Facebook" title="Binary.com on Facebook" />
-														</a>
-														<a href="https://twitter.com/Binarydotcom">
-															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/twitter.png" height="45" width="45" alt="Binary.com on Twitter" title="Binary.com on Twitter" />
-														</a>
-														<a href="https://www.reddit.com/r/binarydotcom/">
-															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/reddit.png" height="45" width="45" alt="Binary.com on Reddit" title="Binary.com on Reddit" />
-														</a>
-														<a href="https://t.me/binarydotcom">
-															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/tel.png" height="45" width="45" alt="Binary.com on Telegram" title="Binary.com on Telegram" />
-														</a>
-													</div>
-												</div>																																							
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-				<tr>
-					<td class="one-column">
-						<table width="100%">
-							<tr>
-								<td class="inner contents">
-									<p class="font-xs justify">This email has been issued by Binary (V) Ltd. and Binary (C.R.) S.A. Binary (V) Ltd. is licensed and regulated by the Vanuatu Financial Services Commission, Rue Bougainville, Port Vila, Vanuatu. Binary (C.R.) S.A. is registered in Costa Rica. Binary options, Forex, and CFD trading may incur losses as well as gains. Prices shown on the website may vary and/or fluctuate due to changes in the currency exchange rates and/or price movements, which may impact your return of investment. </p>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-				<tr>
-					<td class="centered">
-						<p class="font-s centered"><a href="https://www.binary.com/en/terms-and-conditions.html#legal" target="_blank">Terms and Conditions</a>  &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html#risk" target="_blank">Risk Disclaimer</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html#conflicts-policy" target="_blank">Conflicts Policy</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html#order-execution" target="_blank">Order Execution</a></p>
-					</td>
-				</tr>
-				<tr>
-					<td class="centered fill-bg-color unsubscribe">
-						<span class="font-s">Don't wish to receive these emails anymore? <a href="{% unsubscribe_url %}" class="untracked">Unsubscribe</a></span>
-					</td>
-				</tr>
-			</table><!--[if mso></td></tr></table><![endif]-->
+            <!-- End content -->
         </div>
     </center>
 </body>
-</html>                
+</html>

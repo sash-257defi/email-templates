@@ -1,0 +1,240 @@
+body {
+	width: 100%!important;
+	height: 100%;
+	margin: 0 !important;
+	padding: 0;
+	background-color: #ffffff;
+	-webkit-font-smoothing:antialiased;
+	 -webkit-text-size-adjust:none;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #000000;
+	font-weight: 400;
+}
+
+table {
+    border-spacing: 0;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    color: #000000;
+}
+td {
+    padding: 0;
+}
+img {
+    border: 0;
+	max-width: 100%;
+}
+/*
+div[style*="margin: 16px 0"] { 
+    margin:0 !important;
+}
+*/
+.wrapper {
+    width: 100%;
+    
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+.webkit {
+    max-width: 800px;
+    margin: 0 auto;
+	background-color: #ffffff;
+}
+.outer {
+    Margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
+.full-width-image img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+.inner {
+	padding: 0px;
+}
+
+/* ------------------------------------- 
+    TYPOGRAPHY 
+------------------------------------- */
+p {
+	Margin: 1em;
+	font-size: 18px;
+    line-height: 1.4em;
+}
+a,
+a:visited {
+    color: #2A3052;
+    text-decoration: none;
+    font-weight: bold
+}
+a:hover,
+a:active,
+a:visited:hover,
+a:visited:active {
+    text-decoration: underline
+}
+
+/* ------------------------------------- 
+    ONE COLUMN LAYOUT 
+------------------------------------- */
+.one-column .contents {
+    text-align: left;
+}
+.one-column .text {
+    padding-top: 10px;
+}
+/* ------------------------------------- 
+    TWO COLUMNS LAYOUT 
+------------------------------------- */
+.two-column {
+	text-align: center;
+    font-size: 0;
+}
+.two-column .column {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+.two-column .contents {
+    text-align: left;
+}
+.two-column img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ------------------------------------- 
+    THREE COLUMNS LAYOUT
+------------------------------------- */
+.three-column {
+	text-align: left;
+    font-size: 0;
+    width: 100%;
+}
+.three-column .column {
+    width: 33.33%;
+    display: inline-block;
+    vertical-align: top;
+}
+.three-column .contents {
+    text-align: left;
+}
+.three-column img {
+    max-width: 100%;
+    height: auto;
+}
+.column-3 {
+    width: 33.33%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* ------------------------------------- 
+    FOUR COLUMNS LAYOUT
+------------------------------------- */
+.four-column {
+    text-align: left;
+    font-size: 0;
+}
+.four-column .column {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+}
+.four-column .contents {
+    text-align: left;
+}
+.four-column img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ------------------------------------- 
+    SIDEBAR LAYOUT 
+------------------------------------- */
+.sidebar {
+	text-align: center;
+    font-size: 0;
+}
+.sidebar .column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.sidebar .left {
+    width: 30%;
+}
+.sidebar .right {
+    width: 70%;
+}
+.sidebar img {
+    max-width: 100%;
+    height: auto;
+}
+.sidebar .contents {
+    text-align: center;
+}
+
+/* ------------------------------------- 
+    RESPONSIVE
+------------------------------------- */
+@media screen and (max-width: 590px) {
+    .two-column .column,
+    .three-column .column,
+    .four-column .column,
+    .sidebar .left, .sidebar .right, .column-3 {
+        width: 100% !important;
+    }	
+    .two-column img {
+        max-width: 100% !important;
+    }
+    .three-column img {
+        max-width: 50% !important;
+    }
+	.mb-centered, .mb-centered p {
+		text-align: center !important;
+	}
+	.social-ch {
+		text-align: center !important;
+	}
+}
+@media screen and (min-width: 590px)  {
+	.three-column .column {
+        max-width: 33.333333% !important;
+    }
+    .two-column .column {
+        max-width: 50% !important;
+    }
+}
+/* ------------------------------------- 
+    MODIFIERS 
+------------------------------------- */
+.s-box {
+	background-color: #dedede;
+    height: 100px;
+    width: auto;
+    border: 1px solid #cccccc;
+}
+/* ------------------------------------- 
+    TEST
+------------------------------------- */
+.section-title {
+	text-align: left;
+	padding: 20px 0 0 10px;
+	margin-top: 20px;
+}
+.test {
+	background-color: #ccc;
+}
+.border {
+	border: solid 1px #ccc;
+}
+.border-2 {
+	border: solid 1px blue;
+}
+.border-3 {
+	border: solid 1px orange;
+}
