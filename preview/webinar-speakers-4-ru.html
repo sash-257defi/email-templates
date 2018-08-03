@@ -1,0 +1,860 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if !mso]><!-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary.com</title>
+    <!--[if mso]>
+    <style type="text/css">
+        table {border-collapse: collapse;}
+		body, table, td {font-family: Helvetica, Arial, sans-serif !important;}
+    </style>
+    <![endif]-->
+<style type="text/css">
+/* -------------------------------------
+	GLOBAL
+------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&subset=cyrillic,vietnamese');
+body {
+	width: 100%!important;
+	height: 100%;
+	margin: 0 !important;
+	padding: 0;
+	background-color: #fff !important;
+	-webkit-font-smoothing:antialiased;
+	 -webkit-text-size-adjust:none;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #000000;
+	font-weight: 400;
+}
+
+table {
+    border-spacing: 0;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    color: #000000;
+}
+td {
+    padding: 0;
+}
+img {
+    border: 0;
+    max-width: 100%;
+}
+div[style*="margin: 16px 0"] {
+    margin:0 !important;
+}
+.wrapper {
+    width: 100%;
+    table-layout: fixed;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+.webkit {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.outer {
+    Margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
+.full-width-image img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+.inner {
+	padding: 10px;
+}
+
+/* -------------------------------------
+    TYPOGRAPHY
+------------------------------------- */
+p {
+	Margin: 5px 0px;
+	font-size: 18px;
+    line-height: 1.4em;
+}
+a,
+a:visited {
+    color: #2A3052;
+    text-decoration: none;
+    font-weight: bold
+}
+a:hover,
+a:active,
+a:visited:hover,
+a:visited:active {
+    text-decoration: underline
+}
+.h1, h1 {
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-weight:300 !important;
+	font-size: 36px !important;
+	color: #E98024;
+	Margin-bottom: 18px;
+}
+.h2, h2, h2 a {
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size: 28px !important;
+	color: #E98024;
+	Margin-bottom: 10px !important;
+}
+.h3, h3, h3 a {
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	color: #2A3052;
+    font-size: 22px !important;
+    font-weight: 300;
+	Margin-bottom: 15px !important;
+}
+.h4, h4 {
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-weight:400 !important;
+	font-size: 18px !important;
+	color: #000000;
+    margin: 0px;
+}
+.h5, h5 {
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-weight:400;
+	font-size: 16px;
+	color: #000000;
+	Margin-bottom: 5px !important;
+}
+.h6, h6 {
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	font-size: 14px;
+	color: #000000;
+	Margin-bottom: 2px !important;
+}
+.unsubscribe {
+	margin: 20px 0 !important;
+	padding: 20px;
+	font-size: 13px !important;
+	text-align: center;
+}
+.unsubscribe span {
+	margin: 0 auto;
+}
+/* -------------------------------------
+    ELEMENTS
+------------------------------------- */
+.logo {
+	text-align: center;
+	Margin: 0 auto;
+	padding-top: 80px;
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+.FX_table {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.FX_table td {
+	text-align: left;
+}
+.FX_td__title {
+	background-color: #f2f2f2;
+	border-bottom: 2px solid #DEDEDE !important;
+	vertical-align: middle;
+	padding: 10px;
+	width: 35%;
+}
+.FX_td {
+	width: 65%;
+	border-bottom: 2px solid #DEDEDE;
+	vertical-align: middle;
+	padding: 10px;
+}
+.button {
+    cursor: pointer;
+    margin-bottom: 0.5em
+}
+.button span {
+    text-decoration: none;
+    text-align: center;
+    line-height: 100%;
+    text-transform: capitalize;
+    padding: 10px 25px;
+    display: inline-block;
+    font-weight: 400;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    border-radius: 3px;
+    overflow: visible;
+    border: 0;
+    color: #FFF;
+    background: #2E8836
+}
+.button span:active,
+.button span:hover {
+    text-decoration: none
+}
+.button span:hover {
+    background-color: #14602B !important;
+}
+.button spanvisited {
+    color: #FFF
+}
+.button-secondary {
+    background: #F2F2F2;
+    color: #000;
+	cursor: pointer;
+    margin-bottom: 0.5em;
+}
+.button-secondary span {
+    text-decoration: none;
+    text-align: center;
+    line-height: 100%;
+    text-transform: capitalize;
+    padding: 10px 25px;
+    display: inline-block;
+    font-weight: 400;
+    font-family: inherit;
+    border-radius: 3px;
+    overflow: visible;
+    border: 0;
+    color: #000000;
+    background: #F2F2F2;
+}
+
+.button-secondary span:active,
+.button-secondary span:hover {
+    text-decoration: none;
+}
+
+.button-secondary span:hover {
+    text-decoration: none;
+    background: #DEDEDE;
+}
+ol {
+	margin: 1.25em 0 1.25em 0;
+}
+ol li,
+ul li {
+    line-height: 1.4em;
+    margin: .5em 0 0;
+    color: #000000;
+}
+.legal {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-size: 12px !important;
+	color: #444;
+}
+.social-ch {
+	Margin: 1em 0;
+	text-align: center;
+	display: block;
+}
+.social-ch a:hover {
+	text-decoration: none;
+}
+.note {
+	border: 2px solid #dedede;
+	padding: 10px;
+	Margin: 10px 0;
+}
+.cta {
+	margin: 20px 0;
+	text-align: center !important;
+}
+.cta p {
+    display: block;
+	color: #000000;
+	text-align: center !important;
+}
+.cta-lg {
+	Margin: 20px 10px;
+	padding: 20px 10px;
+	text-align: center;
+}
+.cta-lg p {
+    display: block;
+	color: #000000;
+	text-align: center !important;
+	Margin-top: 0px;
+}
+.cta p {
+    display: block;
+	color: #000000;
+	text-align: center;
+}
+.regards {
+	Margin-top: 50px;
+	Margin-bottom: 40px;
+}
+table.default_table  {
+    border-collapse: collapse;
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+	margin: 30px 0px !important;
+}
+table.default_table  .even {
+    background-color: #FFF
+}
+table.default_table thead,
+table.default_table  th {
+    line-height: 1.1em;
+    font-weight: normal;
+    padding: 10px 20px;
+    text-align: left;
+    background: #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    vertical-align: middle
+}
+table.default_table  td {
+    vertical-align: top;
+    border-width: 0 1px;
+    padding: 10px 20px;
+    text-align: left;
+    border-bottom: 2px solid #F2F2F2
+}
+table.default_table.centered th:not(:first-child),
+table.default_table.centered td:not(:first-child) {
+    text-align: center
+}
+table.bullet_table {
+    Margin: 10px 0 10px 10px;
+}
+table.bullet_table td {
+    vertical-align: top;
+    padding: 3px 0;
+}
+.bullet_table_li {
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+}
+.footer-title {
+	text-align: center;
+	padding: 20px 20px 0 20px;
+	Margin-top: 10px;
+	margin-bottom: -5px!important;
+}
+.sidebar-title {
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-weight: 400 !important;
+	font-size: 20px !important;
+	color: #2a3052;
+	text-align: left;
+	Margin-top: 0px !important;
+	Margin-bottom: 10px !important;
+}
+
+.section {
+	padding: 40px 0px;
+}
+.cta-box {
+	display: inline-block;
+	margin: auto;
+	margin-top: 10px;
+	padding: 20px 40px;
+	text-align: center;
+
+}
+.sidebar-icon {
+    margin-top: 20px;
+}
+
+/* -------------------------------------
+    ONE COLUMN LAYOUT
+------------------------------------- */
+.one-column .contents {
+    text-align: left;
+}
+.one-column .text {
+    padding-top: 10px;
+}
+/* -------------------------------------
+    TWO COLUMNS LAYOUT
+------------------------------------- */
+.two-column {
+	text-align: center;
+    font-size: 0;
+}
+.two-column .column {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+.contents {
+	width: 100%;
+}
+.two-column .contents {
+    text-align: left;
+}
+.two-column img {
+    max-width: 100%;
+    height: auto;
+}
+.two-column .text {
+    padding-top: 10px;
+}
+/* -------------------------------------
+    THREE COLUMNS LAYOUT
+------------------------------------- */
+.three-column {
+    text-align: center;
+    font-size: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.three-column .column {
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+}
+.three-column .contents {
+    text-align: center;
+}
+.three-column img {
+    max-width: 100%;
+    height: auto;
+}
+.three-column .text {
+    padding-top: 10px;
+}
+/* -------------------------------------
+    FOUR COLUMNS LAYOUT
+------------------------------------- */
+.four-column {
+    text-align: center;
+    font-size: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.four-column .column {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+}
+.four-column .contents {
+    text-align: center;
+}
+.four-column img {
+    max-width: 100%;
+    height: auto;
+}
+.four-column .text {
+    padding-top: 10px;
+}
+/* -------------------------------------
+    SIDEBAR LAYOUT
+------------------------------------- */
+.sidebar {
+	text-align: center;
+    font-size: 0;
+}
+.sidebar .column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+.sidebar .left {
+    width: 30%;
+}
+.sidebar .right {
+    width: 70%;
+}
+.sidebar img {
+    max-width: 100%;
+    height: auto;
+}
+.sidebar .contents {
+    text-align: center;
+}
+/* -------------------------------------
+    SMALL SIDEBAR LAYOUT
+------------------------------------- */
+.sidebar-sm {
+	text-align: center;
+    font-size: 0;
+}
+.sidebar-sm .column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+.sidebar-sm .left {
+    width: 10%;
+}
+.sidebar-sm .right {
+    width: 90%;
+}
+.sidebar-sm img {
+    max-width: 100%;
+    height: auto;
+}
+.sidebar-sm .contents {
+    text-align: center;
+}
+
+/* -------------------------------------
+    RESPONSIVE
+------------------------------------- */
+@media screen and (max-width: 590px) {
+    .two-column .column,
+    .three-column .column,
+    .four-column .column,
+    .sidebar .left, .sidebar .right,
+    .sidebar-sm .left, .sidebar-sm .right {
+        width: 100% !important;
+    }
+    .two-column img {
+        max-width: 100% !important;
+    }
+    .three-column img {
+        max-width: 50% !important;
+    }
+	.mb-centered, .mb-centered p {
+		text-align: center !important;
+	}
+	.social-ch {
+		text-align: center !important;
+	}
+	.header-nav a {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 590px)  {
+	.three-column .column {
+        max-width: 33% !important;
+    }
+    .two-column .column {
+        max-width: 50% !important;
+    }
+}
+/* -------------------------------------
+    MODIFIERS
+------------------------------------- */
+.s-box {
+	background-color: #dedede;
+	min-height: 100px;
+	border: 1px solid #cccccc;
+}
+.contents p {
+	text-align: left;
+}
+.section-title {
+	text-align: left;
+	border-top: 1px solid #dedede;
+}
+
+.border-color {
+    color: #DEDEDE;
+}
+.font-s, .font-s p {
+    font-size: 13px !important;
+}
+.font-xs, .font-xs p {
+    font-size: 10px !important;
+}
+.font-m, .font-m p {
+    font-size: 14px !important;
+    font-family: Roboto, Arial, sans-serif !important;
+    color: #444;
+}
+.font-xl {
+	font-size: 42px !important;
+	line-height: 42px;
+}
+.font-thin {
+	font-weight: 100 !important;
+}
+ .font-300 {
+	font-weight: 300 !important;
+}
+.padding-tb-20 {
+	padding: 20px 0;
+}
+.text {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+.separator-line {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+.separator {
+    height: 2px
+}
+.separator-lg {
+    height: 10px;
+}
+ .separator-xl {
+    height: 20px;
+}
+.separator-line-thin-gray {
+    height: 1px;
+	background-color: #f2f2f2;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.separator-line-thin-gray-sm {
+    height: 1px;
+	background-color: #DEDEDE;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+ .thin-gray-divider-sm {
+    height: 1px;
+	background-color: #f2f2f2;
+	padding-top: 20px;
+	padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.bordered {
+    border: 1px solid #DEDEDE;
+}
+.border-top {
+    border-top: 1px solid #DEDEDE;
+}
+.border-bottom {
+    border-bottom: 1px solid #DEDEDE;
+}
+.white-border {
+    border: 1px solid #ffffff;
+}
+ .border-top-dark {
+    border-top: 1px solid #15212D;
+}
+.centered {
+	text-align: center !important;
+}
+.center-text {
+	text-align: center !important;
+}
+.justify {
+	text-align: justify !important;
+    text-justify: inter-word;
+}
+.align-right {
+	text-align: right;
+}
+.align-left {
+	text-align: left;
+}
+.test {
+	background-color: #ccc;
+}
+.block-element {
+    display: block;
+}
+.top-padding-sm {
+	padding-top: 10px !important;
+}
+.top-padding-md {
+	padding-top: 20px !important;
+}
+.vertical-padding-xl {
+	padding: 40px 20px;
+}
+.vertical-padding-xxl {
+	padding: 60px 20px;
+}
+.padding-md {
+	padding: 20px;
+}
+.padding-lg {
+	padding: 30px;
+}
+.no-margin {
+    margin: 0;
+}
+.flex-childern {
+	display: flex;
+}
+.header-nav {
+	text-align: center;
+	display: block;
+	margin-top: 40px;
+	padding: 10px;
+	border-top: 1px solid #15212D;
+	border-bottom: 1px solid #15212D;
+}
+.header-nav a {
+	color: #fff !important;
+	padding: 10px;
+	font-weight: normal;
+	line-height: 36px;
+}
+.primary-color {
+    color: #2A3052 !important;
+}
+.primary-bg-color {
+    background-color: #2A3052;
+}
+.secondary-color {
+    color: #E98024
+}
+.secondary-bg-color {
+    background-color: #E98024;
+}
+.primary-color-dark {
+    color: #15212D;
+}
+.primary-bg-color-dark {
+    background-color: #15212D;
+}
+.content-inverse-color,
+a.content-inverse-color,
+h3 .content-inverse-color,
+p .content-inverse-color,
+h1 .content-inverse-color {
+    color: #FFFFFF ;
+}
+.fill-bg-color {
+    background-color: #F2F2F2;
+}
+.white-bg-color {
+	background-color: #ffffff;
+}
+.black-color {
+	color: #000000 !important;
+}
+.display-inline {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+}
+.margin-lg {
+    margin: 30px 0;
+}
+.top-20 {
+    margin-top: 20px;
+}
+.bottom-20 {
+    margin-bottom: 20px;
+}
+</style>
+</head>
+<body style="background-color: #ffffff !important;">
+    <center class="wrapper">
+        <div class="webkit">
+			<!-- {{content}} -->
+            <!-- Start content -->
+
+
+                        <!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+                        <table class="outer white-bg-color" align="center" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td class="full-width-image">
+                                    <a href="https://academy.binary.com/ru/contributors/join-us-as-a-webinar-speaker/"><img src="https://offers.binary.com/binary/email/customer_io/email-webinar/header-5-ru.jpg" width="600" alt="" /></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="inner">
+                                    <table class="contents">
+                                        <tr>
+                                            <td class="text">
+                                              <div class="separator-lg"></div>
+
+                                             <h3 class="centered">У Вас есть финансовые продукты или проверенная торговая стратегия, которой Вы хотите поделиться с клиентами Binary.com по всему миру?</h3>
+                                               <div class="separator-lg"></div>
+                                                  <div class="padding-md">
+                                                  <p class="centered">Станьте нашим спикером и получите полный объём необходимой помощи, совершенно бесплатно.</p>
+                                                  <div class="separator-lg"></div>
+                                                      <p class="centered">Просмотрите наш <a href="https://academy.binary.com/ru/webinars/">каталог вебинаров</a> и узнайте больше о <a href="https://academy.binary.com/ru/contributors/">наших спикерах</a>, проводящих бесплатные тренинги для начинающих и опытных трейдеров.</p>
+                                                  <div class="separator-lg"></div>    
+                                                  <p class="centered "><!--[if mso]>
+                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://academy.binary.com/ru/contributors/join-us-as-a-webinar-speaker/" style="height:40px;v-text-anchor:middle;width:320px;" arcsize="8%" stroke="f" fillcolor="#2E8836">
+                                                          <w:anchorlock/>
+                                                          <center>
+                                                       <![endif]-->
+                                                      <a class="button" href="https://academy.binary.com/ru/contributors/join-us-as-a-webinar-speaker/"><span>Станьте нашим спикером</span></a>
+                                                      <!--[if mso]>
+                                                      </center>
+                                                      </v:roundrect>
+                                                      <![endif]-->
+                                                  </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table><!--[if mso]></td></tr></table><![endif]-->
+
+                        <!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+                        <table class="outer white-bg-color" align="center" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td class="one-column border-bottom border-top">
+                                    <table width="100%">
+                                        <tr>
+                                            <td class="inner">
+                                                <table class="contents">
+                                                    <tr>
+                                                        <td>
+                                                            <div class="cta">
+                                                                <p class="font-s">Для получения дополнительной помощи, напишите нам имейл на адрес <a href="mailto:webinar@binary.com">webinar@binary.com</a></p>
+                                                                <div class="">
+                                                                    <a href="https://www.youtube.com/user/BinaryTradingVideos">
+                                                                        <img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" height="45" width="45" alt="Binary.com on YouTube" title="Binary.com on YouTube" />
+                                                                    </a>
+                                                                    <a href="https://plus.google.com/+Binarydotcom/posts">
+                                                                        <img src="https://offers.binary.com/binary/email/customer_io/email-webinar/g+.png" height="45" width="45" alt="Binary.com Google+" title="Binary.com on Google+" />
+                                                                    </a>
+                                                                    <a href="https://www.facebook.com/binarydotcom">
+                                                                        <img src="https://offers.binary.com/binary/email/customer_io/email-webinar/fb.png" height="45" width="45" alt="Binary.com on Facebook" title="Binary.com on Facebook" />
+                                                                    </a>
+                                                                    <a href="https://twitter.com/Binarydotcom">
+                                                                        <img src="https://offers.binary.com/binary/email/customer_io/email-webinar/twitter.png" height="45" width="45" alt="Binary.com on Twitter" title="Binary.com on Twitter" />
+                                                                    </a>
+                                                                    <a href="https://www.reddit.com/r/binarydotcom/">
+                                                                         <img src="https://offers.binary.com/binary/email/customer_io/email-webinar/reddit.png" height="45" width="45" alt="Binary.com on Reddit" title="Binary.com on Reddit" />
+                                                                       </a>
+                                                                    <a href="https://t.me/binarydotcom">
+                                                                        <img src="https://offers.binary.com/binary/email/customer_io/email-webinar/tel.png" height="45" width="45" alt="Binary.com on Telegram" title="Binary.com on Telegram" />
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="one-column">
+                                    <table width="100%">
+                                        <tr>
+                                            <td class="inner contents">
+                                                <p class="font-xs justify">Данное сообщение создано компаниями Binary (IOM) Ltd, Binary (Europe) Ltd, Binary Investments (Europe) Ltd, Binary (V) Ltd и Binary (C.R.) S.A. Компания Binary (IOM) Ltd лицензирована и регулируется Комиссией по надзору за азартными играми Острова Мэн, а также Комиссией по азартным играм Великобритании. Компания Binary (Europe) Ltd находится под управлением Комиссией по азартным играм Великобритании и Управлением по азартным играм Мальты. Компания Binary Investments (Europe) Ltd лицензирована и регулируется Управлением по финансовым услугам Мальты, находящимся по адресу Notabile Road, <span>Attard, BKR4000</span>, Malta. Компания Binary (V) Ltd. лицензирована и регулируется Комиссией по предоставлению финансовых услуг Вануату, расположенной по адресу Rue Bougainville, Port Vila, Vanuatu. Компания Binary (C.R.) S.A. зарегистрирована в Коста-Рике.</p>
+                                                <p class="font-xs justify">Торговля бинарными опционами может принести не только прибыль, но и убыток. Цены, указанные на вебсайте, могут варьироваться и колебаться, ввиду изменений валютных курсов и ценовой динамики, что способно повлиять на окупаемости Ваших инвестиций. Клиенты должны достичь возраста 18 лет. Помните, что азартные игры могут перерасти в зависимость. Поэтому, пожалуйста, играйте ответственно. Чтобы болье узнать об ответственной торговле, посетите сайт: <a href="https://www.begambleaware.org">www.begambleaware.org</a></p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centered">
+                                   <p class="font-s centered"><a href="https://www.binary.com/ru/terms-and-conditions.html#legal">Правила и условия</a> &nbsp;|&nbsp; <a href="https://www.binary.com/ru/terms-and-conditions.html#risk">О рисках</a> &nbsp;|&nbsp; <a href="https://www.binary.com/ru/terms-and-conditions.html#conflicts-policy">Политика по конфликтам</a> &nbsp;|&nbsp; <a href="https://www.binary.com/ru/terms-and-conditions.html#order-execution">Исполнение ордеров</a></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centered  unsubscribe">
+                                    <p class="font-xs centered">Чтобы отказаться от информационной рассылки, <a href="{% unsubscribe_url %}" class="untracked">нажмите здесь</a>.</p>
+                                </td>
+                            </tr>
+                        </table><!--[if mso]></td></tr></table><![endif]-->
+                        <div class="separator-lg"></div>
+
+            <!-- End content -->
+        </div>
+    </center>
+</body>
+</html>
