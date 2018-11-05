@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <style type="text/css">
+      /* Add your styles here, we'll process and inline all of your styles before sending */
+    </style>
+  </head>
+  <body>
+    <!-- We'll replace this content tag with whatever you write in your email -->
+    {{ content }}
+
+    <!--
+      You can use the Customer.io unsubscribe link in all of your emails.
+      We are able to track the unsubscribe to the specific email they
+      unsubscribed from. You also have the option to include an unsubscribe
+      link in your email header. You always have the option of whether to send
+      to unsubscribed users or not, but use that ability with caution. To learn more,
+      or if you want to handle unsubscribes yourself, please refer to the docs:
+      https://learn.customer.io/documentation/unsubscribes.html
+    -->
+    <a href="{% unsubscribe_url %}" class="untracked">Unsubscribe</a>
+  </body>
+</html>

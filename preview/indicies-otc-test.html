@@ -555,118 +555,284 @@ table.default_table.centered td:not(:first-child) {
 	min-height: 100px;
 	border: 1px solid #cccccc;
 }
+.padding-md {
+	padding: 10px;
+}
+.padding-r-20 {
+	padding-right: 20px;
+}
+.inline-table {
+	display: inline-block !important;
+}
+.text-left {
+	text-align: left !important;
+}
+.w-50 {
+	width: 110px;
+}
+/* Typography */
+.ft-18 {
+	font-size: 18px;
+}
+.title-xxs {
+    font-size: 16px;
+}
+.title-xs {
+    font-size: 18px;
+}
+.title-sm {
+    font-size: 22px;
+}
+.title-md {
+    font-size: 26px;
+}
+
+.title-lg {
+    font-size: 32px;
+}
+.title-xl {
+    font-size: 36px;
+}
+.title-xxl {
+    font-size: 48px;
+}
+.title-2xl {
+    font-size: 56px;
+}
+.title-3xl {
+    font-size: 72px;
+}
+.ft-300 {
+    font-weight: 300;
+}
 </style>
 </head>
 <body>
     <center class="wrapper">
         <div class="webkit">
-            <!--[if mso]>
-			<table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
-			<tr>
-			<td>
-			<![endif]-->
+            <!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
 			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">			
 				<tr>
 					<td>
 						<table class="outer" align="center">
 							<tr>
 								<td class="logo">
-    								<a href="https://www.binary.com/es/home.html"><img src="https://marketing.binary.com/images/email/logo_notagline.png" width="300" alt="Binary.com" /></a>
+									<img src="https://marketing.binary.com/images/email/logo_notagline.png" width="300" alt="Binary.com" />
 								</td>
 							</tr>
 						</table>
 					</td>
 				</tr>
-			</table>
-			{{content}}
-			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">		
+			</table><!--[if mso]></td></tr></table><![endif]-->
+			<!-- {{content}} -->
+            
+            <!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">			
 				<tr>
-					<td>
-					    <div class="separator-line-thin-gray"></div>
-						<h2 class="footer-title">¿Quiere saber más?</h2>
+					<td class="one-column">
+						<table width="100%">
+							<tr>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td class="text">
+												<p>Dear Valued Client,</p> 
+                                                <p>We’re pleased to inform you that starting 12 September 2018, all the indices we offer will be sourced from the over-the-counter (OTC) market. This will give you the benefit of extended trading hours, plus display of real-time spot and charts.</p>
+                                                <p>Existing indices that are sourced from centralised exchanges will be replaced with their OTC equivalent. However, open contracts on these indices will be kept to term. Any contract purchased from 12 September onwards will be fully-sourced from the OTC market.</p>
+                                                <p>Please see the table below for all the indices we are offering, effective from 12 September 2018:</p>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+                <tr>
+					<td class="three-column fill-bg-color"><!--[if (gte mso 9)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="200" valign="top"><![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td>
+                                                    <h3 class="secondary-color">Asia/Oceania</h3>
+                                                    <p class="centered">Australian Index<br />Hong Kong Index<br />Japanese Index</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div><!--[if (gte mso 9)|(IE)]></td><td width="200" valign="top"><![endif]--><div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td>
+													 <h3 class="secondary-color">Europe/Africa</h3>
+                                                    <p class="centered">Dutch Index<br />Euro 50 Index<br />French Index<br />German Index<br />Spanish Index<br />Swiss Index<br />UK Index</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div><!--[if (gte mso 9)|(IE)]></td><td width="200" valign="top"><![endif]--><div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td>
+													 <h3 class="secondary-color">Americas</h3>
+                                                    <p class="centered">US Index<br />US Tech 100 Index<br />Wall Street Index</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+					</td>
+				</tr>
+                <tr>
+					<td class="one-column">
+						<table width="100%">
+							<tr>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td>
+												<p>Please also note that we will no longer be offering the following indices:</p> 
+                                                <table class="bullet_table">
+													<tr>
+														<td class="bullet-img" width="25"><img src="https://offers.binary.com/binary/customer-io/images/bullet.png" width="16" height="16" alt="Binary.com" /></td>
+														<td class="bullet_table_li">Belgian Index</td>
+													</tr>
+													<tr>
+														<td class="bullet-img"><img src="https://offers.binary.com/binary/customer-io/images/bullet.png" width="16" height="16" alt="Binary.com" /></td>
+														<td class="bullet_table_li">Bombay Index</td>
+													</tr>
+													<tr>
+														<td class="bullet-img"><img src="https://offers.binary.com/binary/customer-io/images/bullet.png" width="16" height="16" alt="Binary.com" /></td>
+														<td class="bullet_table_li">Dubai Index</td>
+													</tr>
+                                                    <tr>
+														<td class="bullet-img" width="22"><img src="https://offers.binary.com/binary/customer-io/images/bullet.png" width="16" height="16" alt="Binary.com" /></td>
+														<td class="bullet_table_li">Irish Index</td>
+													</tr>
+													<tr>
+														<td class="bullet-img"><img src="https://offers.binary.com/binary/customer-io/images/bullet.png" width="16" height="16" alt="Binary.com" /></td>
+														<td class="bullet_table_li">Norwegian Index</td>
+													</tr>
+													<tr>
+														<td class="bullet-img"><img src="https://offers.binary.com/binary/customer-io/images/bullet.png" width="16" height="16" alt="Binary.com" /></td>
+														<td class="bullet_table_li">Singapore Index</td>
+													</tr>
+                                                    <tr>
+														<td class="bullet-img"><img src="https://offers.binary.com/binary/customer-io/images/bullet.png" width="16" height="16" alt="Binary.com" /></td>
+														<td class="bullet_table_li">South Africa Index</td>
+													</tr>
+												</table>
+                                                <div class="cta">
+                                                    <p class="centered">Want to try our new indices?</p>
+                                                    <p class="centered">
+												<!--[if mso]>
+													  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.binary.com/en/trading.html?currency=EUR&market=indices" style="height:40px;v-text-anchor:middle;width:240px;" arcsize="8%" stroke="f" fillcolor="#2E8836">
+														<w:anchorlock/>
+														<center>
+													 <![endif]-->
+													<a class="button" href="https://www.binary.com/en/trading.html?currency=EUR&market=indices"><span>Yes, take me there</span></a>
+													<!--[if mso]>
+													</center>
+													</v:roundrect>
+													<![endif]--></p>
+												</div>
+                                                <p>Regards,<br />Binary.com</p>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table><!--[if mso]></td></tr></table><![endif]-->
+            
+            
+			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td class="border-top">
+						<h2 class="footer-title">Want to learn more?</h2>
 					</td>
 				</tr>
 				<tr>
-					<td class="three-column">
-						<!--[if mso]>
-						<table width="100%">
-						<tr>
-						<td width="200" valign="top">
-						<![endif]-->
+					<td class="three-column"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="200" valign="top"><![endif]-->
 						<div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
 										<table class="contents">
 											<tr>
-												<td>													
-													<a href="http://academy.binary.com/es/daily-report/?utm_medium=email&amp;utm_campaign=reactivation&amp;utm_source=intercom"><img src="https://marketing.binary.com/images/email/footer-icon-dailyreport1.png" style="max-width:60px;" class="columnImage" /></a>
+												<td>
+													<a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-dailyreport1.png" style="max-width:60px;" alt="Binary.com" /></a>
 												</td>
 											</tr>
 											<tr>
 												<td class="text">
-													<p class="centered font-s"><a href="http://academy.binary.com/es/daily-report/?utm_medium=email&amp;utm_campaign=reactivation&amp;utm_source=intercom">Informe diario en inglés</a></p>
-													<p class="font-s">Eche un vistazo a nuestros informes de mercado diarios escritos por Dave Evans, inversionista profesional,  para mantenerse al día con las noticias financieras más actuales del mundo.</p>
+													<p class="centered"><a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Daily Report</a></p>
+													<p class="font-s">Stay up-to-date with the latest financial news and trends from around the world, with Daily Market Reports written by professional trader, Dave Evans.</p>
 												</td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 							</table>
-						</div>
-						<!--[if mso]>
-						</td><td width="200" valign="top">
-						<![endif]-->
-						<div class="column">
+						</div><!--[if mso]></td><td width="200" valign="top"><![endif]--><div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
 										<table class="contents">
 											<tr>
-												<td>													
-													<a href="http://academy.binary.com/es/learning-center/?utm_medium=email&amp;utm_campaign=reactivation&amp;utm_source=intercom"><img src="https://marketing.binary.com/images/email/footer-icon-learningcenter.png" style="max-width:60px;" class="columnImage" /></a>
+												<td>
+													<a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-learningcenter.png" style="max-width:60px;" alt="Binary.com" /></a>
 												</td>
 											</tr>
 											<tr>
 												<td class="text">
-													<p class="centered font-s"><a href="http://academy.binary.com/es/learning-center/?utm_medium=email&amp;utm_campaign=reactivation&amp;utm_source=intercom">Centro de Aprendizaje</a></p>
-													<p class="font-s">Únase a nuestros analistas en directo dos veces por semana para un análisis exhaustivo de la evolución reciente y las tendencias en los mercados financieros de todo el mundo.</p>
+													<p class="centered"><a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Learning Centre</a></p>
+													<p class="font-s">Gain useful knowledge about all aspects of binary options trading. Browse our full library of educational materials, including videos, webinars, ebooks, and more.</p>
 												</td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 							</table>
-						</div>
-						<!--[if mso]>
-						</td><td width="200" valign="top">
-						<![endif]-->
-						<div class="column">
+						</div><!--[if mso]></td><td width="200" valign="top"><![endif]--><div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
 										<table class="contents">
 											<tr>
-												<td>													
-													<a href="http://academy.binary.com/es/webinars/?utm_medium=email&amp;utm_campaign=reactivation&amp;utm_source=intercom"><img src="https://marketing.binary.com/images/email/footer-icon-monthlywebinar.png" style="max-width:60px;" class="columnImage" /></a>
+												<td>
+													<a href="https://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-monthlywebinar.png" style="max-width:60px;" alt="Binary.com" /></a>
 												</td>
 											</tr>
 											<tr>
-												<td class="text ">
-													<p class="centered font-s"><a href="http://academy.binary.com/es/webinars/?utm_medium=email&amp;utm_campaign=reactivation&amp;utm_source=intercom">Tutoriales en línea mensuales</a></p>
-													<p class="font-s">¡Atienda, aprenda y gane GRATIS! El equipo de Binary.com en colaboración con inversionistas profesionales le ofrece webinarios mensuales donde aprenderá a identificar oportunidades de inversión a través de diversas técnicas y estrategias.</p>
+												<td class="text">
+													<p class="centered"><a href="http://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Monthly Webinars</a></p>
+													<p class="font-s">Watch, trade, and learn for free. Sign up for our monthly webinars and collect exclusive techniques, strategies, and tips from our professional trading partners.</p>
 												</td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 							</table>
-						</div>
-						<!--[if mso]>
-						</td>
-						</tr>
-						</table>
-						<![endif]-->
+						</div><!--[if mso]></td></tr></table><![endif]-->
 					</td>
 				</tr>
 				<tr>
@@ -678,7 +844,7 @@ table.default_table.centered td:not(:first-child) {
 										<tr>
 											<td>
 												<div class="cta">
-													<p class="font-s">¿Tiene alguna pregunta? ¿Necesita ayuda? Envíenos un correo electrónico a  <a href="mailto:marketing@binary.com">marketing@binary.com</a></p> 
+													<p class="font-s">Have a question? Need Help? Email us at <a href="mailto:marketing@binary.com">marketing@binary.com</a></p> 
 													<div class="">
 														<a href="https://www.youtube.com/user/BinaryTradingVideos">
 															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" height="45" width="45" alt="Binary.com on YouTube" title="Binary.com on YouTube" />
@@ -707,37 +873,29 @@ table.default_table.centered td:not(:first-child) {
 							</tr>
 						</table>
 					</td>
-				</tr>				
+				</tr>
 				<tr>
-					<td class="one-column footer">
+					<td class="one-column">
 						<table width="100%">
 							<tr>
-								<td class="inner">
-									<table class="contents">
-										<tr>
-											<td>
-												<p class="font-xs justify">Este correo ha sido enviado por Binary (IOM) Ltd, Binary (Europa) Ltd y BinaryInvestments (Europa) Ltd. Binary(IOM) Ltd está autorizado y regulado por la Comisión de Supervisión de Apuestas de la Isla de Man, y por la Comisión de Apuestas del Reino Unido. Binary (Europe) Ltd está autorizado por la Comisión de Apuestas del Reino Unido y por la Autoridad de Apuestas de Malta. BinaryInvestments(Europe) Ltd está autorizado y regulado por la Autoridad de Servicios Financieros de Malta, <span>Notabile Road</span>, Attard,  <span>Malta</span>.</p>
-												<p class="font-xs justify">Con el comercio de opciones binarias puede incurrir tanto en pérdidas como en ganancias. Los precios indicados en la página web pueden variar y/o fluctuar debido a cambios en los tipos de cambio de divisas y/o los movimientos de precios, lo que puede afectar a su retorno de la inversión. Las apuestas pueden ser adictivas; por favor, invierta con responsabilidad.</p>
-												<p class="font-s centered"><a href="https://www.binary.com/es/terms-and-conditions.html#legal">Términos y Condiciones</a> &nbsp;|&nbsp; <a href="https://www.binary.com/es/terms-and-conditions.html#risk">Advertencia de Riesgo</a> &nbsp;|&nbsp; <a href="https://www.binary.com/es/terms-and-conditions.html#conflicts-policy">Política de Conflictos</a> &nbsp;|&nbsp; <a href="https://www.binary.com/es/terms-and-conditions.html#order-execution">Ejecución de Órdenes</a></p>
-											</td>
-										</tr>
-										<tr>
-											<td class="fill-bg-color">
-												<p class="font-s centered"><a href="{% unsubscribe_url %}" class="untracked">Cancelar la suscripción</a></p>
-											</td>
-										</tr>
-									</table>
+								<td class="inner contents">
+									<p class="font-xs justify">This email has been issued by Binary (V) Ltd. and Binary (C.R.) S.A. Binary (V) Ltd. is licensed and regulated by the Vanuatu Financial Services Commission, Rue Bougainville, Port Vila, Vanuatu. Binary (C.R.) S.A. is registered in Costa Rica. Binary options, Forex, and CFD trading may incur losses as well as gains. Prices shown on the website may vary and/or fluctuate due to changes in the currency exchange rates and/or price movements, which may impact your return of investment. </p>
 								</td>
 							</tr>
 						</table>
 					</td>
 				</tr>
-			</table>
-			<!--[if mso]>
-			</td>
-			</tr>
-			</table>
-			<![endif]-->
+				<tr>
+					<td class="centered">
+						<p class="font-s centered"><a href="https://www.binary.com/en/terms-and-conditions.html#legal" target="_blank">Terms and Conditions</a>  &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html#risk" target="_blank">Risk Disclaimer</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html#conflicts-policy" target="_blank">Conflicts Policy</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html#order-execution" target="_blank">Order Execution</a></p>
+					</td>
+				</tr>
+				<tr>
+					<td class="centered fill-bg-color unsubscribe">
+						<span class="font-s">Don't wish to receive these emails anymore? <a href="{% unsubscribe_url %}" class="untracked">Unsubscribe</a></span>
+					</td>
+				</tr>
+			</table><!--[if mso></td></tr></table><![endif]-->
         </div>
     </center>
 </body>

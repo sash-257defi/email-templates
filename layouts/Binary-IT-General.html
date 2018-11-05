@@ -42,7 +42,6 @@ td {
 }
 img {
     border: 0;
-    max-width: 100%;
 }
 div[style*="margin: 16px 0"] { 
     margin:0 !important;
@@ -407,9 +406,6 @@ table.default_table.centered td:not(:first-child) {
 .test {
 	background-color: #ccc;
 }
-.block-element {
-    display: block;
-}
 /* ------------------------------------- 
     ONE COLUMN LAYOUT 
 ------------------------------------- */
@@ -518,6 +514,7 @@ table.default_table.centered td:not(:first-child) {
     text-align: center;
 }
 
+
 /* ------------------------------------- 
     RESPONSIVE
 ------------------------------------- */
@@ -560,113 +557,91 @@ table.default_table.centered td:not(:first-child) {
 <body>
     <center class="wrapper">
         <div class="webkit">
-            <!--[if mso]>
-			<table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
-			<tr>
-			<td>
-			<![endif]-->
+            <!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
 			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">			
 				<tr>
 					<td>
 						<table class="outer" align="center">
 							<tr>
 								<td class="logo">
-									<a href="https://www.binary.com/de/home.html"><img src="https://marketing.binary.com/images/email/logo_notagline.png" width="300" alt="Binary.com" /></a>
+									<a href="https://www.binary.com/it/home.html"><img src="https://marketing.binary.com/images/email/logo_notagline.png" width="300" alt="Binary.com" /></a>
 								</td>
 							</tr>
 						</table>
 					</td>
 				</tr>
-			</table>
+			</table><!--[if mso]></td></tr></table><![endif]-->
 			{{content}}
-			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">		
+			<!--[if mso]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
 				<tr>
-					<td>
-					    <div class="separator-line-thin-gray"></div>
-						<h2 class="footer-title">Möchten Sie mehr lernen?</h2>
+					<td class="border-top">
+						<h2 class="footer-title">Desideri saperne di più?</h2>
 					</td>
 				</tr>
 				<tr>
-					<td class="three-column">
-						<!--[if mso]>
-						<table width="100%">
-						<tr>
-						<td width="200" valign="top">
-						<![endif]-->
+					<td class="three-column"><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="200" valign="top"><![endif]-->
 						<div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
 										<table class="contents">
 											<tr>
-												<td>													
-													<a href="https://academy.binary.com/de/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-dailyreport1.png" style="max-width:60px;" class="columnImage" /></a>
+												<td>
+													<a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-dailyreport1.png" style="max-width:60px;" alt="Binary.com" /></a>
 												</td>
 											</tr>
 											<tr>
-												<td class="text font-s">
-													<p class="centered font-s"><a href="https://academy.binary.com/de/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Täglicher Bericht</a></p>
-													<p class="font-s">Lesen Sie unsere täglichen aktuellen Marktberichte, die von Dave Evans, einem professionellen Trader, verfasst werden, um immer mit den neusten Nachrichten aus der Finanzwelt versorgt zu sein.</p>
+												<td class="text">
+													<p class="centered"><a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Report giornalieri</a></p>
+													<p class="font-s">Rimani aggiornato sulle ultime news e tendenze del mondo della finanza internazionale con i nostri Report giornalieri del mercato, scritti dal trader professionista Dave Evans.</p>
 												</td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 							</table>
-						</div>
-						<!--[if mso]>
-						</td><td width="200" valign="top">
-						<![endif]-->
-						<div class="column">
+						</div><!--[if mso]></td><td width="200" valign="top"><![endif]--><div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
 										<table class="contents">
 											<tr>
-												<td>													
-													<a href="https://academy.binary.com/de/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-learningcenter.png" style="max-width:60px;" class="columnImage" /></a>
+												<td>
+													<a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-learningcenter.png" style="max-width:60px;" alt="Binary.com" /></a>
 												</td>
 											</tr>
 											<tr>
-												<td class="text font-s">
-													<p class="centered font-s"><a href="https://academy.binary.com/de/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Lernzentrum</a></p>
-													<p class="font-s">Hören Sie zwei Mal in der Woche LIVE unseren Analysten zu, wie sie die aktuellen Entwicklungen und Trends der Weltfinanzmärkte analysieren.</p>
+												<td class="text">
+													<p class="centered"><a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Materiali informativi</a></p>
+													<p class="font-s">Amplia le tue conoscenze su tutti gli aspetti del trading binario. Naviga nella nostra biblioteca virtuale ricca di materiale informativo, compresi video webinar, e-book e molto altro.</p>
 												</td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 							</table>
-						</div>
-						<!--[if mso]>
-						</td><td width="200" valign="top">
-						<![endif]-->
-						<div class="column">
+						</div><!--[if mso]></td><td width="200" valign="top"><![endif]--><div class="column">
 							<table width="100%">
 								<tr>
 									<td class="inner">
 										<table class="contents">
 											<tr>
-												<td>													
-													<a href="https://academy.binary.com/de/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-monthlywebinar.png" style="max-width:60px;" class="columnImage" /></a>
+												<td>
+													<a href="https://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template"><img src="https://marketing.binary.com/images/email/footer-icon-monthlywebinar.png" style="max-width:60px;" alt="Binary.com" /></a>
 												</td>
 											</tr>
 											<tr>
-												<td class="text font-s">
-													<p class="centered font-s"><a href="http://academy.binary.com/de/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Monatliche Webinare</a></p>
-													<p class="font-s">KOSTENLOS sehen, verdienen und lernen! Binary.com lädt monatlich professionelle Moderatoren ein, die Ihnen die Handelstechniken und Gewinnmöglichkeiten des Handels mit Binären Optionen näherbringen werden.</p>
+												<td class="text">
+													<p class="centered"><a href="http://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Webinar mensili</a></p>
+													<p class="font-s">Guarda e impara gratuitamente. Iscriviti ai nostri webinar mensili per scoprire tecniche e strategie esclusive grazie ai nostri partner professionali.</p>
 												</td>
 											</tr>
 										</table>
 									</td>
 								</tr>
 							</table>
-						</div>
-						<!--[if mso]>
-						</td>
-						</tr>
-						</table>
-						<![endif]-->
+						</div><!--[if mso]></td></tr></table><![endif]-->
 					</td>
 				</tr>
 				<tr>
@@ -678,7 +653,7 @@ table.default_table.centered td:not(:first-child) {
 										<tr>
 											<td>
 												<div class="cta">
-													<p class="font-s">Haben Sie Fragen? Senden uns eine E-Mail an <a href="mailto:marketing@binary.com">marketing@binary.com</a></p> 
+													<p class="font-s">Hai domande o bisogno di assistenza? Scrivici una e-mail all'indirizzo <a href="mailto:marketing@binary.com">marketing@binary.com</a></p> 
 													<div class="">
 														<a href="https://www.youtube.com/user/BinaryTradingVideos">
 															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" height="45" width="45" alt="Binary.com on YouTube" title="Binary.com on YouTube" />
@@ -709,35 +684,28 @@ table.default_table.centered td:not(:first-child) {
 					</td>
 				</tr>
 				<tr>
-					<td class="one-column footer">
+					<td class="one-column">
 						<table width="100%">
 							<tr>
-								<td class="inner">
-									<table class="contents">
-										<tr>
-											<td>
-												<p class="font-xs justify">Diese E-Mail wurde versandt von Binary Investments (Europe) Ltd. mit Sitz in: Mompalao Building, <span>Suite 2,</span> <span>Tower Road</span>, Msida, MSD 1825, Malta. Binary Investments (Europe) Ltd ist ein von der Malta Financial Services Authority, Notabile Road, Attard, BKR4000, Malta, Website: <a href="http://www.mfsa.com.mt">www.mfsa.com.mt</a>, in Europa unter der Lizenz Nr. IS/70156 zugelassener und beaufsichtigter Investitionsdienstleister.</p>
-												<p class="font-xs justify">Der Handel mit Binären Optionen kann zu Verlusten, aber auch zu Gewinnen führen. Die auf der Website angezeigten Kurse können wegen der Veränderungen der Wechselkurse und/oder Kursbewegungen unterschiedlich sein oder schwanken, was Ihre Investitionsrendite beeinflussen kann.</p>
-												<p class="font-s centered"><a href="https://www.binary.com/de/regulation.html#key_information_documents">Schlüsseldokumente</a> &nbsp;|&nbsp; <a href="https://www.binary.com/de/terms-and-conditions.html#legal">Allgemeine Bedingungen</a> &nbsp;|&nbsp; <a href="https://www.binary.com/de/terms-and-conditions.html#risk">Risikohinweise</a> &nbsp;|&nbsp; <a href="https://www.binary.com/de/terms-and-conditions.html#conflicts-policy">Konfliktrichtlinie</a> &nbsp;|&nbsp; <a href="https://www.binary.com/de/terms-and-conditions.html#order-execution">Orderausführung</a></p>
-											</td>
-										</tr>
-										<tr>
-											<td class="fill-bg-color">
-												<p class="font-s centered"><a href="{% unsubscribe_url %}" class="untracked">Abmelden</a></p>
-											</td>
-										</tr>
-									</table>
+								<td class="inner contents">
+									<p class="font-xs justify">Questa e-mail è stata inviata da Binary Investments (Europe) Ltd e Binary (V). Binary Investments (Europe) Ltd è autorizzata e regolamentata dalla Malta Financial Services Authority, <span>Notabile Road</span>, <span>Attard</span>, BKR4000, <span>Malta</span>. Binary (V) Ltd è autorizzata e regolamentata dalla Vanuatu Financial Services Commission, Rue Bougainville, Port Vila, Vanuatu.</p>
+									<p class="font-xs justify">Il trading su Forex e CFD può comportare perdite così come profitti.  I prezzi indicati sul sito internet possono variare e/o oscillare a causa delle variazioni nei tassi di cambio delle valute e/o dei movimenti dei prezzi che possono influire sul rendimento degli investimenti.</p>
 								</td>
 							</tr>
 						</table>
 					</td>
 				</tr>
-			</table>
-			<!--[if mso]>
-			</td>
-			</tr>
-			</table>
-			<![endif]-->
+				<tr>
+					<td class="centered">
+						<p class="font-s centered"><a href="https://www.binary.com/it/terms-and-conditions.html">Termini e condizioni</a> &nbsp;|&nbsp; <a href="https://www.binary.com/it/terms-and-conditions.html#risk">Informativa sui rischi</a> &nbsp;|&nbsp; <a href="https://www.binary.com/it/terms-and-conditions.html#conflicts-policy">Politica sui conflitti d’interesse</a> &nbsp;|&nbsp; <a href="https://www.binary.com/it/terms-and-conditions.html#order-execution">Esecuzione degli ordini</a></p>
+					</td>
+				</tr>
+				<tr>
+					<td class="centered fill-bg-color unsubscribe">
+						<span class="font-s">Non desideri più ricevere queste e-mail? <a href="{% unsubscribe_url %}" class="untracked">Cancella l’iscrizione</a></span>
+					</td>
+				</tr>
+			</table><!--[if mso></td></tr></table><![endif]-->
         </div>
     </center>
 </body>

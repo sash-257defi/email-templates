@@ -42,6 +42,7 @@ td {
 }
 img {
     border: 0;
+    max-width: 100%;
 }
 div[style*="margin: 16px 0"] { 
     margin:0 !important;
@@ -406,6 +407,9 @@ table.default_table.centered td:not(:first-child) {
 .test {
 	background-color: #ccc;
 }
+.block-element {
+    display: block;
+}
 /* ------------------------------------- 
     ONE COLUMN LAYOUT 
 ------------------------------------- */
@@ -514,7 +518,6 @@ table.default_table.centered td:not(:first-child) {
     text-align: center;
 }
 
-
 /* ------------------------------------- 
     RESPONSIVE
 ------------------------------------- */
@@ -564,7 +567,7 @@ table.default_table.centered td:not(:first-child) {
 						<table class="outer" align="center">
 							<tr>
 								<td class="logo">
-									<a href="https://www.binary.com/it/home.html"><img src="https://marketing.binary.com/images/email/logo_notagline.png" width="300" alt="Binary.com" /></a>
+									<a href="https://www.binary.com/en/home.html"><img src="https://marketing.binary.com/images/email/logo_notagline.png" width="300" alt="Binary.com" /></a>
 								</td>
 							</tr>
 						</table>
@@ -576,7 +579,7 @@ table.default_table.centered td:not(:first-child) {
 			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
 				<tr>
 					<td class="border-top">
-						<h2 class="footer-title">Desideri saperne di più?</h2>
+						<h2 class="footer-title">Want to learn more?</h2>
 					</td>
 				</tr>
 				<tr>
@@ -593,8 +596,8 @@ table.default_table.centered td:not(:first-child) {
 											</tr>
 											<tr>
 												<td class="text">
-													<p class="centered"><a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Report giornaliero</a></p>
-													<p class="font-s">Controlla i nostri Report giornalieri dei mercati scritti da Dave Evans, trader professionista. Rimani aggiornato con le ultime novità e i trend finanziari di tutto il mondo.</p>
+													<p class="centered"><a href="https://academy.binary.com/en/daily-report/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Daily Report</a></p>
+													<p class="font-s">Stay up-to-date with the latest financial news and trends from around the world, with Daily Market Reports written by professional trader, Dave Evans.</p>
 												</td>
 											</tr>
 										</table>
@@ -613,8 +616,8 @@ table.default_table.centered td:not(:first-child) {
 											</tr>
 											<tr>
 												<td class="text">
-													<p class="centered"><a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Centro di apprendimento</a></p>
-													<p class="font-s">Ottieni una conoscenza utile su tutti gli aspetti del trading in opzioni binarie. Esplora tutta la nostra libreria di materiali utili, compresi video formativi, webinar, e-book, FAQ e altro.</p>
+													<p class="centered"><a href="https://academy.binary.com/en/learning-center/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Learning Centre</a></p>
+													<p class="font-s">Gain useful knowledge about all aspects of binary options trading. Browse our full library of educational materials, including videos, webinars, ebooks, and more.</p>
 												</td>
 											</tr>
 										</table>
@@ -633,8 +636,8 @@ table.default_table.centered td:not(:first-child) {
 											</tr>
 											<tr>
 												<td class="text">
-													<p class="centered"><a href="http://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Webinar mensili</a></p>
-													<p class="font-s">Guarda, guadagna e impara gratuitamente! Registrati per partecipare ai nostri webinar mensili. Colleziona tecniche esclusive, strategie e suggerimenti dei nostri trader professionisti.</p>
+													<p class="centered"><a href="http://academy.binary.com/en/webinars/?utm_source=customer_io&utm_medium=email&utm_content=footer&utm_campaign=email_template">Monthly Webinars</a></p>
+													<p class="font-s">Watch, trade, and learn for free. Sign up for our monthly webinars and collect exclusive techniques, strategies, and tips from our professional trading partners.</p>
 												</td>
 											</tr>
 										</table>
@@ -653,7 +656,7 @@ table.default_table.centered td:not(:first-child) {
 										<tr>
 											<td>
 												<div class="cta">
-													<p class="font-s">Hai una domanda? Hai bisogno di aiuto? Inviaci una email all’indirizzo <a href="mailto:marketing@binary.com">marketing@binary.com</a></p> 
+													<p class="font-s">Have a question? Need Help? Email us at <a href="mailto:marketing@binary.com">marketing@binary.com</a></p> 
 													<div class="">
 														<a href="https://www.youtube.com/user/BinaryTradingVideos">
 															<img src="https://offers.binary.com/binary/email/customer_io/email-webinar/youtube.png" height="45" width="45" alt="Binary.com on YouTube" title="Binary.com on YouTube" />
@@ -688,9 +691,7 @@ table.default_table.centered td:not(:first-child) {
 						<table width="100%">
 							<tr>
 								<td class="inner contents">
-									<p class="font-xs justify">Questa email è stata inviata da Binary (IOM) Ltd, Binary (Europe) Ltd e Binary Investments (Europe) Ltd. Binary (IOM) Ltd è autorizzato e regolamentato dalla Gambling Supervision Commission dell’Isola di Man e dalla Gambling Commission del Regno Unito. Binary (Europe) Ltd è autorizzata dalla Gambling Commission del Regno Unito e dalla Gaming Authority di Malta. Binary Investments (Europe) Ltd è autorizzata e regolamentata dalla Malta Financial Services Authority, <span>Notabile Road</span>, Attard, <span>BKR4000</span>, Malta.</p>
-									<p class="font-xs justify">Il trading in opzioni binarie può comportare delle perdite così come dei profitti. I prezzi indicati sul sito internet possono variare e/o oscillare a causa delle variazioni nei tassi di cambio delle valute e/o dei movimenti dei prezzi, che possono influire sul rendimento degli investimenti.</p>
-									<p class="font-xs">Il gioco d’azzardo può creare dipendenza, si prega di giocare in modo responsabile.</p>
+									<p class="font-xs justify">This email has been issued by Binary (IOM) Ltd.  Binary (IOM) Ltd is licensed and regulated by the Isle of Man Gambling Supervision Commission, and by the UK Gambling Commission. Clients must be 18 years and above. Gambling can be addictive, please play responsibly. To find out how, please visit <a href="https://www.begambleaware.org">www.begambleaware.org</a></p>
 								</td>
 							</tr>
 						</table>
@@ -698,12 +699,12 @@ table.default_table.centered td:not(:first-child) {
 				</tr>
 				<tr>
 					<td class="centered">
-						<p class="font-s centered"><a href="https://www.binary.com/it/terms-and-conditions.html">Termini e condizioni</a> &nbsp;|&nbsp; <a href="https://www.binary.com/it/terms-and-conditions.html#risk">Informativa sui rischi</a> &nbsp;|&nbsp; <a href="https://www.binary.com/it/terms-and-conditions.html#conflicts-policy">Politica sui conflitti d’interesse</a> &nbsp;|&nbsp; <a href="https://www.binary.com/it/terms-and-conditions.html#order-execution">Esecuzione degli ordini</a></p>
+						<p class="font-s centered"><a href="https://www.binary.com/en/terms-and-conditions.html#legal" target="_blank">Terms and Conditions</a>  &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html#risk" target="_blank">Risk Disclaimer</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html#conflicts-policy" target="_blank">Conflicts Policy</a> &nbsp;|&nbsp; <a href="https://www.binary.com/en/terms-and-conditions.html#order-execution" target="_blank">Order Execution</a></p>
 					</td>
 				</tr>
 				<tr>
 					<td class="centered fill-bg-color unsubscribe">
-						<span class="font-s">Non desideri più ricevere queste email? <a href="{% unsubscribe_url %}" class="untracked">Cancella l’iscrizione</a></span>
+						<span class="font-s">Don't wish to receive these emails anymore? <a href="{% unsubscribe_url %}" class="untracked">Unsubscribe</a></span>
 					</td>
 				</tr>
 			</table><!--[if mso></td></tr></table><![endif]-->
