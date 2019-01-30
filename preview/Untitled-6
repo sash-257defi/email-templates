@@ -1,0 +1,182 @@
+<tr>
+                        <td class="one-column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner">
+                                        <table class="contents">
+                                            <tr>
+                                                <td class="centered">
+                                                    <p>Dear {{ customer.first_name | capitalize }},</p>
+                                                    <p>We truly appreciate you for signing up.</p>
+                                                    <p>We understand you may have some questions about getting started as our new affiliate. Don’t worry, we’re here for you. Let’s kick off our exclusive partnership.</p>
+                                                    <div class="centered top-padding-md">
+                                                        <div class="cta-box bordered rounded fill-bg-color">
+                                                            Your affiliate username
+                                                        </div>
+                                                        <div class="cta-box bordered rounded fill-bg-color">
+                                                            Your affiliate username
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- section -->
+                    <tr>
+                        <td class="one-column fill-bg-color">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner">
+                                        <table class="contents">
+                                            <tr>
+                                                <td class="centered padding-md">
+                                                    <h1>You are entitled to get USD 100</h1>
+                                                    <p>All you have to do is refer a client to us and get rewarded with USD 100 in commission  and that's for every successful referral! Your client must do the following:</p>
+                                                    <table class="" align="center" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td class="two-sm-column"><!--[if (gte mso 9)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="50%" valign="top"><![endif]-->
+                                                                <div class="column">
+                                                                    <table width="100%">
+                                                                        <tr>
+                                                                            <td class="box-2 white-bg-color">
+                                                                                <img src="affiliates/2.png" alt="Binary.com" />
+                                                                                <p>Open a real money account through your unique affiliate link</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div><!--[if (gte mso 9)|(IE)]></td><td width="50%" valign="top"><![endif]--><div class="column">
+                                                                    <table width="100%">
+                                                                        <tr>
+                                                                            <td class="box-2 white-bg-color">
+                                                                                <img src="affiliates/1.png" alt="Binary.com" />
+                                                                                <p>Make a one-time deposit of USD 100 or accumulate the total amount in the real money account</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- section -->
+                    <tr>
+                        <td class="one-column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner">
+                                        <table class="contents">
+                                            <tr>
+                                                <td class="centered padding-md">
+                                                    <h1>Your earnings are all yours all the way</h1>
+                                                    <p>You read it right! Your commissions will be credited to you without deductions, and on time by the 15th of every month. Please set up any of your preferred payment method below through your affiliate account:</p>
+                                                    <table class="" align="center" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td class="two-sm-column"><!--[if (gte mso 9)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="50%" valign="top"><![endif]-->
+                                                                <div class="column">
+                                                                    <table width="100%">
+                                                                        <tr>
+                                                                            <td class="box-2 fill-bg-color">
+                                                                                <img src="affiliates/3.png" alt="Binary.com" />
+                                                                                <p>Your Binary.com player account</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div><!--[if (gte mso 9)|(IE)]></td><td width="50%" valign="top"><![endif]--><div class="column">
+                                                                    <table width="100%">
+                                                                        <tr>
+                                                                            <td class="box-2 fill-bg-color">
+                                                                                <img src="affiliates/4.png" alt="Binary.com" />
+                                                                                <p>Neteller e-money transfer service</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- section -->
+                    <tr>
+                        <td class="one-column fill-bg-color">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner">
+                                        <table class="contents">
+                                            <tr>
+                                                <td class="padding-md">
+                                                    <h1 class="centered">Your earnings are all yours all the way</h1>
+                                                    <p class="centered">You read it right! Your commissions will be credited to you without deductions, and on time by the 15th of every month. Please set up any of your preferred payment method below through your affiliate account:</p>
+                                                    <table class="" align="center" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td class="two-sm-column"><!--[if (gte mso 9)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%" valign="top"><![endif]-->
+                                                                <div class="column-fluid">
+                                                                    <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+                                                                        <tr>
+                                                                            <td class="box-3 white-bg-color">
+                                                                                <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+                                                                                    <tr>
+                                                                                        <td width="100">
+                                                                                            <img src="affiliates/5.png" alt="Binary.com"/>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <h3>Detailed performance reports</h3>
+                                                                                            Monitor your performance with our data-driven statistics on client activities and traffic.
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="two-sm-column no-margin bordered"><!--[if (gte mso 9)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%" valign="top"><![endif]-->
+                                                                <div class="column-fluid">
+                                                                    <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+                                                                        <tr>
+                                                                            <td class="box-3 white-bg-color">
+                                                                                <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+                                                                                    <tr>
+                                                                                        <td width="100">
+                                                                                            <img src="affiliates/5.png" alt="Binary.com"/>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <h3>Detailed performance reports</h3>
+                                                                                            Monitor your performance with our data-driven statistics on client activities and traffic.
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
